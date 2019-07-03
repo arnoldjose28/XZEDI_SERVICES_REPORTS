@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataController name="TxnTtpNotConcilied" conflictDetection="overwriteChanges" label="Txn Ttp Not Concilied" plugIn="INVENIO.Data.AnnotationPlugIn" xmlns="urn:schemas-codeontime-com:data-aquarium">
+  <commands>
+    <command id="command1" type="Text">
+      <text><![CDATA[
+select
+	"TXN_TTP_NOT_CONCILIED"."Fecha_proceso" "FechaProceso"
+	,"TXN_TTP_NOT_CONCILIED"."Descripción_proceso" "DescripcionProceso"
+	,"TXN_TTP_NOT_CONCILIED"."Id_proceso" "IDProceso"
+	,"TXN_TTP_NOT_CONCILIED"."Estado_trnx" "EstadoTrnx"
+	,"TXN_TTP_NOT_CONCILIED"."codeOperation" "CodeOperation"
+	,"TXN_TTP_NOT_CONCILIED"."nameOperation" "NameOperation"
+	,"TXN_TTP_NOT_CONCILIED"."idTrxOriginal" "IDTrxOriginal"
+	,"TXN_TTP_NOT_CONCILIED"."idTrxEntity" "IDTrxEntity"
+	,"TXN_TTP_NOT_CONCILIED"."timestamp" "Timestamp"
+	,"TXN_TTP_NOT_CONCILIED"."phoneNumber" "PhoneNumber"
+	,"TXN_TTP_NOT_CONCILIED"."personalId" "PersonalID"
+	,"TXN_TTP_NOT_CONCILIED"."mainAccount" "MainAccount"
+	,"TXN_TTP_NOT_CONCILIED"."cardNumber" "CardNumber"
+	,"TXN_TTP_NOT_CONCILIED"."promo" "Promo"
+	,"TXN_TTP_NOT_CONCILIED"."promoAccount" "PromoAccount"
+	,"TXN_TTP_NOT_CONCILIED"."realAmount" "RealAmount"
+	,"TXN_TTP_NOT_CONCILIED"."fee" "Fee"
+	,"TXN_TTP_NOT_CONCILIED"."amount" "Amount"
+	,"TXN_TTP_NOT_CONCILIED"."promoAmount" "PromoAmount"
+from "REPORT"."TXN_TTP_NOT_CONCILIED" "TXN_TTP_NOT_CONCILIED"
+]]></text>
+    </command>
+  </commands>
+  <fields>
+    <field name="FechaProceso" type="DateTime" dataFormatString="dd/MM/yyyy" label="Fecha proceso" showInSummary="true" />
+    <field name="DescripcionProceso" type="String" label="Descripción proceso" length="100" showInSummary="true" />
+    <field name="IDProceso" type="Int32" allowNulls="false" label="Id proceso" showInSummary="true" />
+    <field name="EstadoTrnx" type="String" label="Estado trnx" readOnly="true" length="13" showInSummary="true" />
+    <field name="CodeOperation" type="String" label="codeOperation" length="3" showInSummary="true" />
+    <field name="NameOperation" type="String" label="nameOperation" length="70" />
+    <field name="IDTrxOriginal" type="String" label="idTrxOriginal" length="50" />
+    <field name="IDTrxEntity" type="String" label="idTrxEntity" length="20" />
+    <field name="Timestamp" type="DateTime" dataFormatString="dd/MM/yyyy" label="timestamp" readOnly="true" />
+    <field name="PhoneNumber" type="String" label="phoneNumber" length="50" />
+    <field name="PersonalID" type="String" label="personalId" length="50" />
+    <field name="MainAccount" type="String" label="mainAccount" length="20" />
+    <field name="CardNumber" type="String" label="cardNumber" length="20" />
+    <field name="Promo" type="String" label="promo" length="2" />
+    <field name="PromoAccount" type="String" label="promoAccount" length="20" />
+    <field name="RealAmount" type="Decimal" dataFormatString="N2" label="realAmount" readOnly="true" />
+    <field name="Fee" type="Decimal" dataFormatString="N2" label="fee" readOnly="true" />
+    <field name="Amount" type="Decimal" dataFormatString="N2" label="amount" readOnly="true" />
+    <field name="PromoAmount" type="Decimal" dataFormatString="N2" label="promoAmount" readOnly="true" />
+  </fields>
+  <views>
+    <view id="grid1" type="Grid" commandId="command1" label="Reporte Transacciones no Conciliadas TPP">
+      <headerText>$DefaultGridViewDescription</headerText>
+      <dataFields>
+        <dataField fieldName="FechaProceso" columns="20" />
+        <dataField fieldName="DescripcionProceso" />
+        <dataField fieldName="IDProceso" columns="15" />
+        <dataField fieldName="EstadoTrnx" columns="13" />
+        <dataField fieldName="CodeOperation" columns="3" />
+        <dataField fieldName="NameOperation" />
+        <dataField fieldName="IDTrxOriginal" columns="50" />
+        <dataField fieldName="IDTrxEntity" columns="20" />
+        <dataField fieldName="Timestamp" columns="20" />
+        <dataField fieldName="PhoneNumber" columns="50" />
+        <dataField fieldName="PersonalID" columns="50" />
+        <dataField fieldName="MainAccount" columns="20" />
+        <dataField fieldName="CardNumber" columns="20" />
+        <dataField fieldName="Promo" columns="2" />
+        <dataField fieldName="PromoAccount" columns="20" />
+        <dataField fieldName="RealAmount" columns="15" />
+        <dataField fieldName="Fee" columns="15" />
+        <dataField fieldName="Amount" columns="15" />
+        <dataField fieldName="PromoAmount" columns="15" />
+      </dataFields>
+    </view>
+    <view id="editForm1" type="Form" commandId="command1" label="Visualizar Reporte Transacciones no Conciliadas TPP">
+      <headerText>$DefaultEditViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="Reporte Transacciones no Conciliadas TPP" flow="NewColumn">
+          <description><![CDATA[$DefaultEditDescription]]></description>
+          <dataFields>
+            <dataField fieldName="FechaProceso" columns="20" />
+            <dataField fieldName="DescripcionProceso" />
+            <dataField fieldName="IDProceso" columns="15" />
+            <dataField fieldName="EstadoTrnx" columns="13" />
+            <dataField fieldName="CodeOperation" columns="3" />
+            <dataField fieldName="NameOperation" />
+            <dataField fieldName="IDTrxOriginal" columns="50" />
+            <dataField fieldName="IDTrxEntity" columns="20" />
+            <dataField fieldName="Timestamp" columns="20" />
+            <dataField fieldName="PhoneNumber" columns="50" />
+            <dataField fieldName="PersonalID" columns="50" />
+            <dataField fieldName="MainAccount" columns="20" />
+            <dataField fieldName="CardNumber" columns="20" />
+            <dataField fieldName="Promo" columns="2" />
+            <dataField fieldName="PromoAccount" columns="20" />
+            <dataField fieldName="RealAmount" columns="15" />
+            <dataField fieldName="Fee" columns="15" />
+            <dataField fieldName="Amount" columns="15" />
+            <dataField fieldName="PromoAmount" columns="15" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+    <view id="createForm1" type="Form" commandId="command1" label="Nuevo Reporte Transacciones no Conciliadas TPP">
+      <headerText>$DefaultCreateViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="Reporte Transacciones no Conciliadas TPP" flow="NewColumn">
+          <description><![CDATA[$DefaultNewDescription]]></description>
+          <dataFields>
+            <dataField fieldName="FechaProceso" columns="20" />
+            <dataField fieldName="DescripcionProceso" />
+            <dataField fieldName="IDProceso" columns="15" />
+            <dataField fieldName="EstadoTrnx" columns="13" />
+            <dataField fieldName="CodeOperation" columns="3" />
+            <dataField fieldName="NameOperation" />
+            <dataField fieldName="IDTrxOriginal" columns="50" />
+            <dataField fieldName="IDTrxEntity" columns="20" />
+            <dataField fieldName="Timestamp" columns="20" />
+            <dataField fieldName="PhoneNumber" columns="50" />
+            <dataField fieldName="PersonalID" columns="50" />
+            <dataField fieldName="MainAccount" columns="20" />
+            <dataField fieldName="CardNumber" columns="20" />
+            <dataField fieldName="Promo" columns="2" />
+            <dataField fieldName="PromoAccount" columns="20" />
+            <dataField fieldName="RealAmount" columns="15" />
+            <dataField fieldName="Fee" columns="15" />
+            <dataField fieldName="Amount" columns="15" />
+            <dataField fieldName="PromoAmount" columns="15" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+  </views>
+  <actions>
+    <actionGroup id="ag1" scope="Grid">
+      <action id="a2" commandName="Edit" />
+      <action id="a3" commandName="Delete" />
+      <action id="a6" />
+      <action id="a7" commandName="New" commandArgument="grid1" />
+      <action id="a8" commandName="Duplicate" commandArgument="createForm1" />
+    </actionGroup>
+    <actionGroup id="ag2" scope="Form">
+      <action id="a1" commandName="Edit" />
+      <action id="a2" commandName="Delete" />
+      <action id="a3" commandName="Cancel" />
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Delete" />
+      <action id="a6" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a7" whenLastCommandName="New" commandName="Insert" />
+      <action id="a8" whenLastCommandName="New" commandName="Cancel" />
+      <action id="a9" whenLastCommandName="Duplicate" commandName="Insert" />
+      <action id="a10" whenLastCommandName="Duplicate" commandName="Cancel" />
+      <action id="a13" whenLastCommandName="Insert" whenView="createForm1" commandName="Select" commandArgument="editForm1" whenKeySelected="true" whenClientScript="this.hasDetails()" />
+    </actionGroup>
+    <actionGroup id="ag3" scope="ActionBar" headerText="New" flat="true">
+      <action id="a1" commandName="New" commandArgument="createForm1" cssClass="NewIcon" />
+    </actionGroup>
+    <actionGroup id="ag4" scope="ActionBar" headerText="Edit/Delete" flat="true">
+      <action id="a1" whenKeySelected="true" commandName="Edit" commandArgument="editForm1" cssClass="EditIcon" whenView="grid1" />
+      <action id="a2" whenKeySelected="true" commandName="Delete" cssClass="DeleteIcon" whenView="grid1" />
+    </actionGroup>
+    <actionGroup id="ag6" scope="ActionBar" headerText="Record">
+      <action id="a1" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a2" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a3" whenLastCommandName="New" commandName="Insert" />
+      <action id="a4" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+    <actionGroup id="ag7" scope="ActionBar" headerText="Report">
+      <action id="a1" commandName="ReportAsPdf" />
+      <action id="a3" commandName="ReportAsExcel" />
+      <action id="a4" commandName="ReportAsWord" />
+    </actionGroup>
+    <actionGroup id="ag8" scope="Row">
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a6" whenLastCommandName="New" commandName="Insert" />
+      <action id="a7" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+  </actions>
+</dataController>

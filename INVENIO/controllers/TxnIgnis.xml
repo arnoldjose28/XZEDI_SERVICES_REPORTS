@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataController name="TxnIgnis" conflictDetection="overwriteChanges" label="Txn Ignis" xmlns="urn:schemas-codeontime-com:data-aquarium">
+  <commands>
+    <command id="command1" type="Text">
+      <text><![CDATA[
+select
+	"TXN_IGNIS"."RETRIEVALREFNO" "Retrievalrefno"
+	,"TXN_IGNIS"."AMOUNTTRANS" "Amounttrans"
+	,"TXN_IGNIS"."CURRENCY" "Currency"
+	,"TXN_IGNIS"."DATESTAMP" "Datestamp"
+	,"TXN_IGNIS"."CARDACCEPTORID" "Cardacceptorid"
+	,"TXN_IGNIS"."COMPLEMENTARY_CODE" "ComplementaryCode"
+	,"TXN_IGNIS"."MERCHANTID" "Merchantid"
+	,"TXN_IGNIS"."MCC_CODE" "MccCode"
+	,"TXN_IGNIS"."MERC_DESCRIPTION" "MercDescription"
+	,"TXN_IGNIS"."TERMINAL_SERIES" "TerminalSeries"
+	,"TXN_IGNIS"."TERMINAL_MODEL" "TerminalModel"
+	,"TXN_IGNIS"."COMERCEDISTRICT" "Comercedistrict"
+	,"TXN_IGNIS"."TERMINALID" "Terminalid"
+	,"TXN_IGNIS"."CORE_ACCOUNT_NUMBER" "CoreAccountNumber"
+	,"TXN_IGNIS"."OWNER_ID" "OwnerID"
+	,"TXN_IGNIS"."OUTGOING_TRANSACTION_ID" "OutgoingTransactionID"
+	,"TXN_IGNIS"."ENTITYNAME" "Entityname"
+	,"TXN_IGNIS"."MERCHANT_FEE_TYPE" "MerchantFeeType"
+	,"TXN_IGNIS"."VALUE_COMMISSION_MERCHANT" "ValueCommissionMerchant"
+	,"TXN_IGNIS"."MERCHANT_FEE" "MerchantFee"
+	,"TXN_IGNIS"."PROCESSOR_FEE_TYPE" "ProcessorFeeType"
+	,"TXN_IGNIS"."VALUE_COMMISSION_PROVIDER" "ValueCommissionProvider"
+	,"TXN_IGNIS"."PROCESSOR_FEE" "ProcessorFee"
+	,"TXN_IGNIS"."RECEIPT_AMOUNT" "ReceiptAmount"
+	,"TXN_IGNIS"."RECEIPT_SERVICE_FEE" "ReceiptServiceFee"
+	,"TXN_IGNIS"."RECEIPT_PAYING_AMOUNT" "ReceiptPayingAmount"
+	,"TXN_IGNIS"."PRODUCT_CODE" "ProductCode"
+	,"TXN_IGNIS"."MESSAGE_TYPE" "MessageType"
+from "REPORT"."TXN_IGNIS" "TXN_IGNIS"
+]]></text>
+    </command>
+  </commands>
+  <fields>
+    <field name="Retrievalrefno" type="String" label="ID Trxn" length="12" showInSummary="true" />
+    <field name="Amounttrans" type="Decimal" label="Monto de Trnx" readOnly="true" showInSummary="true" />
+    <field name="Currency" type="String" label="Código de Moneda" length="3" showInSummary="true" />
+    <field name="Datestamp" type="DateTime" dataFormatString="g" label="Fecha de Trnx" showInSummary="true" />
+    <field name="Cardacceptorid" type="String" label="Cardacceptorid" length="15" showInSummary="true" />
+    <field name="ComplementaryCode" type="String" label="Código de Recaudo" length="20" />
+    <field name="Merchantid" type="String" label="Código de Comercio" length="15" />
+    <field name="MccCode" type="String" allowNulls="false" label="MCC INT" length="4" />
+    <field name="MercDescription" type="String" allowNulls="false" label="Nombre Comercial" length="60" />
+    <field name="TerminalSeries" type="Decimal" label="Nro de Serie de Terminal" />
+    <field name="TerminalModel" type="String" label="Modelo de Terminal" length="12" />
+    <field name="Comercedistrict" type="String" label="Comercedistrict" length="16" />
+    <field name="Terminalid" type="String" label="Terminal Id" length="8" />
+    <field name="CoreAccountNumber" type="String" label="Core Account Number" length="34" />
+    <field name="OwnerID" type="String" label="Owner Id" length="20" />
+    <field name="OutgoingTransactionID" type="String" label="ID de Trxn Entidad" length="1024" />
+    <field name="Entityname" type="String" label="Nombre de Entidad" length="100" />
+    <field name="MerchantFeeType" type="String" label="Tipo Comisión Comercio" length="20" />
+    <field name="ValueCommissionMerchant" type="Decimal" label="Valor Comisión Comercio" readOnly="true" />
+    <field name="MerchantFee" type="Decimal" label="Comisión Comercio Calculado" readOnly="true" />
+    <field name="ProcessorFeeType" type="String" label="Tipo Comisión V2" length="20" />
+    <field name="ValueCommissionProvider" type="Decimal" label="Valor Comisión V2" readOnly="true" />
+    <field name="ProcessorFee" type="Decimal" label="Comisión V2 Calculada" readOnly="true" />
+    <field name="ReceiptAmount" type="Decimal" label="Monto de Servicio" readOnly="true" />
+    <field name="ReceiptServiceFee" type="Decimal" label="Comisión de Servicio" readOnly="true" />
+    <field name="ReceiptPayingAmount" type="Decimal" label="Monto Total" readOnly="true" />
+    <field name="ProductCode" type="String" label="Tipo de Operación" length="100" />
+    <field name="MessageType" type="String" label="Tipo de Respuesta" length="100" />
+  </fields>
+  <views>
+    <view id="grid1" type="Grid" commandId="command1" label="Txn Ignis">
+      <headerText>$DefaultGridViewDescription</headerText>
+      <dataFields>
+        <dataField fieldName="Retrievalrefno" columns="12" />
+        <dataField fieldName="Amounttrans" columns="15" />
+        <dataField fieldName="Currency" columns="3" />
+        <dataField fieldName="Datestamp" columns="20" />
+        <dataField fieldName="Cardacceptorid" columns="15" />
+        <dataField fieldName="ComplementaryCode" columns="20" />
+        <dataField fieldName="Merchantid" columns="15" />
+        <dataField fieldName="MccCode" columns="4" />
+        <dataField fieldName="MercDescription" />
+        <dataField fieldName="TerminalSeries" columns="15" />
+        <dataField fieldName="TerminalModel" columns="12" />
+        <dataField fieldName="Comercedistrict" columns="16" />
+        <dataField fieldName="Terminalid" columns="8" />
+        <dataField fieldName="CoreAccountNumber" columns="34" />
+        <dataField fieldName="OwnerID" columns="20" />
+        <dataField fieldName="OutgoingTransactionID" />
+        <dataField fieldName="Entityname" />
+        <dataField fieldName="MerchantFeeType" columns="20" />
+        <dataField fieldName="ValueCommissionMerchant" columns="15" />
+        <dataField fieldName="MerchantFee" columns="15" />
+        <dataField fieldName="ProcessorFeeType" columns="20" />
+        <dataField fieldName="ValueCommissionProvider" columns="15" />
+        <dataField fieldName="ProcessorFee" columns="15" />
+        <dataField fieldName="ReceiptAmount" columns="15" />
+        <dataField fieldName="ReceiptServiceFee" columns="15" />
+        <dataField fieldName="ReceiptPayingAmount" columns="15" />
+        <dataField fieldName="ProductCode" />
+        <dataField fieldName="MessageType" />
+      </dataFields>
+    </view>
+    <view id="editForm1" type="Form" commandId="command1" label="Review REPORT Txn Ignis">
+      <headerText>$DefaultEditViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="REPORT Txn Ignis" flow="NewColumn">
+          <description><![CDATA[$DefaultEditDescription]]></description>
+          <dataFields>
+            <dataField fieldName="Retrievalrefno" columns="12" />
+            <dataField fieldName="Amounttrans" columns="15" />
+            <dataField fieldName="Currency" columns="3" />
+            <dataField fieldName="Datestamp" columns="20" />
+            <dataField fieldName="Cardacceptorid" columns="15" />
+            <dataField fieldName="ComplementaryCode" columns="20" />
+            <dataField fieldName="Merchantid" columns="15" />
+            <dataField fieldName="MccCode" columns="4" />
+            <dataField fieldName="MercDescription" />
+            <dataField fieldName="TerminalSeries" columns="15" />
+            <dataField fieldName="TerminalModel" columns="12" />
+            <dataField fieldName="Comercedistrict" columns="16" />
+            <dataField fieldName="Terminalid" columns="8" />
+            <dataField fieldName="CoreAccountNumber" columns="34" />
+            <dataField fieldName="OwnerID" columns="20" />
+            <dataField fieldName="OutgoingTransactionID" />
+            <dataField fieldName="Entityname" />
+            <dataField fieldName="MerchantFeeType" columns="20" />
+            <dataField fieldName="ValueCommissionMerchant" columns="15" />
+            <dataField fieldName="MerchantFee" columns="15" />
+            <dataField fieldName="ProcessorFeeType" columns="20" />
+            <dataField fieldName="ValueCommissionProvider" columns="15" />
+            <dataField fieldName="ProcessorFee" columns="15" />
+            <dataField fieldName="ReceiptAmount" columns="15" />
+            <dataField fieldName="ReceiptServiceFee" columns="15" />
+            <dataField fieldName="ReceiptPayingAmount" columns="15" />
+            <dataField fieldName="ProductCode" />
+            <dataField fieldName="MessageType" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+    <view id="createForm1" type="Form" commandId="command1" label="New REPORT Txn Ignis">
+      <headerText>$DefaultCreateViewDescription</headerText>
+      <categories>
+        <category id="c1" flow="NewColumn">
+          <description><![CDATA[$DefaultNewDescription]]></description>
+          <dataFields>
+            <dataField fieldName="Retrievalrefno" columns="12" />
+            <dataField fieldName="Amounttrans" columns="15" />
+            <dataField fieldName="Currency" columns="3" />
+            <dataField fieldName="Datestamp" columns="20" />
+            <dataField fieldName="Cardacceptorid" columns="15" />
+            <dataField fieldName="ComplementaryCode" columns="20" />
+            <dataField fieldName="Merchantid" columns="15" />
+            <dataField fieldName="MccCode" columns="4" />
+            <dataField fieldName="MercDescription" />
+            <dataField fieldName="TerminalSeries" columns="15" />
+            <dataField fieldName="TerminalModel" columns="12" />
+            <dataField fieldName="Comercedistrict" columns="16" />
+            <dataField fieldName="Terminalid" columns="8" />
+            <dataField fieldName="CoreAccountNumber" columns="34" />
+            <dataField fieldName="OwnerID" columns="20" />
+            <dataField fieldName="OutgoingTransactionID" />
+            <dataField fieldName="Entityname" />
+            <dataField fieldName="MerchantFeeType" columns="20" />
+            <dataField fieldName="ValueCommissionMerchant" columns="15" />
+            <dataField fieldName="MerchantFee" columns="15" />
+            <dataField fieldName="ProcessorFeeType" columns="20" />
+            <dataField fieldName="ValueCommissionProvider" columns="15" />
+            <dataField fieldName="ProcessorFee" columns="15" />
+            <dataField fieldName="ReceiptAmount" columns="15" />
+            <dataField fieldName="ReceiptServiceFee" columns="15" />
+            <dataField fieldName="ReceiptPayingAmount" columns="15" />
+            <dataField fieldName="ProductCode" />
+            <dataField fieldName="MessageType" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+  </views>
+  <actions>
+    <actionGroup id="ag1" scope="Grid">
+      <action id="a1" commandName="Select" commandArgument="editForm1" />
+      <action id="a2" commandName="Edit" roles="%" />
+      <action id="a3" commandName="Delete" roles="%" />
+      <action id="a6" />
+      <action id="a7" commandName="New" commandArgument="grid1" roles="%" />
+      <action id="a8" commandName="Duplicate" commandArgument="createForm1" roles="%" />
+    </actionGroup>
+    <actionGroup id="ag2" scope="Form">
+      <action id="a1" commandName="Edit" roles="%" />
+      <action id="a2" commandName="Delete" roles="%" />
+      <action id="a3" commandName="Cancel" />
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" roles="%" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Delete" roles="%" />
+      <action id="a6" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a7" whenLastCommandName="New" commandName="Insert" roles="%" />
+      <action id="a8" whenLastCommandName="New" commandName="Cancel" />
+      <action id="a9" whenLastCommandName="Duplicate" commandName="Insert" roles="%" />
+      <action id="a10" whenLastCommandName="Duplicate" commandName="Cancel" />
+      <action id="a13" whenLastCommandName="Insert" whenView="createForm1" commandName="Select" commandArgument="editForm1" whenKeySelected="true" whenClientScript="this.hasDetails()" roles="%" />
+    </actionGroup>
+    <actionGroup id="ag3" scope="ActionBar" headerText="New" flat="true">
+      <action id="a1" commandName="New" commandArgument="createForm1" cssClass="NewIcon" roles="%" />
+    </actionGroup>
+    <actionGroup id="ag4" scope="ActionBar" headerText="Edit/Delete" flat="true">
+      <action id="a1" whenKeySelected="true" commandName="Edit" commandArgument="editForm1" cssClass="EditIcon" whenView="grid1" roles="%" />
+      <action id="a2" whenKeySelected="true" commandName="Delete" cssClass="DeleteIcon" whenView="grid1" roles="%" />
+    </actionGroup>
+    <actionGroup id="ag5" scope="ActionBar" headerText="Actions">
+      <action id="a1" commandName="ExportCsv" />
+      <action id="a2" />
+      <action id="a3" commandName="ExportRowset" />
+      <action id="a4" commandName="ExportRss" />
+      <action id="a7" commandName="DataSheet" />
+      <action id="a8" commandName="Grid" />
+    </actionGroup>
+    <actionGroup id="ag6" scope="ActionBar" headerText="Record">
+      <action id="a1" whenLastCommandName="Edit" commandName="Update" roles="%" />
+      <action id="a2" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a3" whenLastCommandName="New" commandName="Insert" roles="%" />
+      <action id="a4" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+    <actionGroup id="ag7" scope="ActionBar" headerText="Report">
+      <action id="a1" commandName="ReportAsPdf" />
+      <action id="a2" commandName="ReportAsImage" />
+      <action id="a3" commandName="ReportAsExcel" />
+      <action id="a4" commandName="ReportAsWord" />
+    </actionGroup>
+    <actionGroup id="ag8" scope="Row">
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" roles="%" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a6" whenLastCommandName="New" commandName="Insert" roles="%" />
+      <action id="a7" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+  </actions>
+</dataController>

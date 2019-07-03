@@ -1,0 +1,45 @@
+<!-- 
+  This file is provided to store the settings for your Data Aquarium project. 
+  You can safely delete this file if no further code generation is planned.
+-->
+<project compatibility="20111118" dataModel="required" appFolder="app" displayName="XZEDI_SERVICES_REPORT" group="" type="Web App Factory" subscriptionLevel="Unlimited" name="XZEDI_SERVICES_REPORTS" prettyName="XZEDI SERVICES REPORTS" codeDomProvider="CSharp" targetFramework="4.6" userInterface="TouchUI" pageImplementation="html" sourceControl="git" xmlns="urn:schemas-codeontime-com:data-aquarium-project">
+  <connectionString hostDatabaseSharing="false" sessionStateMode="Custom">Data Source=172.16.1.27;Initial Catalog=XZEDI.SERVICES_DB_VNET_QA;Persist Security Info=True;User ID=xzedi_1;Password=erudioestsolutio;</connectionString>
+  <providerName>System.Data.SqlClient</providerName>
+  <namespace>INVENIO</namespace>
+  <webServer run="true" port="1730" preview="Browser" client="">
+    <webConfig></webConfig>
+  </webServer>
+  <features useSaveAndNew="false" pageHeader="REPORTS XZEDI SERVICES" copyright="© INVENIO INTELECTUAL S.A 2019" annotations="true" annotationsPath="" newColumn="true" floating="false" maxGridFields="100" multiSelect="false" batchEdit="false" advancedSearch="false" advancedLookup="false" relationshipExplorer="true" enablePermalinks="true" enableHistory="true" enableTransactions="false" showModalForms="true" tabViewSelection="10">
+    <navigation detectUnderscoreSeparatedSchema="" />
+    <blob allowUploadOnInsert="true" />
+    <framework scriptOnly="true" useExtenders="false" />
+    <grid actionColumn="false" />
+    <touch desktopDisplayDensity="Condensed" mobileDisplayDensity="Auto" transitions="" sidebar="Landscape" labelsInList="DisplayedBelow" initialListMode="SeeAll" menu="toolbar" promoteActions="true" smartDates="true" mapApiIdentifier="" mapApiIdentifierMobile="" />
+    <cms searchEngine="" analysisEngine="" analysisOnDataPages="true" />
+    <ease urlHashing="true">
+      <auditing></auditing>
+    </ease>
+    <packageProperties></packageProperties>
+    <smtp deliveryMethod="Network" deliveryFormat="" from="" clientDomain="" targetName="" host="" port="" defaultCredentials="true" enableSsl="false" username="" password="" />
+  </features>
+  <reports enabled="true" version="14" />
+  <host path="" url="" />
+  <databaseObjectFilter generate="ControllersAndPages"></databaseObjectFilter>
+  <bll normalizeModelNames="true" discoveryDepth="3" labelFormatExpression="" selectMethod="Select" selectSingleMethod="SelectSingle" insertMethod="Insert" updateMethod="Update" deleteMethod="Delete" generateSharedBusinessRules="true" includeViews="true" tabViewSelection="0">
+    <fieldMap></fieldMap>
+    <keys></keys>
+    <fieldsToIgnore></fieldsToIgnore>
+    <fieldsToHide></fieldsToHide>
+    <customLabels></customLabels>
+  </bll>
+  <membership enabled="true" providerName="System.Data.SqlClient" connectionString="" windowsAuthentication="false" activeDirectory="false" customSecurity="false" dedicatedLogin="true" displayRememberMe="false" rememberMeSet="false" displaySignUp="false" displayPasswordRecovery="true" displayMyAccount="true" displayHelp="false" idleUserDetectionTimeout="-1" tabViewSelection="3" validationKey="0F31C76373BA5907129A83AE7A78B57A08680D8AB61D32A9C5311ADB203FB0C176F2AA9878B67CA282878A54014201215EA6326C13BCB59224880EB43B05C26E">
+    <adConfig></adConfig>
+    <config></config>
+  </membership>
+  <globalization uiCulture="en-US" culture="en-US" enableClientBasedCulture="false" supportedCultures="en-US,en-US; " googleTranslateApiKey="" />
+  <layout name="Classic" menuStyle="MultiLevel" />
+  <theme name="DarkKnight" />
+  <publish mode="FileSystem">
+    <fileSystem external="true" />
+  </publish>
+</project>

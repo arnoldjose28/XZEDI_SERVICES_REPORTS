@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataController name="ReportMonthlyInvoice" conflictDetection="overwriteChanges" label="Report Monthly Invoice" plugIn="INVENIO.Data.AnnotationPlugIn" xmlns="urn:schemas-codeontime-com:data-aquarium">
+  <commands>
+    <command id="command1" type="Text">
+      <text><![CDATA[
+select
+	"REPORT_MONTHLY_INVOICE"."IDPROCESO" "Idproceso"
+	,"REPORT_MONTHLY_INVOICE"."ACCOUNT_NUMBER" "AccountNumber"
+	,"REPORT_MONTHLY_INVOICE"."OWNER_ID" "OwnerID"
+	,"REPORT_MONTHLY_INVOICE"."CODIGO_RECARGAS" "CodigoRecargas"
+	,"REPORT_MONTHLY_INVOICE"."CODIGO_NBO" "CodigoNbo"
+	,"REPORT_MONTHLY_INVOICE"."ABONOS" "Abonos"
+	,"REPORT_MONTHLY_INVOICE"."REC_TOTAL" "RecTotal"
+	,"REPORT_MONTHLY_INVOICE"."REC_COM" "RecCom"
+	,"REPORT_MONTHLY_INVOICE"."SER_TOTAL" "SerTotal"
+	,"REPORT_MONTHLY_INVOICE"."SER_COM" "SerCom"
+	,"REPORT_MONTHLY_INVOICE"."TOTAL_FACTURADO" "TotalFacturado"
+	,"REPORT_MONTHLY_INVOICE"."TOTAL_FACTURAR" "TotalFacturar"
+from "REPORT"."REPORT_MONTHLY_INVOICE" "REPORT_MONTHLY_INVOICE"
+]]></text>
+    </command>
+  </commands>
+  <fields>
+    <field name="Idproceso" type="Int32" label="Id Proceso" showInSummary="true" />
+    <field name="AccountNumber" type="String" label="Account Number" length="200" showInSummary="true" />
+    <field name="OwnerID" type="String" label="Owner Id" length="200" showInSummary="true" />
+    <field name="CodigoRecargas" type="String" label="Codigo Recargas" length="200" showInSummary="true" />
+    <field name="CodigoNbo" type="String" label="Codigo Nbo" length="200" showInSummary="true" />
+    <field name="Abonos" type="Double" dataFormatString="N2" label="Abonos" />
+    <field name="RecTotal" type="Double" dataFormatString="N2" label="Rec Total" />
+    <field name="RecCom" type="Double" dataFormatString="N2" label="Rec Com" />
+    <field name="SerTotal" type="Double" dataFormatString="N2" label="Ser Total" />
+    <field name="SerCom" type="Double" dataFormatString="N2" label="Ser Com" />
+    <field name="TotalFacturado" type="Double" dataFormatString="N2" label="Total Facturado" />
+    <field name="TotalFacturar" type="Double" dataFormatString="N2" label="Total Facturar" />
+  </fields>
+  <views>
+    <view id="grid1" type="Grid" commandId="command1" label="Reporte Facturación a Comercios">
+      <headerText>$DefaultGridViewDescription</headerText>
+      <dataFields>
+        <dataField fieldName="Idproceso" columns="15" />
+        <dataField fieldName="AccountNumber" />
+        <dataField fieldName="OwnerID" />
+        <dataField fieldName="CodigoRecargas" />
+        <dataField fieldName="CodigoNbo" />
+        <dataField fieldName="Abonos" columns="15" />
+        <dataField fieldName="RecTotal" columns="15" />
+        <dataField fieldName="RecCom" columns="15" />
+        <dataField fieldName="SerTotal" columns="15" />
+        <dataField fieldName="SerCom" columns="15" />
+        <dataField fieldName="TotalFacturado" columns="15" />
+        <dataField fieldName="TotalFacturar" columns="15" />
+      </dataFields>
+    </view>
+    <view id="editForm1" type="Form" commandId="command1" label="Visualizar Reporte Facturación a Comercios">
+      <headerText>$DefaultEditViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="Reporte Facturación a Comercios" flow="NewColumn">
+          <description><![CDATA[$DefaultEditDescription]]></description>
+          <dataFields>
+            <dataField fieldName="Idproceso" columns="15" />
+            <dataField fieldName="AccountNumber" />
+            <dataField fieldName="OwnerID" />
+            <dataField fieldName="CodigoRecargas" />
+            <dataField fieldName="CodigoNbo" />
+            <dataField fieldName="Abonos" columns="15" />
+            <dataField fieldName="RecTotal" columns="15" />
+            <dataField fieldName="RecCom" columns="15" />
+            <dataField fieldName="SerTotal" columns="15" />
+            <dataField fieldName="SerCom" columns="15" />
+            <dataField fieldName="TotalFacturado" columns="15" />
+            <dataField fieldName="TotalFacturar" columns="15" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+    <view id="createForm1" type="Form" commandId="command1" label="Nuevo Reporte Facturación a Comercios">
+      <headerText>$DefaultCreateViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="Reporte Facturación a Comercios" flow="NewColumn">
+          <description><![CDATA[$DefaultNewDescription]]></description>
+          <dataFields>
+            <dataField fieldName="Idproceso" columns="15" />
+            <dataField fieldName="AccountNumber" />
+            <dataField fieldName="OwnerID" />
+            <dataField fieldName="CodigoRecargas" />
+            <dataField fieldName="CodigoNbo" />
+            <dataField fieldName="Abonos" columns="15" />
+            <dataField fieldName="RecTotal" columns="15" />
+            <dataField fieldName="RecCom" columns="15" />
+            <dataField fieldName="SerTotal" columns="15" />
+            <dataField fieldName="SerCom" columns="15" />
+            <dataField fieldName="TotalFacturado" columns="15" />
+            <dataField fieldName="TotalFacturar" columns="15" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+  </views>
+  <actions>
+    <actionGroup id="ag1" scope="Grid">
+      <action id="a2" commandName="Edit" />
+      <action id="a3" commandName="Delete" />
+      <action id="a6" />
+      <action id="a7" commandName="New" commandArgument="grid1" />
+      <action id="a8" commandName="Duplicate" commandArgument="createForm1" />
+    </actionGroup>
+    <actionGroup id="ag2" scope="Form">
+      <action id="a1" commandName="Edit" />
+      <action id="a2" commandName="Delete" />
+      <action id="a3" commandName="Cancel" />
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Delete" />
+      <action id="a6" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a7" whenLastCommandName="New" commandName="Insert" />
+      <action id="a8" whenLastCommandName="New" commandName="Cancel" />
+      <action id="a9" whenLastCommandName="Duplicate" commandName="Insert" />
+      <action id="a10" whenLastCommandName="Duplicate" commandName="Cancel" />
+      <action id="a13" whenLastCommandName="Insert" whenView="createForm1" commandName="Select" commandArgument="editForm1" whenKeySelected="true" whenClientScript="this.hasDetails()" />
+    </actionGroup>
+    <actionGroup id="ag3" scope="ActionBar" headerText="New" flat="true">
+      <action id="a1" commandName="New" commandArgument="createForm1" cssClass="NewIcon" />
+    </actionGroup>
+    <actionGroup id="ag4" scope="ActionBar" headerText="Edit/Delete" flat="true">
+      <action id="a1" whenKeySelected="true" commandName="Edit" commandArgument="editForm1" cssClass="EditIcon" whenView="grid1" />
+      <action id="a2" whenKeySelected="true" commandName="Delete" cssClass="DeleteIcon" whenView="grid1" />
+    </actionGroup>
+    <actionGroup id="ag6" scope="ActionBar" headerText="Record">
+      <action id="a1" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a2" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a3" whenLastCommandName="New" commandName="Insert" />
+      <action id="a4" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+    <actionGroup id="ag7" scope="ActionBar" headerText="Report">
+      <action id="a1" commandName="ReportAsPdf" />
+      <action id="a3" commandName="ReportAsExcel" />
+      <action id="a4" commandName="ReportAsWord" />
+    </actionGroup>
+    <actionGroup id="ag8" scope="Row">
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a6" whenLastCommandName="New" commandName="Insert" />
+      <action id="a7" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+  </actions>
+</dataController>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="REPORT" baseTable="TXN_TTP" alias="TXN_TTP" created="2019-04-05T23:30:31" modified="2019-04-05T23:33:57" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys />
+  <columns>
+    <column name="codeOperation" fieldName="CodeOperation" label="codeOperation" />
+    <column name="nameOperation" fieldName="NameOperation" label="nameOperation" />
+    <column name="idTrxOriginal" fieldName="IDTrxOriginal" label="idTrxOriginal" />
+    <column name="idTrxEntity" fieldName="IDTrxEntity" label="idTrxEntity" />
+    <column name="timestamp" fieldName="Timestamp" label="timestamp" />
+    <column name="phoneNumber" fieldName="PhoneNumber" label="phoneNumber" />
+    <column name="personalId" fieldName="PersonalID" label="personalId" />
+    <column name="mainAccount" fieldName="MainAccount" label="mainAccount" />
+    <column name="cardNumber" fieldName="CardNumber" label="cardNumber" />
+    <column name="promo" fieldName="Promo" label="promo" />
+    <column name="promoAccount" fieldName="PromoAccount" label="promoAccount" />
+    <column name="realAmount" fieldName="RealAmount" label="realAmount" />
+    <column name="fee" fieldName="Fee" label="fee" />
+    <column name="amount" fieldName="Amount" label="amount" />
+    <column name="promoAmount" fieldName="PromoAmount" label="promo Amount" />
+  </columns>
+</dataModel>

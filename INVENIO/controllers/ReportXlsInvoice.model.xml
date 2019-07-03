@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="REPORT" baseTable="REPORT_XLS_INVOICE" alias="REPORT_XLS_INVOICE" created="2019-06-24T15:45:33" modified="2019-06-24T15:47:27" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys />
+  <columns>
+    <column name="IDPROCESO" fieldName="Idproceso" label="Id Proceso" />
+    <column name="FECHA_EMISION" fieldName="FechaEmision" label="Fecha Emisión" format="" />
+    <column name="TIPO_DOCUMENTO" fieldName="TipoDocumento" label="Tipo Documento" />
+    <column name="SERIE" fieldName="Serie" label="Serie" />
+    <column name="NUM_DOCUMENTO" fieldName="NumDocumento" label="Num Documento" />
+    <column name="TIPO_DOC_CLIENTE" fieldName="TipoDocCliente" label="Tipo Doc Cliente" />
+    <column name="DOCUMENTO" fieldName="Documento" label="Documento" />
+    <column name="RAZON_SOCIAL" fieldName="RazonSocial" label="Razon Social" />
+    <column name="DIRECCION" fieldName="Direccion" label="Dirección" />
+    <column name="EMAIL_COMERCIAL" fieldName="EmailComercial" label="Email Comercial" />
+    <column name="CORREO_COPIA" fieldName="CorreoCopia" label="Correo Copia" />
+    <column name="MONEDA" fieldName="Moneda" label="Moneda" />
+    <column name="FORMA_PAGO" fieldName="FormaPago" label="Forma Pago" />
+    <column name="OBSERVACIONES" fieldName="Observaciones" label="Observaciones" />
+    <column name="IGV" fieldName="Igv" label="Igv" />
+    <column name="TIPO_OPERACION" fieldName="TipoOperacion" label="Tipo Operación" />
+    <column name="DETRACCION" fieldName="Detraccion" label="Detracción" />
+    <column name="SERVICIO_DETRACC" fieldName="ServicioDetracc" label="Servicio Detracc" />
+    <column name="PORCENTAJE_DETRACC" fieldName="PorcentajeDetracc" label="Porcentaje Detracc" />
+    <column name="FECHA_VENCIMIENTO" fieldName="FechaVencimiento" label="Fecha Vencimiento" format="" />
+    <column name="ITEM" fieldName="Item" label="Item" />
+    <column name="CODIGO" fieldName="Codigo" label="Código" />
+    <column name="DESCRIPCION" fieldName="Descripcion" label="Descripción" />
+    <column name="CANTIDAD" fieldName="Cantidad" label="Cantidad" />
+    <column name="UNIDAD" fieldName="Unidad" label="Unidad" />
+    <column name="TIPO_AFEC" fieldName="TipoAfec" label="Tipo Afec" />
+    <column name="TOTAL_FACTURAR" fieldName="TotalFacturar" label="Total Facturar" format="N2" />
+    <column name="REF_FACTURA" fieldName="RefFactura" label="Ref Factura" />
+  </columns>
+</dataModel>

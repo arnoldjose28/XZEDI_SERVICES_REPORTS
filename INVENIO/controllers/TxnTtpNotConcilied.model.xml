@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="REPORT" baseTable="TXN_TTP_NOT_CONCILIED" alias="TXN_TTP_NOT_CONCILIED" created="2019-05-27T15:41:20" modified="2019-05-27T15:52:32" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys />
+  <columns>
+    <column name="Fecha_proceso" fieldName="FechaProceso" label="Fecha proceso" format="dd/MM/yyyy" />
+    <column name="Descripción_proceso" fieldName="DescripcionProceso" label="Descripción proceso" />
+    <column name="Id_proceso" fieldName="IDProceso" label="Id proceso" />
+    <column name="Estado_trnx" fieldName="EstadoTrnx" label="Estado trnx" />
+    <column name="codeOperation" fieldName="CodeOperation" label="codeOperation" />
+    <column name="nameOperation" fieldName="NameOperation" label="nameOperation" />
+    <column name="idTrxOriginal" fieldName="IDTrxOriginal" label="idTrxOriginal" />
+    <column name="idTrxEntity" fieldName="IDTrxEntity" label="idTrxEntity" />
+    <column name="timestamp" fieldName="Timestamp" label="timestamp" format="dd/MM/yyyy" />
+    <column name="phoneNumber" fieldName="PhoneNumber" label="phoneNumber" />
+    <column name="personalId" fieldName="PersonalID" label="personalId" />
+    <column name="mainAccount" fieldName="MainAccount" label="mainAccount" />
+    <column name="cardNumber" fieldName="CardNumber" label="cardNumber" />
+    <column name="promo" fieldName="Promo" label="promo" />
+    <column name="promoAccount" fieldName="PromoAccount" label="promoAccount" />
+    <column name="realAmount" fieldName="RealAmount" label="realAmount" format="N2" />
+    <column name="fee" fieldName="Fee" label="fee" format="N2" />
+    <column name="amount" fieldName="Amount" label="amount" format="N2" />
+    <column name="promoAmount" fieldName="PromoAmount" label="promoAmount" format="N2" />
+  </columns>
+</dataModel>

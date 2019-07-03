@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B1135A1B-8B04-4A78-9784-CCDD696A0A83}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>INVENIO</RootNamespace>
+    <AssemblyName>INVENIO</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845DCD8080CC91, processorArchitecture=MSIL">
+      <HintPath>bin\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845DCD8080CC91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>bin\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845DCD8080CC91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>bin\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>bin\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\Action.cs" />
+    <Compile Include="Data\ActionArgs.cs" />
+    <Compile Include="Data\ActionGroup.cs" />
+    <Compile Include="Data\ActionHandlerBase.cs" />
+    <Compile Include="Data\ActionResult.cs" />
+    <Compile Include="Data\AnnotationPlugIn.cs" />
+    <Compile Include="Data\BlobAdapters.cs" />
+    <Compile Include="Data\BlobAdaptersEx.cs" />
+    <Compile Include="Data\BusinessRules.cs" />
+    <Compile Include="Data\Category.cs" />
+    <Compile Include="Data\Common.cs" />
+    <Compile Include="Data\Controller.Core.cs" />
+    <Compile Include="Data\Controller.cs" />
+    <Compile Include="Data\Controller.Export.cs" />
+    <Compile Include="Data\Controller.Filter.cs" />
+    <Compile Include="Data\ControllerConfiguration.cs" />
+    <Compile Include="Data\ControllerNodeSet.cs" />
+    <Compile Include="Data\CultureManager.cs" />
+    <Compile Include="Data\DataAccess.cs" />
+    <Compile Include="Data\DataField.cs" />
+    <Compile Include="Data\DistinctValueRequest.cs" />
+    <Compile Include="Data\DynamicExpression.cs" />
+    <Compile Include="Data\FieldValue.cs" />
+    <Compile Include="Data\FilterFunctions.cs" />
+    <Compile Include="Data\ImportProcessor.cs" />
+    <Compile Include="Data\Localizer.cs" />
+    <Compile Include="Data\PageRequest.cs" />
+    <Compile Include="Data\Transactions.cs" />
+    <Compile Include="Data\View.cs" />
+    <Compile Include="Data\ViewPage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Rules\MyProfile.generated.cs" />
+    <Compile Include="Rules\MyProfileBusinessRules.cs" />
+    <Compile Include="Rules\ReportExecution.r101.cs" />
+    <Compile Include="Rules\SharedBusinessRules.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\ReportExecution.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Web\AquariumExtenderBase.cs" />
+    <Compile Include="Web\ChartHost.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ControlHost.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ControllerDataSource.cs" />
+    <Compile Include="Web\ControllerDataSourceDesign.cs" />
+    <Compile Include="Web\DataViewExtender.cs" />
+    <Compile Include="Web\DataViewLookup.cs" />
+    <Compile Include="Web\DataViewTextBox.cs" />
+    <Compile Include="Web\MembershipBar.cs" />
+    <Compile Include="Web\MembershipBarExtender.cs" />
+    <Compile Include="Web\MembershipManager.cs" />
+    <Compile Include="Web\MembershipManagerExtender.cs" />
+    <Compile Include="Web\MenuExtender.cs" />
+    <Compile Include="Web\PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Security\EventTracker.cs" />
+    <Compile Include="Security\ExportAuthenticationModule.cs" />
+    <Compile Include="Security\MembershipBusinessRules.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Services\ApplicationServices.cs" />
+    <Compile Include="Services\ApplicationServices.generated.cs" />
+    <Compile Include="Services\ApplicationServices.Version.cs" />
+    <Compile Include="Services\DataControllerService.cs" />
+    <Compile Include="Services\EnterpriseApplicationServices.cs" />
+    <Compile Include="Services\RepresentationalStateTransfer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="controllers\Application.xsd" />
+    <None Include="controllers\DataAquarium.xsd" />
+    <EmbeddedResource Include="controllers\aspnet_Membership - Copia.xml" />
+    <EmbeddedResource Include="controllers\aspnet_Membership - Copia.xml.en_US.txt" />
+    <EmbeddedResource Include="controllers\aspnet_Membership.xml" />
+    <EmbeddedResource Include="controllers\aspnet_Membership.xml.en_US.txt" />
+    <EmbeddedResource Include="controllers\aspnet_Membership.xml.es_ES.txt" />
+    <EmbeddedResource Include="controllers\aspnet_Roles - Copia.xml" />
+    <EmbeddedResource Include="controllers\aspnet_Roles - Copia.xml.en_US.txt" />
+    <EmbeddedResource Include="controllers\aspnet_Roles.xml" />
+    <EmbeddedResource Include="controllers\aspnet_Roles.xml.en_US.txt" />
+    <EmbeddedResource Include="controllers\aspnet_Roles.xml.es_ES.txt" />
+    <EmbeddedResource Include="controllers\EntityAssort.model.xml" />
+    <EmbeddedResource Include="controllers\EntityAssort.xml" />
+    <EmbeddedResource Include="controllers\MerchantCredit.model.xml" />
+    <EmbeddedResource Include="controllers\MerchantCredit.xml" />
+    <EmbeddedResource Include="controllers\MerchantCreditMonth.model.xml" />
+    <EmbeddedResource Include="controllers\MerchantCreditMonth.xml" />
+    <EmbeddedResource Include="controllers\MerchantSummary.model.xml" />
+    <EmbeddedResource Include="controllers\MerchantSummary.xml" />
+    <EmbeddedResource Include="controllers\MyProfile.xml" />
+    <EmbeddedResource Include="controllers\MyProfile.xml.en_US.txt" />
+    <EmbeddedResource Include="controllers\MyProfile.xml.es_ES.txt" />
+    <EmbeddedResource Include="controllers\ReportAmounts.model.xml" />
+    <EmbeddedResource Include="controllers\ReportAmounts.xml" />
+    <EmbeddedResource Include="controllers\ReportConciliationTpp.model.xml" />
+    <EmbeddedResource Include="controllers\ReportConciliationTpp.xml" />
+    <EmbeddedResource Include="controllers\ReportExecution.model.xml" />
+    <EmbeddedResource Include="controllers\ReportExecution.xml" />
+    <EmbeddedResource Include="controllers\ReportMonthlyInvoice.xml" />
+    <EmbeddedResource Include="controllers\Reports.model.xml" />
+    <EmbeddedResource Include="controllers\Reports.xml" />
+    <EmbeddedResource Include="controllers\ReportXlsInvoice.model.xml" />
+    <EmbeddedResource Include="controllers\ReportXlsInvoice.xml" />
+    <EmbeddedResource Include="controllers\SubscriptionFile.xml" />
+    <EmbeddedResource Include="controllers\SummaryDailySupplier.model.xml" />
+    <EmbeddedResource Include="controllers\SummaryDailySupplier.xml" />
+    <EmbeddedResource Include="controllers\SummaryMonthPayment.model.xml" />
+    <EmbeddedResource Include="controllers\SummaryMonthPayment.xml" />
+    <EmbeddedResource Include="controllers\TppLiquidation.model.xml" />
+    <EmbeddedResource Include="controllers\TppLiquidation.xml" />
+    <EmbeddedResource Include="controllers\TxnFc.model.xml" />
+    <EmbeddedResource Include="controllers\TxnFc.xml" />
+    <EmbeddedResource Include="controllers\TxnFcNotConcilied.model.xml" />
+    <EmbeddedResource Include="controllers\TxnFcNotConcilied.xml" />
+    <EmbeddedResource Include="controllers\TxnIgnis.xml" />
+    <EmbeddedResource Include="controllers\TxnPaid.model.xml" />
+    <EmbeddedResource Include="controllers\TxnPaid.xml" />
+    <EmbeddedResource Include="controllers\TxnPaidMonth.model.xml" />
+    <EmbeddedResource Include="controllers\TxnPaidMonth.xml" />
+    <EmbeddedResource Include="controllers\TxnReconciled.model.xml" />
+    <EmbeddedResource Include="controllers\TxnReconciled.xml" />
+    <EmbeddedResource Include="controllers\TxnTtp.model.xml" />
+    <EmbeddedResource Include="controllers\TxnTtp.xml" />
+    <EmbeddedResource Include="controllers\TxnTtpNotConcilied.model.xml" />
+    <EmbeddedResource Include="controllers\TxnTtpNotConcilied.xml" />
+    <EmbeddedResource Include="controllers\TxnXzedi.model.xml" />
+    <EmbeddedResource Include="controllers\TxnXzedi.xml" />
+    <EmbeddedResource Include="controllers\TxnXzediNotConcilied.model.xml" />
+    <EmbeddedResource Include="controllers\TxnXzediNotConcilied.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Handlers\Blob.cs" />
+    <Compile Include="Handlers\Blob.generated.cs" />
+    <Compile Include="Handlers\Export.cs" />
+    <Compile Include="Handlers\Import.cs" />
+    <Compile Include="Handlers\Report.cs" />
+    <Compile Include="Handlers\Report.generated.cs" />
+    <Compile Include="Handlers\Site.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handlers\Theme.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="js\daf\daf-membership.min.js" />
+    <EmbeddedResource Include="js\daf\daf-odp.min.js" />
+    <EmbeddedResource Include="js\daf\daf-resources.min.en_US.js" />
+    <EmbeddedResource Include="js\daf\daf-resources.min.es_ES.js" />
+    <EmbeddedResource Include="js\daf\daf.min.js" />
+    <EmbeddedResource Include="js\daf\touch-charts.min.js" />
+    <EmbeddedResource Include="js\daf\touch-edit.min.js" />
+    <EmbeddedResource Include="js\daf\touch.min.js" />
+    <EmbeddedResource Include="js\sys\culture\es-ES.js" />
+    <EmbeddedResource Include="js\sys\bootstrap.min.js" />
+    <EmbeddedResource Include="js\sys\jquery-2.2.4.min.js" />
+    <EmbeddedResource Include="js\sys\jquery.mobile-1.4.6.min.js" />
+    <EmbeddedResource Include="js\sys\MicrosoftAjax.min.js" />
+    <EmbeddedResource Include="js\sys\unicode.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="reports\Template.xslt" />
+    <EmbeddedResource Include="reports\Template.xslt.en_US.txt" />
+    <EmbeddedResource Include="reports\Template.xslt.es_ES.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.en_US.txt" />
+    <EmbeddedResource Include="Resources.es_ES.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!--
+        To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  
+      -->
+</Project>

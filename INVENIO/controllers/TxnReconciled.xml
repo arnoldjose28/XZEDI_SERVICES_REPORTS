@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataController name="TxnReconciled" conflictDetection="overwriteChanges" label="Txn Reconciled" plugIn="INVENIO.Data.AnnotationPlugIn" xmlns="urn:schemas-codeontime-com:data-aquarium">
+  <commands>
+    <command id="command1" type="Text">
+      <text><![CDATA[
+select
+	"TXN_RECONCILED"."Fecha_Proceso" "FechaProceso"
+	,"TXN_RECONCILED"."Descripción_Proceso" "DescripcionProceso"
+	,"TXN_RECONCILED"."Id_proceso" "IDProceso"
+	,"TXN_RECONCILED"."ID_Trnx" "IDTrnx"
+	,"TXN_RECONCILED"."Monto_de_Trnx" "MontoDeTrnx"
+	,"TXN_RECONCILED"."Código_de_Moneda" "CodigoDeMoneda"
+	,"TXN_RECONCILED"."Fecha_de_Trnx" "FechaDeTrnx"
+	,"TXN_RECONCILED"."Cardacceptorid" "Cardacceptorid"
+	,"TXN_RECONCILED"."Código_de_Recaudo" "CodigoDeRecaudo"
+	,"TXN_RECONCILED"."Código_de_Comercio" "CodigoDeComercio"
+	,"TXN_RECONCILED"."MCC_INT" "MccInt"
+	,"TXN_RECONCILED"."Nombre_Comercial" "NombreComercial"
+	,"TXN_RECONCILED"."Nro_de_Serie_de_Terminal" "NroDeSerieDeTerminal"
+	,"TXN_RECONCILED"."Modelo_de_Terminal" "ModeloDeTerminal"
+	,"TXN_RECONCILED"."Comercedistrict" "Comercedistrict"
+	,"TXN_RECONCILED"."Terminal_Id" "TerminalID"
+	,"TXN_RECONCILED"."Core_Account_Number" "CoreAccountNumber"
+	,"TXN_RECONCILED"."Owner_Id" "OwnerID"
+	,"TXN_RECONCILED"."ID_de Trnx_Entidad" "IDDetrnxEntidad"
+	,"TXN_RECONCILED"."Nombre_de_Entidad" "NombreDeEntidad"
+	,"TXN_RECONCILED"."Tipo_Comisión_Comercio" "TipoComisionComercio"
+	,"TXN_RECONCILED"."Valor_Comisión_Comercio" "ValorComisionComercio"
+	,"TXN_RECONCILED"."Comisión_Comercio_Calculado" "ComisionComercioCalculado"
+	,"TXN_RECONCILED"."Tipo_Comisión_V2" "TipoComisionV2"
+	,"TXN_RECONCILED"."Valor_Comisión_V2" "ValorComisionV2"
+	,"TXN_RECONCILED"."Comisión_V2_Calculada" "ComisionV2Calculada"
+	,"TXN_RECONCILED"."Monto_de_Servicio" "MontoDeServicio"
+	,"TXN_RECONCILED"."Comisión_de_Servicio" "ComisionDeServicio"
+	,"TXN_RECONCILED"."Monto_Total" "MontoTotal"
+	,"TXN_RECONCILED"."Tipo_de_Operación" "TipoDeOperacion"
+	,"TXN_RECONCILED"."Tipo_de_Respuesta" "TipoDeRespuesta"
+	,"TXN_RECONCILED"."Código_Respuesta_Proveedor" "CodigoRespuestaProveedor"
+	,"TXN_RECONCILED"."Mensaje_Respuesta_Proveedor" "MensajeRespuestaProveedor"
+	,"TXN_RECONCILED"."Estado" "Estado"
+from "REPORT"."TXN_RECONCILED" "TXN_RECONCILED"
+]]></text>
+    </command>
+  </commands>
+  <fields>
+    <field name="FechaProceso" type="DateTime" label="Fecha Proceso" readOnly="true" showInSummary="true" dataFormatString="dd/MM/yyyy" />
+    <field name="DescripcionProceso" type="String" label="Descripción Proceso" length="100" showInSummary="true" />
+    <field name="IDProceso" type="Double" label="Id proceso" showInSummary="true" />
+    <field name="IDTrnx" type="String" label="ID Trnx" length="12" showInSummary="true" />
+    <field name="MontoDeTrnx" type="Decimal" dataFormatString="N2" label="Monto de Trnx" readOnly="true" showInSummary="true" />
+    <field name="CodigoDeMoneda" type="String" label="Código de Moneda" length="3" />
+    <field name="FechaDeTrnx" type="DateTime" label="Fecha de Trnx" readOnly="true" dataFormatString="dd/MM/yyyy" />
+    <field name="Cardacceptorid" type="String" label="Cardacceptorid" length="15" />
+    <field name="CodigoDeRecaudo" type="String" label="Código de Recaudo" length="20" />
+    <field name="CodigoDeComercio" type="String" label="Código de Comercio" length="15" />
+    <field name="MccInt" type="String" allowNulls="false" label="MCC INT" length="4" />
+    <field name="NombreComercial" type="String" allowNulls="false" label="Nombre Comercial" length="60" />
+    <field name="NroDeSerieDeTerminal" type="Int32" label="Nro de Serie de Terminal" />
+    <field name="ModeloDeTerminal" type="String" label="Modelo de Terminal" length="12" />
+    <field name="Comercedistrict" type="String" label="Comercedistrict" length="16" />
+    <field name="TerminalID" type="String" label="Terminal Id" length="8" />
+    <field name="CoreAccountNumber" type="String" label="Core Account Number" length="34" />
+    <field name="OwnerID" type="String" label="Owner Id" length="20" />
+    <field name="IDDetrnxEntidad" type="String" label="ID de Trnx Entidad" length="1024" />
+    <field name="NombreDeEntidad" type="String" label="Nombre de Entidad" length="100" />
+    <field name="TipoComisionComercio" type="String" label="Tipo Comisión Comercio" length="20" />
+    <field name="ValorComisionComercio" type="Decimal" dataFormatString="N2" label="Valor Comisión Comercio" />
+    <field name="ComisionComercioCalculado" type="Decimal" dataFormatString="N2" label="Comisión Comercio Calculado" />
+    <field name="TipoComisionV2" type="String" label="Tipo Comisión V2" length="20" />
+    <field name="ValorComisionV2" type="Decimal" dataFormatString="N2" label="Valor Comisión V2" />
+    <field name="ComisionV2Calculada" type="Decimal" dataFormatString="N2" label="Comisión V2 Calculada" />
+    <field name="MontoDeServicio" type="Decimal" allowNulls="false" dataFormatString="N2" label="Monto de Servicio" readOnly="true" />
+    <field name="ComisionDeServicio" type="Decimal" dataFormatString="N2" label="Comisión de Servicio" />
+    <field name="MontoTotal" type="Decimal" allowNulls="false" dataFormatString="N2" label="Monto Total" readOnly="true" />
+    <field name="TipoDeOperacion" type="String" label="Tipo de Operación" length="100" />
+    <field name="TipoDeRespuesta" type="String" label="Tipo de Respuesta" length="100" />
+    <field name="CodigoRespuestaProveedor" type="String" allowNulls="false" label="Código Respuesta Proveedor" readOnly="true" length="6" />
+    <field name="MensajeRespuestaProveedor" type="String" allowNulls="false" label="Mensaje Respuesta Proveedor" readOnly="true" length="100" />
+    <field name="Estado" type="String" label="Estado" readOnly="true" length="12" />
+  </fields>
+  <views>
+    <view id="grid1" type="Grid" commandId="command1" label="Reporte Transacciones Conciliadas">
+      <headerText>$DefaultGridViewDescription</headerText>
+      <dataFields>
+        <dataField fieldName="FechaProceso" columns="10" />
+        <dataField fieldName="DescripcionProceso" />
+        <dataField fieldName="IDProceso" columns="15" />
+        <dataField fieldName="IDTrnx" columns="12" />
+        <dataField fieldName="MontoDeTrnx" columns="15" />
+        <dataField fieldName="CodigoDeMoneda" columns="3" />
+        <dataField fieldName="FechaDeTrnx" columns="10" />
+        <dataField fieldName="Cardacceptorid" columns="15" />
+        <dataField fieldName="CodigoDeRecaudo" columns="20" />
+        <dataField fieldName="CodigoDeComercio" columns="15" />
+        <dataField fieldName="MccInt" columns="4" />
+        <dataField fieldName="NombreComercial" />
+        <dataField fieldName="NroDeSerieDeTerminal" columns="15" />
+        <dataField fieldName="ModeloDeTerminal" columns="12" />
+        <dataField fieldName="Comercedistrict" columns="16" />
+        <dataField fieldName="TerminalID" columns="8" />
+        <dataField fieldName="CoreAccountNumber" columns="34" />
+        <dataField fieldName="OwnerID" columns="20" />
+        <dataField fieldName="IDDetrnxEntidad" />
+        <dataField fieldName="NombreDeEntidad" />
+        <dataField fieldName="TipoComisionComercio" columns="20" />
+        <dataField fieldName="ValorComisionComercio" columns="15" />
+        <dataField fieldName="ComisionComercioCalculado" columns="15" />
+        <dataField fieldName="TipoComisionV2" columns="20" />
+        <dataField fieldName="ValorComisionV2" columns="15" />
+        <dataField fieldName="ComisionV2Calculada" columns="15" />
+        <dataField fieldName="MontoDeServicio" columns="15" />
+        <dataField fieldName="ComisionDeServicio" columns="15" />
+        <dataField fieldName="MontoTotal" columns="15" />
+        <dataField fieldName="TipoDeOperacion" />
+        <dataField fieldName="TipoDeRespuesta" />
+        <dataField fieldName="CodigoRespuestaProveedor" columns="6" />
+        <dataField fieldName="MensajeRespuestaProveedor" />
+        <dataField fieldName="Estado" columns="12" />
+      </dataFields>
+    </view>
+    <view id="editForm1" type="Form" commandId="command1" label="Visualizar Reporte Transaciones Conciliadas">
+      <headerText>$DefaultEditViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="Reporte Transaciones Conciliadas" flow="NewColumn">
+          <description><![CDATA[$DefaultEditDescription]]></description>
+          <dataFields>
+            <dataField fieldName="FechaProceso" columns="10" />
+            <dataField fieldName="DescripcionProceso" />
+            <dataField fieldName="IDProceso" columns="15" />
+            <dataField fieldName="IDTrnx" columns="12" />
+            <dataField fieldName="MontoDeTrnx" columns="15" />
+            <dataField fieldName="CodigoDeMoneda" columns="3" />
+            <dataField fieldName="FechaDeTrnx" columns="10" />
+            <dataField fieldName="Cardacceptorid" columns="15" />
+            <dataField fieldName="CodigoDeRecaudo" columns="20" />
+            <dataField fieldName="CodigoDeComercio" columns="15" />
+            <dataField fieldName="MccInt" columns="4" />
+            <dataField fieldName="NombreComercial" />
+            <dataField fieldName="NroDeSerieDeTerminal" columns="15" />
+            <dataField fieldName="ModeloDeTerminal" columns="12" />
+            <dataField fieldName="Comercedistrict" columns="16" />
+            <dataField fieldName="TerminalID" columns="8" />
+            <dataField fieldName="CoreAccountNumber" columns="34" />
+            <dataField fieldName="OwnerID" columns="20" />
+            <dataField fieldName="IDDetrnxEntidad" />
+            <dataField fieldName="NombreDeEntidad" />
+            <dataField fieldName="TipoComisionComercio" columns="20" />
+            <dataField fieldName="ValorComisionComercio" columns="15" />
+            <dataField fieldName="ComisionComercioCalculado" columns="15" />
+            <dataField fieldName="TipoComisionV2" columns="20" />
+            <dataField fieldName="ValorComisionV2" columns="15" />
+            <dataField fieldName="ComisionV2Calculada" columns="15" />
+            <dataField fieldName="MontoDeServicio" columns="15" />
+            <dataField fieldName="ComisionDeServicio" columns="15" />
+            <dataField fieldName="MontoTotal" columns="15" />
+            <dataField fieldName="TipoDeOperacion" />
+            <dataField fieldName="TipoDeRespuesta" />
+            <dataField fieldName="CodigoRespuestaProveedor" columns="6" />
+            <dataField fieldName="MensajeRespuestaProveedor" />
+            <dataField fieldName="Estado" columns="12" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+    <view id="createForm1" type="Form" commandId="command1" label="Nuevo Reporte Transaciones Conciliadas">
+      <headerText>$DefaultCreateViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="Reporte Transaciones Conciliadas" flow="NewColumn">
+          <description><![CDATA[$DefaultNewDescription]]></description>
+          <dataFields>
+            <dataField fieldName="FechaProceso" columns="10" />
+            <dataField fieldName="DescripcionProceso" />
+            <dataField fieldName="IDProceso" columns="15" />
+            <dataField fieldName="IDTrnx" columns="12" />
+            <dataField fieldName="MontoDeTrnx" columns="15" />
+            <dataField fieldName="CodigoDeMoneda" columns="3" />
+            <dataField fieldName="FechaDeTrnx" columns="10" />
+            <dataField fieldName="Cardacceptorid" columns="15" />
+            <dataField fieldName="CodigoDeRecaudo" columns="20" />
+            <dataField fieldName="CodigoDeComercio" columns="15" />
+            <dataField fieldName="MccInt" columns="4" />
+            <dataField fieldName="NombreComercial" />
+            <dataField fieldName="NroDeSerieDeTerminal" columns="15" />
+            <dataField fieldName="ModeloDeTerminal" columns="12" />
+            <dataField fieldName="Comercedistrict" columns="16" />
+            <dataField fieldName="TerminalID" columns="8" />
+            <dataField fieldName="CoreAccountNumber" columns="34" />
+            <dataField fieldName="OwnerID" columns="20" />
+            <dataField fieldName="IDDetrnxEntidad" />
+            <dataField fieldName="NombreDeEntidad" />
+            <dataField fieldName="TipoComisionComercio" columns="20" />
+            <dataField fieldName="ValorComisionComercio" columns="15" />
+            <dataField fieldName="ComisionComercioCalculado" columns="15" />
+            <dataField fieldName="TipoComisionV2" columns="20" />
+            <dataField fieldName="ValorComisionV2" columns="15" />
+            <dataField fieldName="ComisionV2Calculada" columns="15" />
+            <dataField fieldName="MontoDeServicio" columns="15" />
+            <dataField fieldName="ComisionDeServicio" columns="15" />
+            <dataField fieldName="MontoTotal" columns="15" />
+            <dataField fieldName="TipoDeOperacion" />
+            <dataField fieldName="TipoDeRespuesta" />
+            <dataField fieldName="CodigoRespuestaProveedor" columns="6" />
+            <dataField fieldName="MensajeRespuestaProveedor" />
+            <dataField fieldName="Estado" columns="12" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+  </views>
+  <actions>
+    <actionGroup id="ag1" scope="Grid">
+      <action id="a2" commandName="Edit" />
+      <action id="a3" commandName="Delete" />
+      <action id="a6" />
+      <action id="a7" commandName="New" commandArgument="grid1" />
+      <action id="a8" commandName="Duplicate" commandArgument="createForm1" />
+    </actionGroup>
+    <actionGroup id="ag2" scope="Form">
+      <action id="a1" commandName="Edit" />
+      <action id="a2" commandName="Delete" />
+      <action id="a3" commandName="Cancel" />
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Delete" />
+      <action id="a6" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a7" whenLastCommandName="New" commandName="Insert" />
+      <action id="a8" whenLastCommandName="New" commandName="Cancel" />
+      <action id="a9" whenLastCommandName="Duplicate" commandName="Insert" />
+      <action id="a10" whenLastCommandName="Duplicate" commandName="Cancel" />
+      <action id="a13" whenLastCommandName="Insert" whenView="createForm1" commandName="Select" commandArgument="editForm1" whenKeySelected="true" whenClientScript="this.hasDetails()" />
+    </actionGroup>
+    <actionGroup id="ag3" scope="ActionBar" headerText="New" flat="true">
+      <action id="a1" commandName="New" commandArgument="createForm1" cssClass="NewIcon" />
+    </actionGroup>
+    <actionGroup id="ag4" scope="ActionBar" headerText="Edit/Delete" flat="true">
+      <action id="a1" whenKeySelected="true" commandName="Edit" commandArgument="editForm1" cssClass="EditIcon" whenView="grid1" />
+      <action id="a2" whenKeySelected="true" commandName="Delete" cssClass="DeleteIcon" whenView="grid1" />
+    </actionGroup>
+    <actionGroup id="ag6" scope="ActionBar" headerText="Record">
+      <action id="a1" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a2" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a3" whenLastCommandName="New" commandName="Insert" />
+      <action id="a4" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+    <actionGroup id="ag7" scope="ActionBar" headerText="Report">
+      <action id="a1" commandName="ReportAsPdf" />
+      <action id="a3" commandName="ReportAsExcel" />
+      <action id="a4" commandName="ReportAsWord" />
+    </actionGroup>
+    <actionGroup id="ag8" scope="Row">
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a6" whenLastCommandName="New" commandName="Insert" />
+      <action id="a7" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+  </actions>
+</dataController>

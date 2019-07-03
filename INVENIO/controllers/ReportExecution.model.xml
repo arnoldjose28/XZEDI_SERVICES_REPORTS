@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="REPORT" baseTable="REPORT_EXECUTION" alias="REPORT_EXECUTION" created="2019-04-05T23:58:32" modified="2019-04-06T00:00:54" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys />
+  <columns>
+    <column name="ID_EXECUTION" fieldName="IDExecution" label="Id Proceso" />
+    <column name="PROCESS_DESCRIPTION" fieldName="ProcessDescription" label="Descripción Proceso" />
+    <column name="ID_REPORT" fieldName="IDReport" label="Id Reporte" />
+    <column name="NAME_REPORT" fieldName="NameReport" label="Nombre Reporte" />
+    <column name="FIRS_DAY_PROCESS" fieldName="FirsDayProcess" label="Primer Dia Proceso" />
+    <column name="USER" fieldName="User" label="Usuario" />
+    <column name="CREATED_AT" fieldName="CreatedAt" label="Fecha Creación" />
+    <column name="LAST_DAY_PROCESS" fieldName="LastDayProcess" label="Ultimo Dia Proceso" />
+  </columns>
+</dataModel>

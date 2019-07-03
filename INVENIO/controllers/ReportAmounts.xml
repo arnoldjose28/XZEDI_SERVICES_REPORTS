@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataController name="ReportAmounts" conflictDetection="overwriteChanges" label="Report Amounts" plugIn="INVENIO.Data.AnnotationPlugIn" xmlns="urn:schemas-codeontime-com:data-aquarium">
+  <commands>
+    <command id="command1" type="Text">
+      <text><![CDATA[
+select
+	"REPORT_AMOUNTS"."Fecha_Proceso" "FechaProceso"
+	,"REPORT_AMOUNTS"."Descripción_Proceso" "DescripcionProceso"
+	,"REPORT_AMOUNTS"."Id_Proceso" "IDProceso"
+	,"REPORT_AMOUNTS"."Nombre_Empresa" "NombreEmpresa"
+	,"REPORT_AMOUNTS"."Total_Trnx" "TotalTrnx"
+	,"REPORT_AMOUNTS"."Total_Monto" "TotalMonto"
+	,"REPORT_AMOUNTS"."Total_Comisión_V2" "TotalComisionV2"
+	,"REPORT_AMOUNTS"."Total_Comisión_Comercios" "TotalComisionComercios"
+	,"REPORT_AMOUNTS"."Total_Trnx_Conciliadas" "TotalTrnxConciliadas"
+	,"REPORT_AMOUNTS"."Total_Monto_Conciliadas" "TotalMontoConciliadas"
+	,"REPORT_AMOUNTS"."Total_Comisiones_V2_Conciliadas" "TotalComisionesV2Conciliadas"
+	,"REPORT_AMOUNTS"."Total_Comisiones_Comercios_Conciliadas" "TotalComisionesComerciosConciliadas"
+	,"REPORT_AMOUNTS"."Total_Trnx_No_Conciliadas" "TotalTrnxNoConciliadas"
+	,"REPORT_AMOUNTS"."Total_Monto_No_Conciliado" "TotalMontoNoConciliado"
+	,"REPORT_AMOUNTS"."Total_Comisión_V2_No_Conciliada" "TotalComisionV2NoConciliada"
+	,"REPORT_AMOUNTS"."Total_Comisiones_Comercio_No_Conciliadas" "TotalComisionesComercioNoConciliadas"
+from "REPORT"."REPORT_AMOUNTS" "REPORT_AMOUNTS"
+]]></text>
+    </command>
+  </commands>
+  <fields>
+    <field name="FechaProceso" type="DateTime" label="Fecha Proceso" showInSummary="true" dataFormatString="dd/MM/yyyy" />
+    <field name="DescripcionProceso" type="String" label="Descripción Proceso" length="100" showInSummary="true" />
+    <field name="IDProceso" type="Int32" allowNulls="false" label="Id Proceso" showInSummary="true" />
+    <field name="NombreEmpresa" type="String" allowNulls="false" label="Nombre Empresa" length="5" showInSummary="true" />
+    <field name="TotalTrnx" type="Int32" label="Total Trnx" showInSummary="true" />
+    <field name="TotalMonto" type="Decimal" dataFormatString="N2" label="Total Monto" />
+    <field name="TotalComisionV2" type="Decimal" dataFormatString="N2" label="Total Comisión V2" />
+    <field name="TotalComisionComercios" type="Decimal" dataFormatString="N2" label="Total Comisión Comercios" />
+    <field name="TotalTrnxConciliadas" type="Int32" label="Total Trnx Conciliadas" />
+    <field name="TotalMontoConciliadas" type="Decimal" dataFormatString="N2" label="Total Monto Conciliadas" />
+    <field name="TotalComisionesV2Conciliadas" type="Decimal" dataFormatString="N2" label="Total Comisiones V2 Conciliadas" />
+    <field name="TotalComisionesComerciosConciliadas" type="Decimal" dataFormatString="N2" label="Total Comisiones Comercios Conciliadas" />
+    <field name="TotalTrnxNoConciliadas" type="Int32" label="Total Trnx No Conciliadas" />
+    <field name="TotalMontoNoConciliado" type="Decimal" dataFormatString="N2" label="Total Monto No Conciliado" />
+    <field name="TotalComisionV2NoConciliada" type="Decimal" dataFormatString="N2" label="Total Comisión V2 No Conciliada" />
+    <field name="TotalComisionesComercioNoConciliadas" type="Decimal" dataFormatString="N2" label="Total Comisiones Comercio No Conciliadas" />
+  </fields>
+  <views>
+    <view id="grid1" type="Grid" commandId="command1" label="Reporte Resumen de Transacciones General">
+      <headerText>$DefaultGridViewDescription</headerText>
+      <dataFields>
+        <dataField fieldName="FechaProceso" columns="10" />
+        <dataField fieldName="DescripcionProceso" />
+        <dataField fieldName="IDProceso" columns="15" />
+        <dataField fieldName="NombreEmpresa" columns="5" />
+        <dataField fieldName="TotalTrnx" columns="15" />
+        <dataField fieldName="TotalMonto" columns="15" />
+        <dataField fieldName="TotalComisionV2" columns="15" />
+        <dataField fieldName="TotalComisionComercios" columns="15" />
+        <dataField fieldName="TotalTrnxConciliadas" columns="15" />
+        <dataField fieldName="TotalMontoConciliadas" columns="15" />
+        <dataField fieldName="TotalComisionesV2Conciliadas" columns="15" />
+        <dataField fieldName="TotalComisionesComerciosConciliadas" columns="15" />
+        <dataField fieldName="TotalTrnxNoConciliadas" columns="15" />
+        <dataField fieldName="TotalMontoNoConciliado" columns="15" />
+        <dataField fieldName="TotalComisionV2NoConciliada" columns="15" />
+        <dataField fieldName="TotalComisionesComercioNoConciliadas" columns="15" />
+      </dataFields>
+    </view>
+    <view id="editForm1" type="Form" commandId="command1" label="Visualizar Reporte Resumen de Transacciones General">
+      <headerText>$DefaultEditViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="Reporte Resumen de Transacciones General" flow="NewColumn">
+          <description><![CDATA[$DefaultEditDescription]]></description>
+          <dataFields>
+            <dataField fieldName="FechaProceso" columns="10" />
+            <dataField fieldName="DescripcionProceso" />
+            <dataField fieldName="IDProceso" columns="15" />
+            <dataField fieldName="NombreEmpresa" columns="5" />
+            <dataField fieldName="TotalTrnx" columns="15" />
+            <dataField fieldName="TotalMonto" columns="15" />
+            <dataField fieldName="TotalComisionV2" columns="15" />
+            <dataField fieldName="TotalComisionComercios" columns="15" />
+            <dataField fieldName="TotalTrnxConciliadas" columns="15" />
+            <dataField fieldName="TotalMontoConciliadas" columns="15" />
+            <dataField fieldName="TotalComisionesV2Conciliadas" columns="15" />
+            <dataField fieldName="TotalComisionesComerciosConciliadas" columns="15" />
+            <dataField fieldName="TotalTrnxNoConciliadas" columns="15" />
+            <dataField fieldName="TotalMontoNoConciliado" columns="15" />
+            <dataField fieldName="TotalComisionV2NoConciliada" columns="15" />
+            <dataField fieldName="TotalComisionesComercioNoConciliadas" columns="15" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+    <view id="createForm1" type="Form" commandId="command1" label="Nuevo Reporte Resumen de Transacciones General">
+      <headerText>$DefaultCreateViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="Reporte Resumen de Transacciones General" flow="NewColumn">
+          <description><![CDATA[$DefaultNewDescription]]></description>
+          <dataFields>
+            <dataField fieldName="FechaProceso" columns="10" />
+            <dataField fieldName="DescripcionProceso" />
+            <dataField fieldName="IDProceso" columns="15" />
+            <dataField fieldName="NombreEmpresa" columns="5" />
+            <dataField fieldName="TotalTrnx" columns="15" />
+            <dataField fieldName="TotalMonto" columns="15" />
+            <dataField fieldName="TotalComisionV2" columns="15" />
+            <dataField fieldName="TotalComisionComercios" columns="15" />
+            <dataField fieldName="TotalTrnxConciliadas" columns="15" />
+            <dataField fieldName="TotalMontoConciliadas" columns="15" />
+            <dataField fieldName="TotalComisionesV2Conciliadas" columns="15" />
+            <dataField fieldName="TotalComisionesComerciosConciliadas" columns="15" />
+            <dataField fieldName="TotalTrnxNoConciliadas" columns="15" />
+            <dataField fieldName="TotalMontoNoConciliado" columns="15" />
+            <dataField fieldName="TotalComisionV2NoConciliada" columns="15" />
+            <dataField fieldName="TotalComisionesComercioNoConciliadas" columns="15" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+  </views>
+  <actions>
+    <actionGroup id="ag1" scope="Grid">
+      <action id="a1" commandName="Select" commandArgument="editForm1" />
+      <action id="a2" commandName="Edit" />
+      <action id="a3" commandName="Delete" />
+      <action id="a6" />
+      <action id="a7" commandName="New" commandArgument="grid1" />
+      <action id="a8" commandName="Duplicate" commandArgument="createForm1" />
+    </actionGroup>
+    <actionGroup id="ag2" scope="Form">
+      <action id="a1" commandName="Edit" />
+      <action id="a2" commandName="Delete" />
+      <action id="a3" commandName="Cancel" />
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Delete" />
+      <action id="a6" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a7" whenLastCommandName="New" commandName="Insert" />
+      <action id="a8" whenLastCommandName="New" commandName="Cancel" />
+      <action id="a9" whenLastCommandName="Duplicate" commandName="Insert" />
+      <action id="a10" whenLastCommandName="Duplicate" commandName="Cancel" />
+      <action id="a13" whenLastCommandName="Insert" whenView="createForm1" commandName="Select" commandArgument="editForm1" whenKeySelected="true" whenClientScript="this.hasDetails()" />
+    </actionGroup>
+    <actionGroup id="ag3" scope="ActionBar" headerText="New" flat="true">
+      <action id="a1" commandName="New" commandArgument="createForm1" cssClass="NewIcon" />
+    </actionGroup>
+    <actionGroup id="ag4" scope="ActionBar" headerText="Edit/Delete" flat="true">
+      <action id="a1" whenKeySelected="true" commandName="Edit" commandArgument="editForm1" cssClass="EditIcon" whenView="grid1" />
+      <action id="a2" whenKeySelected="true" commandName="Delete" cssClass="DeleteIcon" whenView="grid1" />
+    </actionGroup>
+    <actionGroup id="ag6" scope="ActionBar" headerText="Record">
+      <action id="a1" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a2" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a3" whenLastCommandName="New" commandName="Insert" />
+      <action id="a4" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+    <actionGroup id="ag7" scope="ActionBar" headerText="Report">
+      <action id="a1" commandName="ReportAsPdf" />
+      <action id="a3" commandName="ReportAsExcel" />
+      <action id="a4" commandName="ReportAsWord" />
+    </actionGroup>
+    <actionGroup id="ag8" scope="Row">
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a6" whenLastCommandName="New" commandName="Insert" />
+      <action id="a7" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+  </actions>
+</dataController>

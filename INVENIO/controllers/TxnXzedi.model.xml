@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="REPORT" baseTable="TXN_XZEDI" alias="TXN_XZEDI" created="2019-05-03T22:03:37" modified="2019-05-03T22:05:07" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys />
+  <columns>
+    <column name="ID_Trnx" fieldName="IDTrnx" label="ID Trnx" />
+    <column name="Monto_de_Trnx" fieldName="MontoDeTrnx" label="Monto de Trnx" format="N2" />
+    <column name="Código_de_Moneda" fieldName="CódigoDeMoneda" label="Código de Moneda" />
+    <column name="Fecha_de_Trnx" fieldName="FechaDeTrnx" label="Fecha de Trnx" />
+    <column name="Cardacceptorid" fieldName="Cardacceptorid" label="Cardacceptorid" />
+    <column name="Código_de_Recaudo" fieldName="CódigoDeRecaudo" label="Código de Recaudo" />
+    <column name="Código_de_Comercio" fieldName="CódigoDeComercio" label="Código de Comercio" />
+    <column name="MCC_INT" fieldName="MccInt" label="Mcc Int" />
+    <column name="Nombre_Comercial" fieldName="NombreComercial" label="Nombre Comercial" />
+    <column name="Nro_de_Serie_de_Terminal" fieldName="NroDeSerieDeTerminal" label="Nro de Serie de Terminal" />
+    <column name="Modelo_de_Terminal" fieldName="ModeloDeTerminal" label="Modelo de Terminal" />
+    <column name="Comercedistrict" fieldName="Comercedistrict" label="Comercedistrict" />
+    <column name="Terminal_Id" fieldName="TerminalID" label="Terminal Id" />
+    <column name="Core_Account_Number" fieldName="CoreAccountNumber" label="Core Account Number" />
+    <column name="Owner_Id" fieldName="OwnerID" label="Owner Id" />
+    <column name="ID_de_Trnx_Entidad" fieldName="IDDeTrnxEntidad" label="ID de Trnx Entidad" />
+    <column name="Nombre_de_Entidad" fieldName="NombreDeEntidad" label="Nombre de Entidad" />
+    <column name="Tipo_Comisión_Comercio" fieldName="TipoComisiónComercio" label="Tipo Comisión Comercio" />
+    <column name="Valor_Comisión_Comercio" fieldName="ValorComisiónComercio" label="Valor Comisión Comercio" format="N2" />
+    <column name="Comisión_Comercio_Calculado" fieldName="ComisiónComercioCalculado" label="Comisión Comercio Calculado" format="N2" />
+    <column name="Tipo_Comisión_V2" fieldName="TipoComisiónV2" label="Tipo Comisión V2" />
+    <column name="Valor_Comisión_V2" fieldName="ValorComisiónV2" label="Valor Comisión V2" format="N2" />
+    <column name="Comisión_V2_Calculada" fieldName="ComisiónV2Calculada" label="Comisión V2 Calculada" format="N2" />
+    <column name="Monto_de_Servicio" fieldName="MontoDeServicio" label="Monto de Servicio" format="N2" />
+    <column name="Comisión_de_Servicio" fieldName="ComisiónDeServicio" label="Comisión de Servicio" format="N2" />
+    <column name="Monto_Total" fieldName="MontoTotal" label="Monto Total" format="N2" />
+    <column name="Tipo_de_Operación" fieldName="TipoDeOperación" label="Tipo de Operación" />
+    <column name="Tipo_de_Respuesta" fieldName="TipoDeRespuesta" label="Tipo de Respuesta" />
+    <column name="Código_Respuesta_Proveedor" fieldName="CódigoRespuestaProveedor" label="Código Respuesta Proveedor" />
+    <column name="Mensaje_Respuesta_Proveedor" fieldName="MensajeRespuestaProveedor" label="Mensaje Respuesta Proveedor" />
+  </columns>
+</dataModel>

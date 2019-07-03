@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataController name="SummaryMonthPayment" conflictDetection="overwriteChanges" label="Summary Month Payment" plugIn="INVENIO.Data.AnnotationPlugIn" xmlns="urn:schemas-codeontime-com:data-aquarium">
+  <commands>
+    <command id="command1" type="Text">
+      <text><![CDATA[
+select
+	"SUMMARY_MONTH_PAYMENT"."Fecha_Proceso" "FechaProceso"
+	,"SUMMARY_MONTH_PAYMENT"."Descripción_Proceso" "DescripcionProceso"
+	,"SUMMARY_MONTH_PAYMENT"."Id_Proceso" "IDProceso"
+	,"SUMMARY_MONTH_PAYMENT"."Nombre_de_Entidad" "NombreDeEntidad"
+	,"SUMMARY_MONTH_PAYMENT"."Código_de_Entidad" "CodigoDeEntidad"
+	,"SUMMARY_MONTH_PAYMENT"."Monto_Total" "MontoTotal"
+	,"SUMMARY_MONTH_PAYMENT"."Total_Trnx" "TotalTrnx"
+	,"SUMMARY_MONTH_PAYMENT"."Comisión_V2" "ComisionV2"
+	,"SUMMARY_MONTH_PAYMENT"."Comisión_Comercio" "ComisionComercio"
+	,"SUMMARY_MONTH_PAYMENT"."Total_Pagado" "TotalPagado"
+from "REPORT"."SUMMARY_MONTH_PAYMENT" "SUMMARY_MONTH_PAYMENT"
+]]></text>
+    </command>
+  </commands>
+  <fields>
+    <field name="FechaProceso" type="DateTime" label="Fecha Proceso" readOnly="true" showInSummary="true" dataFormatString="dd/MM/yyyy" />
+    <field name="DescripcionProceso" type="String" label="Descripción Proceso" length="100" showInSummary="true" />
+    <field name="IDProceso" type="Int32" allowNulls="false" label="Id Proceso" showInSummary="true" />
+    <field name="NombreDeEntidad" type="String" label="Nombre de Entidad" readOnly="true" length="9" showInSummary="true" />
+    <field name="CodigoDeEntidad" type="String" label="Código de Entidad" length="100" showInSummary="true" />
+    <field name="MontoTotal" type="Decimal" dataFormatString="N2" label="Monto Total" readOnly="true" />
+    <field name="TotalTrnx" type="Int32" label="Total Trnx" />
+    <field name="ComisionV2" type="Decimal" dataFormatString="N2" label="Comisión V2" readOnly="true" />
+    <field name="ComisionComercio" type="Decimal" dataFormatString="N2" label="Comisión Comercio" readOnly="true" />
+    <field name="TotalPagado" type="Decimal" dataFormatString="N2" label="Total Pagado" readOnly="true" />
+  </fields>
+  <views>
+    <view id="grid1" type="Grid" commandId="command1" label="Reporte Resumen Pago por Mes">
+      <headerText>$DefaultGridViewDescription</headerText>
+      <dataFields>
+        <dataField fieldName="FechaProceso" columns="10" />
+        <dataField fieldName="DescripcionProceso" />
+        <dataField fieldName="IDProceso" columns="15" />
+        <dataField fieldName="NombreDeEntidad" columns="9" />
+        <dataField fieldName="CodigoDeEntidad" />
+        <dataField fieldName="MontoTotal" columns="15" />
+        <dataField fieldName="TotalTrnx" columns="15" />
+        <dataField fieldName="ComisionV2" columns="15" />
+        <dataField fieldName="ComisionComercio" columns="15" />
+        <dataField fieldName="TotalPagado" columns="15" />
+      </dataFields>
+    </view>
+    <view id="editForm1" type="Form" commandId="command1" label="Visualizar Reporte Resumen Pago por Mes">
+      <headerText>$DefaultEditViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="Reporte Resumen Pago por Mes" flow="NewColumn">
+          <description><![CDATA[$DefaultEditDescription]]></description>
+          <dataFields>
+            <dataField fieldName="FechaProceso" columns="10" />
+            <dataField fieldName="DescripcionProceso" />
+            <dataField fieldName="IDProceso" columns="15" />
+            <dataField fieldName="NombreDeEntidad" columns="9" />
+            <dataField fieldName="CodigoDeEntidad" />
+            <dataField fieldName="MontoTotal" columns="15" />
+            <dataField fieldName="TotalTrnx" columns="15" />
+            <dataField fieldName="ComisionV2" columns="15" />
+            <dataField fieldName="ComisionComercio" columns="15" />
+            <dataField fieldName="TotalPagado" columns="15" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+    <view id="createForm1" type="Form" commandId="command1" label="Nuevo Reporte Resumen Pago por Mes">
+      <headerText>$DefaultCreateViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="Reporte Resumen Pago por Mes" flow="NewColumn">
+          <description><![CDATA[$DefaultNewDescription]]></description>
+          <dataFields>
+            <dataField fieldName="FechaProceso" columns="10" />
+            <dataField fieldName="DescripcionProceso" />
+            <dataField fieldName="IDProceso" columns="15" />
+            <dataField fieldName="NombreDeEntidad" columns="9" />
+            <dataField fieldName="CodigoDeEntidad" />
+            <dataField fieldName="MontoTotal" columns="15" />
+            <dataField fieldName="TotalTrnx" columns="15" />
+            <dataField fieldName="ComisionV2" columns="15" />
+            <dataField fieldName="ComisionComercio" columns="15" />
+            <dataField fieldName="TotalPagado" columns="15" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+  </views>
+  <actions>
+    <actionGroup id="ag1" scope="Grid">
+      <action id="a2" commandName="Edit" />
+      <action id="a3" commandName="Delete" />
+      <action id="a6" />
+      <action id="a7" commandName="New" commandArgument="grid1" />
+      <action id="a8" commandName="Duplicate" commandArgument="createForm1" />
+    </actionGroup>
+    <actionGroup id="ag2" scope="Form">
+      <action id="a1" commandName="Edit" />
+      <action id="a2" commandName="Delete" />
+      <action id="a3" commandName="Cancel" />
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Delete" />
+      <action id="a6" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a7" whenLastCommandName="New" commandName="Insert" />
+      <action id="a8" whenLastCommandName="New" commandName="Cancel" />
+      <action id="a9" whenLastCommandName="Duplicate" commandName="Insert" />
+      <action id="a10" whenLastCommandName="Duplicate" commandName="Cancel" />
+      <action id="a13" whenLastCommandName="Insert" whenView="createForm1" commandName="Select" commandArgument="editForm1" whenKeySelected="true" whenClientScript="this.hasDetails()" />
+    </actionGroup>
+    <actionGroup id="ag3" scope="ActionBar" headerText="New" flat="true">
+      <action id="a1" commandName="New" commandArgument="createForm1" cssClass="NewIcon" />
+    </actionGroup>
+    <actionGroup id="ag4" scope="ActionBar" headerText="Edit/Delete" flat="true">
+      <action id="a1" whenKeySelected="true" commandName="Edit" commandArgument="editForm1" cssClass="EditIcon" whenView="grid1" />
+      <action id="a2" whenKeySelected="true" commandName="Delete" cssClass="DeleteIcon" whenView="grid1" />
+    </actionGroup>
+    <actionGroup id="ag6" scope="ActionBar" headerText="Record">
+      <action id="a1" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a2" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a3" whenLastCommandName="New" commandName="Insert" />
+      <action id="a4" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+    <actionGroup id="ag7" scope="ActionBar" headerText="Report">
+      <action id="a1" commandName="ReportAsPdf" />
+      <action id="a3" commandName="ReportAsExcel" />
+      <action id="a4" commandName="ReportAsWord" />
+    </actionGroup>
+    <actionGroup id="ag8" scope="Row">
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a6" whenLastCommandName="New" commandName="Insert" />
+      <action id="a7" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+  </actions>
+</dataController>

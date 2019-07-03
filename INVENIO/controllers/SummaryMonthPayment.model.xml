@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="REPORT" baseTable="SUMMARY_MONTH_PAYMENT" alias="SUMMARY_MONTH_PAYMENT" created="2019-05-03T12:06:31" modified="2019-05-03T12:06:53" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys />
+  <columns>
+    <column name="Fecha_Proceso" fieldName="FechaProceso" label="Fecha Proceso" />
+    <column name="Descripción_Proceso" fieldName="DescripciónProceso" label="Descripción Proceso" />
+    <column name="Id_Proceso" fieldName="IDProceso" label="Id Proceso" />
+    <column name="Nombre_de_Entidad" fieldName="NombreDeEntidad" label="Nombre de Entidad" />
+    <column name="Código_de_Entidad" fieldName="CódigoDeEntidad" label="Código de Entidad" />
+    <column name="Monto_Total" fieldName="MontoTotal" label="Monto Total" format="N&quot;" />
+    <column name="Total_Trnx" fieldName="TotalTrnx" label="Total Trnx" />
+    <column name="Comisión_V2" fieldName="ComisiónV2" label="Comisión V2" format="N2" />
+    <column name="Comisión_Comercio" fieldName="ComisiónComercio" label="Comisión Comercio" format="N2" />
+    <column name="Total_Pagado" fieldName="TotalPagado" label="Total Pagado" format="N2" />
+  </columns>
+</dataModel>

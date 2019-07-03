@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataController name="MyProfile" conflictDetection="overwriteChanges" label="My Profile" plugIn="INVENIO.Data.AnnotationPlugIn" handler="INVENIO.Rules.MyProfileBusinessRules" xmlns="urn:schemas-codeontime-com:data-aquarium">
+  <commands />
+  <fields>
+    <field name="UserName" type="String" allowNulls="false" label="Nombre Usuario" />
+    <field name="RememberMe" type="Boolean" allowNulls="false" default="0" label="Recuerdame la proxima vez">
+      <items style="CheckBox" />
+    </field>
+    <field name="Password" type="String" allowNulls="false" label="Clave" />
+    <field name="ConfirmPassword" type="String" allowNulls="false" label="Confirmar Clave" />
+    <field name="OldPassword" type="String" allowNulls="false" label="Clave Anterior" />
+    <field name="Email" type="String" label="Correo electronico" allowNulls="false" />
+    <field name="PasswordQuestion" type="String" label="Pregunta Clave" allowNulls="false" />
+    <field name="PasswordAnswer" type="String" label="Respuesta Clave" allowNulls="false" />
+    <field name="DisplayRememberMe" type="Boolean" />
+  </fields>
+  <views>
+    <view id="loginForm" type="Form" access="Public" label="Inicio" tags="modal-fit-content modal-max-xs material-icon-lock-outline discard-changes-prompt-none">
+      <categories>
+        <category id="c1" headerText="" flow="NewColumn">
+          <dataFields>
+            <dataField fieldName="UserName" />
+            <dataField fieldName="Password" textMode="Password" />
+            <dataField fieldName="RememberMe">
+              <visibility>
+                <expression test="$row.DisplayRememberMe != false" />
+              </visibility>
+            </dataField>
+            <dataField fieldName="DisplayRememberMe" hidden="true" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+    <view id="signUpForm" type="Form" commandId="command1" access="Public" label="Registrar cuenta" tags="material-icon-person-add">
+      <headerText>Rellene este formulario y haga clic en el botón Aceptar para registrarse en una cuenta. Haga clic en Cancelar para volver a la pantalla anterior.</headerText>
+      <categories>
+        <category id="c1" headerText="Nueva información de usuario" flow="NewColumn">
+          <description><![CDATA[Por favor, introduzca el nombre de usuario y la contraseña. Tenga en cuenta que la contraseña debe tener al menos 7 caracteres e incluir un carácter no alfanumérico. Solo los usuarios aprobados podrán iniciar sesión en el sitio web.]]></description>
+          <dataFields>
+            <dataField fieldName="UserName" columns="20" />
+            <dataField fieldName="Password" columns="20" textMode="Password" />
+            <dataField fieldName="ConfirmPassword" columns="20" textMode="Password" />
+          </dataFields>
+        </category>
+        <category id="c2" headerText="Recuperar Clave">
+          <description><![CDATA[                          
+                        Estos campos son necesarios para ayudarlo a recuperar una contraseña olvidada. Durante el proceso de recuperación, se le pedirá que ingrese un nombre de usuario.
+Si existe una cuenta de usuario, se solicita una pregunta de seguridad para ser respondida. Una respuesta correcta activará un correo electrónico con una contraseña temporal que se enviará al correo electrónico registrado.
+                      
+                        ]]></description>
+          <dataFields>
+            <dataField fieldName="Email" />
+            <dataField fieldName="PasswordQuestion" />
+            <dataField fieldName="PasswordAnswer" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+    <view id="passwordRequestForm" type="Form" commandId="command1" access="Public" label="Recuperar clave: Paso 1 of 2" tags="material-icon-lock discard-changes-prompt-none">
+      <headerText>Rellene este formulario y haga clic en el botón Continuar para recuperar la contraseña olvidada. Haga clic en Cancelar para volver a la pantalla anterior.</headerText>
+      <categories>
+        <category id="c1" headerText="¿Olvidaste tu clave?" flow="NewColumn">
+          <description><![CDATA[Por favor, ingrese un nombre de usuario.<br/><br/><br/>]]></description>
+          <dataFields>
+            <dataField fieldName="UserName" columns="20" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+    <view id="identityConfirmationForm" type="Form" commandId="command1" access="Public" label="Recuperar Clave: Paso 2 of 2" tags="material-icon-lock-open discard-changes-prompt-none">
+      <headerText>Rellene este formulario y haga clic en el botón Enviar para recuperar la contraseña olvidada. Haga clic en Cancelar para volver a la pantalla anterior.</headerText>
+      <categories>
+        <category id="c1" headerText="Confirmacion de identidad" flow="NewColumn">
+          <description><![CDATA[Responde la siguiente pregunta para recibir tu contraseña.<br/><br/><br/>]]></description>
+          <dataFields>
+            <dataField fieldName="UserName" columns="20" readOnly="true" />
+            <dataField fieldName="PasswordQuestion" readOnly="true" />
+            <dataField fieldName="PasswordAnswer" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+    <view id="myAccountForm" type="Form" commandId="command1" label="Mi Cuenta" tags="material-icon-perm-identity discard-changes-prompt-none">
+      <headerText>Por favor revise la información de su membresía a continuación. Haga clic en Actualizar mi cuenta para cambiar este registro, o haga clic en Cancelar para volver.</headerText>
+      <categories>
+        <category id="c1" headerText="1. Clave Actual" flow="NewColumn">
+          <description><![CDATA[Ingrese su contraseña actual para crear una nueva contraseña, actualizar su dirección de correo electrónico o cambiar la pregunta y respuesta de recuperación de contraseña.]]></description>
+          <dataFields>
+            <dataField fieldName="UserName" readOnly="true" />
+            <dataField fieldName="OldPassword" columns="20" textMode="Password">
+              <headerText>Clave Actual</headerText>
+            </dataField>
+          </dataFields>
+        </category>
+        <category id="c2" headerText="2. Nueva Clave (Opcional)">
+          <description><![CDATA[Por favor, introduzca la nueva contraseña. Tenga en cuenta que la contraseña debe tener al menos 7 caracteres e incluir un carácter no alfanumérico.]]></description>
+          <dataFields>
+            <dataField fieldName="Password" columns="20" textMode="Password">
+              <headerText>Nueva Clave</headerText>
+            </dataField>
+            <dataField fieldName="ConfirmPassword" columns="20" textMode="Password">
+              <headerText>Confirmar Nueva Clave</headerText>
+            </dataField>
+          </dataFields>
+        </category>
+        <category id="c3" headerText="3. Recuperación de correo electrónico y clave (Opcional)">
+          <description><![CDATA[                          
+                        Durante la recuperación de una contraseña olvidada, se le pedirá que ingrese su nombre de usuario.
+Si existe una cuenta de usuario, se debe responder una pregunta de contraseña. Una respuesta correcta activará un correo electrónico con una contraseña temporal que se le enviará.                      
+                        ]]></description>
+          <dataFields>
+            <dataField fieldName="Email" />
+            <dataField fieldName="PasswordQuestion" />
+            <dataField fieldName="PasswordAnswer">
+              <headerText>Respuesta Clave (No se muestra para su protecciòn)</headerText>
+            </dataField>
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+  </views>
+  <actions>
+    <actionGroup id="ag1" scope="Form">
+      <action id="a1" whenLastCommandName="New" whenLastCommandArgument="signUpForm" commandName="Insert" commandArgument="SignUp" headerText="Registrarte" />
+      <action id="a2" whenLastCommandName="New" whenLastCommandArgument="signUpForm" commandName="Cancel" />
+      <action id="a3" whenLastCommandName="Insert" whenLastCommandArgument="SignUp" commandName="Cancel" />
+      <action id="a4" whenLastCommandName="New" whenLastCommandArgument="passwordRequestForm" commandName="Cancel" />
+      <action id="a5" whenLastCommandName="New" whenLastCommandArgument="passwordRequestForm" commandName="Custom" commandArgument="RequestPassword" headerText="Siguiente" cssClass="material-icon-arrow-forward" />
+      <action id="a6" whenLastCommandName="Edit" whenLastCommandArgument="identityConfirmationForm" commandName="Custom" commandArgument="BackToRequestPassword" headerText="Regresar" causesValidation="false" />
+      <action id="a7" whenLastCommandName="Edit" whenLastCommandArgument="identityConfirmationForm" commandName="Custom" commandArgument="ConfirmIdentity" headerText="Finalizar" cssClass="material-icon-check" />
+      <action id="a8" whenLastCommandName="Edit" whenLastCommandArgument="myAccountForm" commandName="Update" headerText="Actualizar Mi Cuenta" causesValidation="false" />
+      <action id="a9" whenLastCommandName="Edit" whenLastCommandArgument="myAccountForm" commandName="Cancel" />
+      <action id="a10" commandName="Custom" headerText="Iniciar" commandArgument="Login" whenLastCommandName="New" whenLastCommandArgument="loginForm" causesValidation="true" key="Enter" cssClass="material-icon-arrow-forward" />
+      <action id="a12" commandName="Custom" headerText="Olvidaste tu clave?" commandArgument="ForgotPassword" whenLastCommandName="New" whenLastCommandArgument="loginForm" causesValidation="false" />
+    </actionGroup>
+    <actionGroup id="agAuth" scope="Custom">
+      <action id="aFacebook" commandName="Navigate" commandArgument="~/appservices/saas/facebook" headerText="^LoginWithFacebook^Login With Facebook^LoginWithFacebook^" whenLastCommandName="New" whenLastCommandArgument="loginForm" whenTag="show-facebook-login" />
+      <action id="aGoogle" commandName="Navigate" commandArgument="~/appservices/saas/google" headerText="^LoginWithGoogle^Login With Google^LoginWithGoogle^" whenLastCommandName="New" whenLastCommandArgument="loginForm" whenTag="show-google-login" />
+      <action id="aMsGraph" commandName="Navigate" commandArgument="~/appservices/saas/msgraph" headerText="^LoginWithMicrosoft^Login With Microsoft^LoginWithMicrosoft^" whenLastCommandName="New" whenLastCommandArgument="loginForm" whenTag="show-msgraph-login" />
+      <action id="aWindowsLive" commandName="Navigate" commandArgument="~/appservices/saas/windowslive" headerText="^LoginWithWindowsLive^Login With Windows Live^LoginWithWindowsLive^" whenLastCommandName="New" whenLastCommandArgument="loginForm" whenTag="show-windows-live-login" />
+      <action id="aSharePoint" commandName="Navigate" commandArgument="~/appservices/saas/sharepoint" headerText="^LoginWithSharePoint^Login With SharePoint^LoginWithSharePoint^" whenLastCommandName="New" whenLastCommandArgument="loginForm" whenTag="show-sharepoint-login" />
+      <action id="aDnn" commandName="Navigate" commandArgument="~/appservices/saas/dnn" headerText="^LoginWithDNN^Login With DotNetNuke^LoginWithDNN^" whenLastCommandName="New" whenLastCommandArgument="loginForm" whenTag="show-dnn-login" />
+      <action id="aCloudIdentity" commandName="Navigate" commandArgument="~/appservices/saas/cloudidentity" headerText="^LoginWithCloudIdentity^Login With Cloud Identity^LoginWithCloudIdentity^" whenLastCommandName="New" whenLastCommandArgument="loginForm" whenTag="show-cloudidentity-login" />
+    </actionGroup>
+  </actions>
+  <businessRules>
+    <rule id="r100" commandName="Custom" commandArgument="Login" type="JavaScript" phase="Execute"><![CDATA[
+                  
+this.preventDefault();
+var resources = Web.MembershipResources.Messages;
+$app.login($row.UserName, $row.Password, $row.RememberMe==true,
+  function () {
+    setTimeout(function() {
+      $app._navigated = true;
+      window.location.replace($app.touch.returnUrl() || __baseUrl);
+    });
+  },
+  function () {
+    $app.alert(resources.InvalidUserNameAndPassword, function() {$app.input.focus({fieldName:'UserName'})});
+  });
+                
+                ]]></rule>
+    <rule id="r101" commandName="Custom" commandArgument="SignUp" type="JavaScript" phase="Execute"><![CDATA[
+                    
+this.preventDefault();
+$app.touch.show({
+  controller: 'MyProfile',
+  startCommand: 'New',
+  startArgument: 'signUpForm'
+});
+                
+                  ]]></rule>
+    <rule id="r102" commandName="Custom" commandArgument="ForgotPassword" type="JavaScript" phase="Execute"><![CDATA[
+                    
+this.preventDefault();
+$app.touch.show({
+  controller: 'MyProfile',
+  startCommand: 'New',
+  startArgument: 'passwordRequestForm'
+});
+                
+                  ]]></rule>
+    <rule id="r103" commandName="Insert" type="Sql" phase="Before"><![CDATA[Declare @validar int
+
+select @validar=len(isnull([Report].[fn_ValidaEmail](@Email),0))
+
+if @validar=1
+begin
+        set @Result_Error='El correo Ingresado no es valido, favor verificarlo.'
+end]]></rule>
+  </businessRules>
+</dataController>

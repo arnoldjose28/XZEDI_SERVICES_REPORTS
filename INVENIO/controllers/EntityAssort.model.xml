@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="REPORT" baseTable="ENTITY_ASSORT" alias="ENTITY_ASSORT" created="2019-05-03T00:55:27" modified="2019-05-03T00:55:51" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys />
+  <columns>
+    <column name="Id_Proceso" fieldName="IDProceso" label="Id Proceso" />
+    <column name="Descripción_Proceso" fieldName="DescripciónProceso" label="Descripción Proceso" />
+    <column name="Fecha_Proceso" fieldName="FechaProceso" label="Fecha Proceso" />
+    <column name="Producto" fieldName="Producto" label="Producto" />
+    <column name="Tipo_de_Operación" fieldName="TipoDeOperación" label="Tipo de Operación" />
+    <column name="Total_Trnxs" fieldName="TotalTrnxs" label="Total Trnxs" />
+    <column name="Tipo_de_Moneda" fieldName="TipoDeMoneda" label="Tipo de Moneda" />
+    <column name="Comisión_Comercio" fieldName="ComisiónComercio" label="Comisión Comercio" format="N2" />
+    <column name="Comisión_V2" fieldName="ComisiónV2" label="Comisión V2" format="N2" />
+    <column name="Monto_Trnx" fieldName="MontoTrnx" label="Monto Trnx" format="N2" />
+    <column name="Monto_Neto" fieldName="MontoNeto" label="Monto Neto" format="N2" />
+  </columns>
+</dataModel>

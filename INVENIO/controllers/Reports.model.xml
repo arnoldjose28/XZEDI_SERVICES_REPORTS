@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="REPORT" baseTable="REPORTS" alias="REPORTS" created="2019-04-06T00:01:14" modified="2019-04-06T00:01:45" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys />
+  <columns>
+    <column name="ID_REPORT" fieldName="IDReport" label="Id Reporte" />
+    <column name="NAME_REPORT" fieldName="NameReport" label="Nombre Reporte" />
+    <column name="DESCRIPTION_REPORT" fieldName="DescriptionReport" label="Descripción Reporte" />
+  </columns>
+</dataModel>

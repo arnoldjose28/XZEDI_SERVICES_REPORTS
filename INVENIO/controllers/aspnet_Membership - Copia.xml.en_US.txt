@@ -1,0 +1,175 @@
+*******************************************************************************
+Your application uses this file to locate resource strings defined
+in aspnet_Membership - Copia.xml project item. 
+
+Replace the text between localization brackets as needed.
+*******************************************************************************
+
+^ActionBarNewActionDescription^Crear un nuevo registro de usuario.^ActionBarNewActionDescription^
+
+^ActionBarNewActionHeaderText^Nuevo Usuario^ActionBarNewActionHeaderText^
+
+^ActionBarNewGroupHeaderText^Nuevo^ActionBarNewGroupHeaderText^
+
+^BackToRequestPasswordActionHeaderText^Back^BackToRequestPasswordActionHeaderText^
+
+^Comment^Commentarios^Comment^
+
+^ConfirmIdentityActionHeaderText^Finish^ConfirmIdentityActionHeaderText^
+
+^ConfirmPassword^Confirmar Contraseña^ConfirmPassword^
+
+^CreateDate^Fecha de Creación^CreateDate^
+
+^CreateFormCommentCategoryDescription^Ingrese cualquier comentario adicional sobre esta cuenta de usuario. El comentario no es visible para el usuario.^CreateFormCommentCategoryDescription^
+
+^CreateFormCommentCategoryHeaderText^Commentarios^CreateFormCommentCategoryHeaderText^
+
+^CreateFormNewUserInfoCategoryDescription^Por favor ingrese el nombre de usuario y la contraseña. Tenga en cuenta que la contraseña debe estar formada por la estructura permitida en el sitio. Solo los usuarios aprobados podrán iniciar sesión en la plataforma.^CreateFormNewUserInfoCategoryDescription^
+
+^CreateFormNewUserInfoCategoryHeaderText^Información nuevo usuario^CreateFormNewUserInfoCategoryHeaderText^
+
+^CreateFormPasswordRecoveryCategoryDescription^Estos campos son necesarios para ayudar al usuario a recuperar una contraseña olvidada. Durante el proceso de recuperación, se le pedirá al usuario que ingrese un nombre de usuario.
+            Si existe una cuenta de usuario, se solicita una pregunta de seguridad para que se responda. Una respuesta correcta activará un correo electrónico con una contraseña temporal que se enviará al usuario.^CreateFormPasswordRecoveryCategoryDescription^
+
+^CreateFormPasswordRecoveryCategoryHeaderText^Recuperación de contraseña^CreateFormPasswordRecoveryCategoryHeaderText^
+
+^CreateFormRolesCategoryDescription^Seleccione los roles de usuario que más se asemejan a las responsabilidades del usuario. Los roles controlan el acceso a las áreas de esta plataforma. Póngase en contacto con el administrador del sistema si se deben cambiar las restricciones de acceso a las funciones.^CreateFormRolesCategoryDescription^
+
+^CreateFormRolesCategoryHeaderText^Roles^CreateFormRolesCategoryHeaderText^
+
+^CreateFormViewHeaderText^Complete este formulario y haga clic en el botón Aceptar para crear un nuevo registro de usuario. Haga clic en Cancelar para volver a la pantalla anterior.^CreateFormViewHeaderText^
+
+^CreateFormViewLabel^Nuevo^CreateFormViewLabel^
+
+^CreateViewIsApprovedFieldHeaderText^Esta cuenta de usuario se creará como aprobada.^CreateViewIsApprovedFieldHeaderText^
+
+^DuplicateEmail^Duplicate email address.^DuplicateEmail^
+
+^DuplicateProviderUserKey^Duplicate provider key.^DuplicateProviderUserKey^
+
+^DuplicateUserName^Duplicate user name.^DuplicateUserName^
+
+^EditFormActivityStatisticsCategoryDescription^Estadísticas de actividad^EditFormActivityStatisticsCategoryDescription^
+
+^EditFormIsApprovedFieldHeaderText^Esta cuenta de usuario está aprobada^EditFormIsApprovedFieldHeaderText^
+
+^EditFormLoginStatisticsCategoryDescription^Estas son las estadísticas de los intentos fallidos de inicio de sesión de este usuario.
+					<br/>
+					<br/>
+					El usuario se bloqueará después de alcanzar un número máximo de intentos fallidos de inicio de sesión. Los usuarios bloqueados podrán volver a iniciar sesión después de la fecha en Inicio fallido de la ventana de intento de contraseña. Los usuarios que no pudieron recuperar la contraseña podrán hacerlo después de la fecha en Inicio fallido de la ventana de intento de respuesta de contraseña.
+					<br/>
+					<br/>
+					Puede restablecer la capacidad del usuario para iniciar sesión configurando el indicador Bloqueado como 'No'.^EditFormLoginStatisticsCategoryDescription^
+
+^EditFormLoginStatisticsCategoryHeaderText^Estadísticas de acceso^EditFormLoginStatisticsCategoryHeaderText^
+
+^EditFormPasswordRecoveryCategoryDescription^Durante la recuperación de una contraseña olvidada, se le pedirá al usuario que ingrese un nombre de usuario. Si existe una cuenta de usuario, se solicita una pregunta de seguridad para que se responda. Una respuesta correcta activará un correo electrónico con una contraseña temporal que se enviará al usuario.
+						<br/><br/>
+						Cambie la marca bloqueada a 'No' si el usuario ha sido bloqueado después de alcanzar una cantidad máxima de intentos de inicio de sesión fallidos y desea permitir que el usuario vuelva a iniciar sesión.^EditFormPasswordRecoveryCategoryDescription^
+
+^EditFormPasswordRecoveryCategoryHeaderText^Recuperación de contraseña^EditFormPasswordRecoveryCategoryHeaderText^
+
+^EditFormUserInformationCategoryDescription^Seleccione los roles de usuario que más se asemejan a las responsabilidades del usuario. Los roles controlan el acceso a las áreas de esta plataforma. Póngase en contacto con el administrador del sistema si se deben cambiar las restricciones de acceso a las funciones.
+						<br/>
+						<br/>
+						Ingrese cualquier comentario adicional sobre esta cuenta de usuario. El comentario no es visible para el usuario.^EditFormUserInformationCategoryDescription^
+
+^EditFormUserInformationCategoryHeaderText^Información Usuario^EditFormUserInformationCategoryHeaderText^
+
+^EditFormViewHeaderText^Revise la información de usuario a continuación. Haga clic en Editar para cambiar este registro, haga clic en Eliminar para eliminar el registro o haga clic en Cancelar / Cerrar para volver.^EditFormViewHeaderText^
+
+^EditFormViewLabel^Editar Usuarios^EditFormViewLabel^
+
+^Email^Email^Email^
+
+^EnterCurrentPassword^Please enter your current password.^EnterCurrentPassword^
+
+^EnterPasswordAnswer^Please enter a password answer.^EnterPasswordAnswer^
+
+^ErrorSavingUser^Error saving user account.^ErrorSavingUser^
+
+^FailedPasswordAnswerAttemptCount^Recuento de intentos de respuesta de contraseña fallida^FailedPasswordAnswerAttemptCount^
+
+^FailedPasswordAnswerAttemptWindowStart^Falló el inicio de la ventana del intento de respuesta de la contraseña^FailedPasswordAnswerAttemptWindowStart^
+
+^FailedPasswordAttemptCount^Recuento de intentos fallidos de contraseña^FailedPasswordAttemptCount^
+
+^FailedPasswordAttemptWindowStart^Error al iniciar la ventana de intento de contraseña^FailedPasswordAttemptWindowStart^
+
+^GridViewHeaderText^Esta es una lista de registros de usuarios de la plataforma.^GridViewHeaderText^
+
+^GridViewLabel^Todos los usuarios^GridViewLabel^
+
+^InvalidAnswer^Invalid password recovery answer.^InvalidAnswer^
+
+^InvalidEmail^Invalid email address.^InvalidEmail^
+
+^InvalidPassword^Invalid password.^InvalidPassword^
+
+^InvalidProviderUserKey^Invalid provider user key.^InvalidProviderUserKey^
+
+^InvalidQuestion^Invalid password recovery question.^InvalidQuestion^
+
+^InvalidUserName^Invalid user name.^InvalidUserName^
+
+^IsApproved^Esta aprobado^IsApproved^
+
+^IsLockedOut^Está bloqueado^IsLockedOut^
+
+^LastLockoutDate^Última fecha de bloqueo^LastLockoutDate^
+
+^LastLoginDate^Última fecha de inicio de sesión^LastLoginDate^
+
+^LastPasswordChangedDate^Fecha última contraseña cambiada^LastPasswordChangedDate^
+
+^NewPasswordAlert^A new password has been emailed to the address on file.^NewPasswordAlert^
+
+^NewPasswordAndConfirmatinDoNotMatch^New password and confirmation do not match.^NewPasswordAndConfirmatinDoNotMatch^
+
+^NewPasswordInvalid^Your new password is invalid.^NewPasswordInvalid^
+
+^NewPasswordSubject^New password for \'{0}\'.^NewPasswordSubject^
+
+^OldPassword^Contraseña Anterior^OldPassword^
+
+^Password^Contraseña^Password^
+
+^PasswordAndConfirmationDoNotMatch^Password and confirmation do not match.^PasswordAndConfirmationDoNotMatch^
+
+^PasswordAnswer^Respuesta de contraseña^PasswordAnswer^
+
+^PasswordDoesNotMatchRecords^Your password does not match our records.^PasswordDoesNotMatchRecords^
+
+^PasswordFormat^Formato de contraseña^PasswordFormat^
+
+^PasswordQuestion^Pregunta Secreta^PasswordQuestion^
+
+^ProviderError^Provider error.^ProviderError^
+
+^RequestPasswordActionHeaderText^Next^RequestPasswordActionHeaderText^
+
+^Roles^Roles^Roles^
+
+^SelfRegisteredUser^Self-registered user.^SelfRegisteredUser^
+
+^SignUp^Sign Up^SignUp^
+
+^UpdateMyAccountActionHeaderText^Update My Account^UpdateMyAccountActionHeaderText^
+
+^UserCannotBeLockedOut^User cannot be locked out. If you want to prevent this user from being able to login then simply mark user as 'not-approved'.^UserCannotBeLockedOut^
+
+^UserHasBeenDeleted^User '{0}' has been deleted.^UserHasBeenDeleted^
+
+^UserName^Nombre Usuario^UserName^
+
+^UserNameDoesNotExist^User name does not exist.^UserNameDoesNotExist^
+
+^UserNotFound^User not found.^UserNotFound^
+
+^UserRejected^User has been rejected.^UserRejected^
+
+^UsersInRolesGridHeaderText^Esta es una lista de registros de usuarios que pertenecen a un rol seleccionado.^UsersInRolesGridHeaderText^
+
+^UsersInRolesGridLabel^Roles Usuarios^UsersInRolesGridLabel^
+

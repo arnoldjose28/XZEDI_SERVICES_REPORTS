@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A7309899-A798-40E8-B753-6C9CEB3FC2B0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApp</RootNamespace>
+    <AssemblyName>WebApp</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845DCD8080CC91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>bin\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845DCD8080CC91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>bin\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845DCD8080CC91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>bin\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>bin\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DataVisualization" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\INVENIO\INVENIO.csproj">
+      <Project>{B1135A1B-8B04-4A78-9784-CCDD696A0A83}</Project>
+      <Name>INVENIO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="controls\MembershipManager.html" />
+    <Content Include="controls\TableOfContents.html" />
+    <Content Include="controls\TableOfContents.html.en-US.txt" />
+    <Content Include="controls\TableOfContents.html.es-ES.txt" />
+    <Content Include="controls\Welcome.html" />
+    <Content Include="controls\Welcome.html.en-US.txt" />
+    <Content Include="controls\Welcome.html.es-ES.txt" />
+    <Content Include="css\daf\touch-charts.css" />
+    <Content Include="css\daf\touch-charts.min.css" />
+    <Content Include="css\daf\touch-scroll.css" />
+    <Content Include="css\daf\touch-scroll.min.css" />
+    <Content Include="css\daf\touch-theme.css" />
+    <Content Include="css\daf\touch.css" />
+    <Content Include="css\daf\touch.min.css" />
+    <Content Include="css\sys\bootstrap.css" />
+    <Content Include="css\sys\bootstrap.min.css" />
+    <Content Include="css\sys\jquery.mobile-1.4.6.css" />
+    <Content Include="css\sys\jquery.mobile-1.4.6.min.css" />
+    <Content Include="css\themes\touch-accent.aquarium.json" />
+    <Content Include="css\themes\touch-accent.azure.json" />
+    <Content Include="css\themes\touch-accent.belltown.json" />
+    <Content Include="css\themes\touch-accent.berry.json" />
+    <Content Include="css\themes\touch-accent.bittersweet.json" />
+    <Content Include="css\themes\touch-accent.cay.json" />
+    <Content Include="css\themes\touch-accent.citrus.json" />
+    <Content Include="css\themes\touch-accent.classic.json" />
+    <Content Include="css\themes\touch-accent.construct.json" />
+    <Content Include="css\themes\touch-accent.convention.json" />
+    <Content Include="css\themes\touch-accent.darkknight.json" />
+    <Content Include="css\themes\touch-accent.felt.json" />
+    <Content Include="css\themes\touch-accent.graham.json" />
+    <Content Include="css\themes\touch-accent.granite.json" />
+    <Content Include="css\themes\touch-accent.grapello.json" />
+    <Content Include="css\themes\touch-accent.gravity.json" />
+    <Content Include="css\themes\touch-accent.lacquer.json" />
+    <Content Include="css\themes\touch-accent.laminate.json" />
+    <Content Include="css\themes\touch-accent.lichen.json" />
+    <Content Include="css\themes\touch-accent.mission.json" />
+    <Content Include="css\themes\touch-accent.modern.json" />
+    <Content Include="css\themes\touch-accent.modernrose.json" />
+    <Content Include="css\themes\touch-accent.municipal.json" />
+    <Content Include="css\themes\touch-accent.petal.json" />
+    <Content Include="css\themes\touch-accent.pinnate.json" />
+    <Content Include="css\themes\touch-accent.plastic.json" />
+    <Content Include="css\themes\touch-accent.ricasso.json" />
+    <Content Include="css\themes\touch-accent.simple.json" />
+    <Content Include="css\themes\touch-accent.social.json" />
+    <Content Include="css\themes\touch-accent.summer.json" />
+    <Content Include="css\themes\touch-accent.vantage.json" />
+    <Content Include="css\themes\touch-accent.verdant.json" />
+    <Content Include="css\themes\touch-accent.viewpoint.json" />
+    <Content Include="css\themes\touch-accent.whitesmoke.json" />
+    <Content Include="css\themes\touch-accent.yoshi.json" />
+    <Content Include="css\themes\touch-theme.dark.json" />
+    <Content Include="css\themes\touch-theme.light.json" />
+    <Content Include="css\_ignore.txt" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\MaterialIcons-Regular.eot" />
+    <Content Include="fonts\MaterialIcons-Regular.ttf" />
+    <Content Include="fonts\MaterialIcons-Regular.woff" />
+    <Content Include="images\acc-man-bkg.jpg" />
+    <Content Include="images\fondo_logo.jpg" />
+    <Content Include="images\fondo_logo1.jpg" />
+    <Content Include="images\logo_xzedi.jpeg" />
+    <Content Include="js\daf\daf-membership.js" />
+    <Content Include="js\daf\daf-odp.js" />
+    <Content Include="js\daf\daf-resources.en-US.js" />
+    <Content Include="js\daf\daf-resources.es-ES.js" />
+    <Content Include="js\daf\daf.js" />
+    <Content Include="js\daf\touch-charts.js" />
+    <Content Include="js\daf\touch-edit.js" />
+    <Content Include="js\daf\touch.js" />
+    <Content Include="js\lib\import.min.js" />
+    <Content Include="js\sys\culture\es-ES.js" />
+    <Content Include="js\sys\jquery-2.2.4.js" />
+    <Content Include="js\sys\jquery.mobile-1.4.6.js" />
+    <Content Include="js\sys\unicode.js" />
+    <Content Include="js\_ignore.txt" />
+    <Content Include="js\_references.js" />
+    <Content Include="pages\Comercios.html" />
+    <Content Include="pages\CompensacionDiaria.html" />
+    <Content Include="pages\CompensacionMensual.html" />
+    <Content Include="pages\Conciliacion.html" />
+    <Content Include="pages\EntityAssort.html" />
+    <Content Include="pages\Gestion.html" />
+    <Content Include="pages\Home.html" />
+    <Content Include="pages\Home.html.en-US.txt" />
+    <Content Include="pages\Home.html.es-ES.txt" />
+    <Content Include="pages\Membership.html" />
+    <Content Include="pages\Membership.html.en-US.txt" />
+    <Content Include="pages\Membership.html.es-ES.txt" />
+    <Content Include="pages\MerchantCredit.html" />
+    <Content Include="pages\MerchantCreditMonth.html" />
+    <Content Include="pages\MerchantSummary.html" />
+    <Content Include="pages\Proveedores.html" />
+    <Content Include="pages\ReportAmounts.html" />
+    <Content Include="pages\ReportConciliationTpp.html" />
+    <Content Include="pages\ReportExecution.html" />
+    <Content Include="pages\ReportMonthlyInvoice.html" />
+    <Content Include="pages\ReportreportAmounts.html" />
+    <Content Include="pages\Reports.html" />
+    <Content Include="pages\ReportXlsInvoice.html" />
+    <Content Include="pages\SubscriptionFile.html" />
+    <Content Include="pages\SummaryDailySupplier.html" />
+    <Content Include="pages\SummaryMonthPayment.html" />
+    <Content Include="pages\TppLiquidation.html" />
+    <Content Include="pages\TransaccionesnoConciliadas.html" />
+    <Content Include="pages\TxnFc.html" />
+    <Content Include="pages\TxnFcNotConcilied.html" />
+    <Content Include="pages\TxnIgnis.html" />
+    <Content Include="pages\TxnPaid.html" />
+    <Content Include="pages\TxnPaidMonth.html" />
+    <Content Include="pages\TxnReconciled.html" />
+    <Content Include="pages\TxnTtp.html" />
+    <Content Include="pages\TxnTtpNotConcilied.html" />
+    <Content Include="pages\TxnXzedi.html" />
+    <Content Include="pages\TxnXzediNotConcilied.html" />
+    <Content Include="Global.asax" />
+    <Content Include="Login.html" />
+    <Content Include="Login.html.en-US.txt" />
+    <Content Include="Login.html.es-ES.txt" />
+    <Content Include="Site.aspx" />
+    <Content Include="Site.html" />
+    <Content Include="Site.html.en-US.txt" />
+    <Content Include="Site.html.es-ES.txt" />
+    <Content Include="touch-settings.json" />
+    <Content Include="web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <Content Include="Web.Sitemap.en-US.txt" />
+    <Content Include="Web.Sitemap.es-ES.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Site.aspx.cs">
+      <DependentUpon>Site.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Web.Sitemap" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56707/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!--
+        To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  
+      -->
+</Project>

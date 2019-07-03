@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="REPORT" baseTable="MERCHANT_CREDIT" alias="MERCHANT_CREDIT" created="2019-05-22T13:16:14" modified="2019-05-22T13:17:24" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys />
+  <columns>
+    <column name="Fecha_de_Abono" fieldName="FechaDeAbono" label="Fecha de Abono" format="dd/MM/yyyy" />
+    <column name="Fecha_Proceso" fieldName="FechaProceso" label="Fecha Proceso" format="dd/MM/yyyy" />
+    <column name="Código_de_Comercio" fieldName="CodigoDeComercio" label="Código de Comercio" />
+    <column name="Nombre_de_Comercio" fieldName="NombreDeComercio" label="Nombre de Comercio" />
+    <column name="Entidad_de_Abono" fieldName="EntidadDeAbono" label="Entidad de Abono" />
+    <column name="Canal_de_Abono" fieldName="CanalDeAbono" label="Canal de Abono" />
+    <column name="Monto_de_Abono" fieldName="MontoDeAbono" label="Monto de Abono" format="N2" />
+    <column name="Código_de_Recaudo" fieldName="CodigoDeRecaudo" label="Código de Recaudo" />
+    <column name="Comisión_Recaudo" fieldName="ComisionRecaudo" label="Comisión Recaudo" format="N2" />
+  </columns>
+</dataModel>

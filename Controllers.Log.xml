@@ -1,0 +1,4513 @@
+<log xmlns="urn:schemas-codeontime-com:xml-builder" xmlns:aquarium="urn:schemas-codeontime-com:data-aquarium" xmlns:a="urn:schemas-codeontime-com:data-aquarium">
+  <c y="NodeSet" t="2019-03-25T11:43:33">
+    <controller name="ReportExecution" />
+    <field name="TheidReportnameReport" />
+    <update>
+      <Label>Nombre Del Reporte</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T11:44:00">
+    <controller name="ReportExecution" />
+    <view id="grid1" />
+    <dataField fieldName="FirsDayProcess" />
+    <before>
+      <controller name="ReportExecution" />
+      <view id="grid1" />
+      <dataField fieldName="IDReport" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-03-25T11:44:07">
+    <controller name="ReportExecution" />
+    <view id="grid1" />
+    <dataField fieldName="FirsDayProcess" />
+    <before>
+      <controller name="ReportExecution" />
+      <view id="grid1" />
+      <dataField fieldName="IDExecution" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-03-25T11:44:12">
+    <controller name="ReportExecution" />
+    <view id="grid1" />
+    <dataField fieldName="FirsDayProcess" />
+    <before>
+      <controller name="ReportExecution" />
+      <view id="grid1" />
+      <dataField fieldName="ProcessDescription" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-03-25T11:44:33">
+    <controller name="ReportExecution" />
+    <view id="grid1" />
+    <dataField fieldName="NameReport" />
+    <update>
+      <Hidden>true</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T11:44:43">
+    <controller name="ReportExecution" />
+    <view id="grid1" />
+    <dataField fieldName="User" />
+    <update>
+      <Hidden>true</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T11:44:52">
+    <controller name="ReportExecution" />
+    <view id="grid1" />
+    <dataField fieldName="LastDayProcess" />
+    <update>
+      <Hidden>true</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T11:48:33">
+    <controller name="ReportExecution" />
+    <field name="NameReport" />
+    <update>
+      <Label>Nombre Reporte</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T11:48:50">
+    <controller name="ReportExecution" />
+    <field name="User" />
+    <update>
+      <Label>Usuario</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T11:49:08">
+    <controller name="ReportExecution" />
+    <field name="IDReport" />
+    <update>
+      <Label>Id Reporte</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T11:49:44">
+    <controller name="ReportExecution" />
+    <field name="CreatedAt" />
+    <update>
+      <Label>Fecha De Creación</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T11:49:59">
+    <controller name="ReportExecution" />
+    <field name="LastDayProcess" />
+    <update>
+      <Label>Segunda Fecha Txn</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T11:51:00">
+    <controller name="ReportExecution" />
+    <field name="IDExecution" />
+    <update>
+      <Label>Id Proceso</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T11:51:22">
+    <controller name="ReportExecution" />
+    <field name="ProcessDescription" />
+    <update>
+      <Label>Descripción Proceso</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T11:51:37">
+    <controller name="ReportExecution" />
+    <field name="FirsDayProcess" />
+    <update>
+      <Label>Fecha Trxn</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T11:55:33">
+    <controller name="ReportExecution" />
+    <view id="grid1" />
+    <dataField fieldName="IDReport" />
+    <update>
+      <HyperlinkFormatString />
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T11:56:55">
+    <controller name="ReportExecution" />
+    <view id="grid1" />
+    <update>
+      <Label>Informe de Ejecución</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T11:58:40">
+    <controller name="ReportExecution" />
+    <view id="editForm1" />
+    <update>
+      <Label>Informe de Ejecución</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T11:58:53">
+    <controller name="ReportExecution" />
+    <view id="createForm1" />
+    <update>
+      <Label>Informe de Ejecución</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T12:02:05">
+    <controller name="ReportExecution" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <dataField fieldName="FirsDayProcess" />
+    <before>
+      <controller name="ReportExecution" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="NameReport" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-03-25T12:02:23">
+    <controller name="ReportExecution" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <dataField fieldName="FirsDayProcess" />
+    <before>
+      <controller name="ReportExecution" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="User" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-03-25T12:02:27">
+    <controller name="ReportExecution" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <dataField fieldName="FirsDayProcess" />
+    <before>
+      <controller name="ReportExecution" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="IDReport" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-03-25T12:02:31">
+    <controller name="ReportExecution" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <dataField fieldName="FirsDayProcess" />
+    <before>
+      <controller name="ReportExecution" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="IDExecution" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-03-25T12:02:35">
+    <controller name="ReportExecution" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <dataField fieldName="FirsDayProcess" />
+    <before>
+      <controller name="ReportExecution" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="ProcessDescription" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-03-25T12:02:41">
+    <controller name="ReportExecution" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <dataField fieldName="FirsDayProcess" />
+    <before>
+      <controller name="ReportExecution" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="LastDayProcess" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-03-25T12:02:58">
+    <controller name="ReportExecution" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <dataField fieldName="CreatedAt" />
+    <before>
+      <controller name="ReportExecution" />
+      <view id="createForm1" />
+      <category id="c1" />
+      <dataField fieldName="ProcessDescription" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-03-25T12:03:05">
+    <controller name="ReportExecution" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <dataField fieldName="CreatedAt" />
+    <before>
+      <controller name="ReportExecution" />
+      <view id="createForm1" />
+      <category id="c1" />
+      <dataField fieldName="FirsDayProcess" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-03-25T12:03:12">
+    <controller name="ReportExecution" />
+    <view id="createForm1" />
+    <dataField fieldName="NameReport" />
+    <update>
+      <Hidden>true</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T12:03:20">
+    <controller name="ReportExecution" />
+    <view id="createForm1" />
+    <dataField fieldName="User" />
+    <update>
+      <Hidden>true</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T12:03:29">
+    <controller name="ReportExecution" />
+    <view id="createForm1" />
+    <dataField fieldName="CreatedAt" />
+    <update>
+      <Hidden>true</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T12:03:36">
+    <controller name="ReportExecution" />
+    <view id="createForm1" />
+    <dataField fieldName="LastDayProcess" />
+    <update>
+      <Hidden>true</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T12:03:45">
+    <controller name="ReportExecution" />
+    <view id="createForm1" />
+    <dataField fieldName="IDExecution" />
+    <update>
+      <Hidden>true</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T13:58:37">
+    <controller name="TxnIgnis" />
+    <field name="Retrievalrefno" />
+    <update>
+      <Label>ID Trxn</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T13:58:54">
+    <controller name="TxnIgnis" />
+    <field name="Amounttrans" />
+    <update>
+      <Label>Monto de Trnx</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T13:59:08">
+    <controller name="TxnIgnis" />
+    <field name="Currency" />
+    <update>
+      <Label>Código de Moneda</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T13:59:24">
+    <controller name="TxnIgnis" />
+    <field name="Datestamp" />
+    <update>
+      <Label>Fecha de Trnx</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:13:30">
+    <controller name="TxnIgnis" />
+    <field name="ComplementaryCode" />
+    <update>
+      <Label>Código de Recaudo</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:13:47">
+    <controller name="TxnIgnis" />
+    <field name="Merchantid" />
+    <update>
+      <Label>Código de Comercio</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:14:06">
+    <controller name="TxnIgnis" />
+    <field name="MccCode" />
+    <update>
+      <Label>MCC INT</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:14:23">
+    <controller name="TxnIgnis" />
+    <field name="MercDescription" />
+    <update>
+      <Label>Nombre Comercial</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:14:38">
+    <controller name="TxnIgnis" />
+    <field name="TerminalSeries" />
+    <update>
+      <Label>Nro de Serie de Terminal</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:15:15">
+    <controller name="TxnIgnis" />
+    <field name="TerminalModel" />
+    <update>
+      <Label>Modelo de Terminal</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:15:45">
+    <controller name="TxnIgnis" />
+    <field name="Terminalid" />
+    <update>
+      <Label>Terminal Id</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:16:40">
+    <controller name="TxnIgnis" />
+    <field name="OutgoingTransactionID" />
+    <update>
+      <Label>ID de Trxn Entidad</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:34:37">
+    <controller name="TxnIgnis" />
+    <field name="Entityname" />
+    <update>
+      <Label>Nombre de Entidad</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:34:52">
+    <controller name="TxnIgnis" />
+    <field name="MerchantFeeType" />
+    <update>
+      <Label>Tipo Comisión Comercio</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:35:09">
+    <controller name="TxnIgnis" />
+    <field name="ValueCommissionMerchant" />
+    <update>
+      <Label>Valor Comisión Comercio</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:35:29">
+    <controller name="TxnIgnis" />
+    <field name="MerchantFee" />
+    <update>
+      <Label>Comisión Comercio Calculado</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:35:47">
+    <controller name="TxnIgnis" />
+    <field name="ProcessorFeeType" />
+    <update>
+      <Label>Tipo Comisión V2</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:36:02">
+    <controller name="TxnIgnis" />
+    <field name="ValueCommissionProvider" />
+    <update>
+      <Label>Valor Comisión V2</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:36:18">
+    <controller name="TxnIgnis" />
+    <field name="ProcessorFee" />
+    <update>
+      <Label>Comisión V2 Calculada</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:36:40">
+    <controller name="TxnIgnis" />
+    <field name="ReceiptAmount" />
+    <update>
+      <Label>Monto de Servicio</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:36:54">
+    <controller name="TxnIgnis" />
+    <field name="ReceiptServiceFee" />
+    <update>
+      <Label>Comisión de Servicio</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:37:09">
+    <controller name="TxnIgnis" />
+    <field name="ReceiptPayingAmount" />
+    <update>
+      <Label>Monto Total</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:37:22">
+    <controller name="TxnIgnis" />
+    <field name="ProductCode" />
+    <update>
+      <Label>Tipo de Operación</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:39:21">
+    <controller name="TxnIgnis" />
+    <field name="MessageType" />
+    <update>
+      <Label>Tipo de Respuesta</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:41:00">
+    <controller name="TxnIgnis" />
+    <actionGroup id="ag1" />
+    <action id="a2" />
+    <update>
+      <Roles>%</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:41:08">
+    <controller name="TxnIgnis" />
+    <actionGroup id="ag1" />
+    <action id="a3" />
+    <update>
+      <Roles>%</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:41:16">
+    <controller name="TxnIgnis" />
+    <actionGroup id="ag1" />
+    <action id="a7" />
+    <update>
+      <Roles>%</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:41:25">
+    <controller name="TxnIgnis" />
+    <actionGroup id="ag1" />
+    <action id="a8" />
+    <update>
+      <Roles>%</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:41:36">
+    <controller name="TxnIgnis" />
+    <actionGroup id="ag2" />
+    <action id="a1" />
+    <update>
+      <Roles>%</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:41:46">
+    <controller name="TxnIgnis" />
+    <actionGroup id="ag2" />
+    <action id="a2" />
+    <update>
+      <Roles>%</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:41:53">
+    <controller name="TxnIgnis" />
+    <actionGroup id="ag2" />
+    <action id="a4" />
+    <update>
+      <Roles>%</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:42:01">
+    <controller name="TxnIgnis" />
+    <actionGroup id="ag2" />
+    <action id="a5" />
+    <update>
+      <Roles>%</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:42:09">
+    <controller name="TxnIgnis" />
+    <actionGroup id="ag2" />
+    <action id="a7" />
+    <update>
+      <Roles>%</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:42:16">
+    <controller name="TxnIgnis" />
+    <actionGroup id="ag2" />
+    <action id="a9" />
+    <update>
+      <Roles>%</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:42:30">
+    <controller name="TxnIgnis" />
+    <actionGroup id="ag2" />
+    <action id="a13" />
+    <update>
+      <Roles>%</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:42:45">
+    <controller name="TxnIgnis" />
+    <actionGroup id="ag3" />
+    <action id="a1" />
+    <update>
+      <Roles>%</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:42:53">
+    <controller name="TxnIgnis" />
+    <actionGroup id="ag4" />
+    <action id="a1" />
+    <update>
+      <Roles>%</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:43:00">
+    <controller name="TxnIgnis" />
+    <actionGroup id="ag4" />
+    <action id="a2" />
+    <update>
+      <Roles>%</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:43:12">
+    <controller name="TxnIgnis" />
+    <actionGroup id="ag6" />
+    <action id="a1" />
+    <update>
+      <Roles>%</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:43:19">
+    <controller name="TxnIgnis" />
+    <actionGroup id="ag6" />
+    <action id="a3" />
+    <update>
+      <Roles>%</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:43:30">
+    <controller name="TxnIgnis" />
+    <actionGroup id="ag8" />
+    <action id="a4" />
+    <update>
+      <Roles>%</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T14:43:37">
+    <controller name="TxnIgnis" />
+    <actionGroup id="ag8" />
+    <action id="a6" />
+    <update>
+      <Roles>%</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T15:22:24">
+    <controller name="TxnFc" />
+    <view id="grid1" />
+    <update>
+      <Label>FC</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-26T11:28:59">
+    <controller name="TxnReconciled" />
+    <field name="Retrievalrefno" />
+    <before>
+      <controller name="TxnReconciled" />
+      <field name="CreatedAt" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-03-26T11:29:34">
+    <controller name="TxnReconciled" />
+    <field name="CreatedAt" />
+    <update>
+      <Label>Fecha Proceso</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-26T11:29:57">
+    <controller name="TxnReconciled" />
+    <field name="ProcessDescription" />
+    <update>
+      <Label>Descripción Proceso</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-27T10:22:48">
+    <controller name="EntityAssort" />
+    <view id="grid1" />
+    <dataField fieldName="FechaTrxn" />
+    <update>
+      <Hidden>true</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-27T11:50:01">
+    <controller name="ReportExecution" />
+    <update>
+      <GenerateDataAccessObjects>false</GenerateDataAccessObjects>
+      <RestConfig>Uri:. 
+Método: GET 
+Users: * 
+Roles: Administrators, Users
+Xml: False 
+JSON: True</RestConfig>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-27T11:53:23">
+    <controller name="ReportExecution" />
+    <update>
+      <RestConfig>Uri:. 
+Método: GET 
+Users: * 
+Roles: Administrators, Users
+Xml: True 
+JSON: False</RestConfig>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:24:55">
+    <controller name="TxnXzedi" />
+    <view id="grid1" />
+    <update>
+      <Label>Xzedi</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:25:15">
+    <controller name="TxnXzedi" />
+    <view id="editForm1" />
+    <update>
+      <Label>Editar Txn Xzedi</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:25:30">
+    <controller name="TxnXzedi" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nueva Txn Xzedi</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:25:47">
+    <controller name="TxnXzedi" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Xzedi</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:26:02">
+    <controller name="TxnXzedi" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Xzedi</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:26:30">
+    <controller name="TxnFc" />
+    <view id="editForm1" />
+    <update>
+      <Label>Editar FC</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:26:40">
+    <controller name="TxnFc" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Fc</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:26:56">
+    <controller name="TxnFc" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Fc</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:27:15">
+    <controller name="TxnXzedi" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Xzedi</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:27:26">
+    <controller name="TxnFc" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>FC</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:27:57">
+    <controller name="ReportAmounts" />
+    <view id="grid1" />
+    <update>
+      <Label>Conciliación</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:28:08">
+    <controller name="ReportAmounts" />
+    <view id="editForm1" />
+    <update>
+      <Label>Editar Conciliación</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:28:21">
+    <controller name="ReportAmounts" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nueva Conciliación</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:28:27">
+    <controller name="ReportAmounts" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Conciliación</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:28:37">
+    <controller name="ReportAmounts" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Conciliación</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:50:30">
+    <controller name="TxnXzedi" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Xzedi</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:51:20">
+    <controller name="TxnXzedi" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Xzedi</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:51:32">
+    <controller name="TxnXzedi" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Xzedi</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:51:44">
+    <controller name="TxnXzedi" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Xzedi</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:51:55">
+    <controller name="TxnXzedi" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Xzedi</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:55:06">
+    <controller name="TxnFc" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte FullCargas</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:55:26">
+    <controller name="TxnFc" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte FullCargas</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:55:43">
+    <controller name="TxnFc" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte FullCargas</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:55:58">
+    <controller name="TxnFc" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte FullCargas</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:56:18">
+    <controller name="TxnFc" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte FullCargas</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:03:09">
+    <controller name="ReportAmounts" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Conciliación</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:03:20">
+    <controller name="ReportAmounts" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Conciliación</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:07:25">
+    <controller name="EntityAssort" />
+    <field name="ComisiónComercio" />
+    <update>
+      <DataFormatString>N2</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:45:55">
+    <controller name="TxnReconciled" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Transacciones Conciliadas</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:46:32">
+    <controller name="TxnReconciled" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Transaciones Conciliadas</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:46:42">
+    <controller name="TxnReconciled" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Transaciones Conciliadas</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:46:50">
+    <controller name="TxnReconciled" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Transaciones Conciliadas</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:47:07">
+    <controller name="TxnReconciled" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Transaciones Conciliadas</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:48:15">
+    <controller name="EntityAssort" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Cuadre por Entidades</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:48:49">
+    <controller name="EntityAssort" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Cuadre por Entidades</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:48:58">
+    <controller name="EntityAssort" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Cuadre por Entidades</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:49:07">
+    <controller name="EntityAssort" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Cuadre por Entidades</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:49:32">
+    <controller name="EntityAssort" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Cuadre por Entidades</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:51:23">
+    <controller name="SummaryDailySupplier" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Resumen Diario por Proveedor</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:51:38">
+    <controller name="SummaryDailySupplier" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Resumen Diario por Proveedor</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:51:46">
+    <controller name="SummaryDailySupplier" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Resumen Diario por Proveedor</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:52:01">
+    <controller name="SummaryDailySupplier" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Resumen Diario por Proveedor</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:52:13">
+    <controller name="SummaryDailySupplier" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Resumen Diario por Proveedor</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:53:43">
+    <controller name="SubscriptionFile" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Archivo de Abono</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:53:55">
+    <controller name="SubscriptionFile" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Archivo de Abono</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:54:03">
+    <controller name="SubscriptionFile" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Archivo de Abono</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:54:16">
+    <controller name="SubscriptionFile" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Archivo de Abono</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:54:30">
+    <controller name="SubscriptionFile" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Archivo de Abono</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:55:58">
+    <controller name="TxnPaid" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Transacciones Pagadas</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:56:05">
+    <controller name="TxnPaid" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Transacciones Pagadas</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:56:12">
+    <controller name="TxnPaid" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Transacciones Pagadas</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:56:24">
+    <controller name="TxnPaid" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Transacciones Pagadas</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:56:39">
+    <controller name="TxnPaid" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Transacciones Pagadas</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:35:41">
+    <controller name="MerchantCredit" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Abonos de Comercios</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:36:39">
+    <controller name="MerchantCredit" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Abonos de Comercios</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:37:06">
+    <controller name="MerchantCredit" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Abonos de Comercios</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:37:24">
+    <controller name="MerchantCredit" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Abonos de Comercios</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:38:33">
+    <controller name="MerchantCredit" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Abonos de Comercios</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:39:45">
+    <controller name="TxnXzediNotConcilied" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte de Transacciones no Conciliadas XZEDI</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:40:03">
+    <controller name="TxnXzediNotConcilied" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte de Transacciones no Conciliadas XZEDI</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:40:18">
+    <controller name="TxnXzediNotConcilied" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte de Transacciones no Conciliadas XZEDI</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:40:53">
+    <controller name="TxnXzediNotConcilied" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte de Transacciones no Conciliadas XZEDI</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:41:09">
+    <controller name="TxnXzediNotConcilied" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte de Transacciones no Conciliadas XZEDI</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:42:21">
+    <controller name="TxnTtpNotConcilied" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte de Transacciones no Conciliadas TPP</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:42:46">
+    <controller name="TxnTtpNotConcilied" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte de Transacciones no Conciliadas TPP</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:43:00">
+    <controller name="TxnTtpNotConcilied" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte de Transacciones no Conciliadas TPP</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:43:23">
+    <controller name="TxnTtpNotConcilied" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte de Transacciones no Conciliadas TPP</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:43:41">
+    <controller name="TxnTtpNotConcilied" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte de Transacciones no Conciliadas TPP</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:44:20">
+    <controller name="TxnFcNotConcilied" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte de Transacciones no Conciliadas Full Carga</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:45:05">
+    <controller name="TxnFcNotConcilied" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte de Transacciones no Conciliadas Full Carga</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:45:21">
+    <controller name="TxnFcNotConcilied" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte de Transacciones no Conciliadas Full Carga</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:45:46">
+    <controller name="TxnFcNotConcilied" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte de Transacciones no Conciliadas Full Carga</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:46:03">
+    <controller name="TxnFcNotConcilied" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte de Transacciones no Conciliadas Full Carga</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:52:06">
+    <controller name="TxnTtp" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte TPP</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:52:34">
+    <controller name="TxnTtp" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte TPP</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:52:51">
+    <controller name="TxnTtp" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte TPP</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:53:03">
+    <controller name="TxnTtp" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte TPP</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:53:14">
+    <controller name="TxnTtp" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte TPP</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:53:40">
+    <controller name="ReportAmounts" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Resumen de Transacciones General</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:53:52">
+    <controller name="ReportAmounts" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Resumen de Transacciones General</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:54:04">
+    <controller name="ReportAmounts" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Resumen de Transacciones General</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:54:16">
+    <controller name="ReportAmounts" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Resumen de Transacciones General</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:54:34">
+    <controller name="ReportAmounts" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Resumen de Transacciones General</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:56:38">
+    <controller name="EntityAssort" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Cuadre por Proveedor</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:56:50">
+    <controller name="EntityAssort" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Cuadre por Proveedor</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:57:02">
+    <controller name="EntityAssort" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Cuadre por Proveedor</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:57:33">
+    <controller name="EntityAssort" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Cuadre por Proveedor</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:57:44">
+    <controller name="EntityAssort" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Cuadre por Proveedor</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T01:01:01">
+    <controller name="SummaryDailySupplier" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Resumen Diario por Producto</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T01:01:13">
+    <controller name="SummaryDailySupplier" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Resumen Diario por Producto</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T01:01:26">
+    <controller name="SummaryDailySupplier" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Resumen Diario por Producto</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T01:01:36">
+    <controller name="SummaryDailySupplier" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Resumen Diario por Producto</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T01:03:12">
+    <controller name="SubscriptionFile" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Pago a Proveedores</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T01:03:24">
+    <controller name="SubscriptionFile" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Pago a Proveedores</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T01:03:40">
+    <controller name="SubscriptionFile" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Pago a Proveedores</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T01:03:55">
+    <controller name="SubscriptionFile" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Pago a Proveedores</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T01:04:07">
+    <controller name="SubscriptionFile" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Pago a Proveedores</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:08:01">
+    <controller name="EntityAssort" />
+    <actionGroup id="ag5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:08:12">
+    <controller name="EntityAssort" />
+    <actionGroup id="ag7" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:08:39">
+    <controller name="MerchantCredit" />
+    <actionGroup id="ag5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:08:48">
+    <controller name="MerchantCredit" />
+    <actionGroup id="ag7" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:09:00">
+    <controller name="ReportAmounts" />
+    <actionGroup id="ag5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:09:05">
+    <controller name="ReportAmounts" />
+    <actionGroup id="ag7" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:09:17">
+    <controller name="ReportExecution" />
+    <actionGroup id="ag5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:09:23">
+    <controller name="ReportExecution" />
+    <actionGroup id="ag7" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:09:33">
+    <controller name="Reports" />
+    <actionGroup id="ag5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:09:37">
+    <controller name="Reports" />
+    <actionGroup id="ag7" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:09:45">
+    <controller name="SubscriptionFile" />
+    <actionGroup id="ag5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:09:49">
+    <controller name="SubscriptionFile" />
+    <actionGroup id="ag7" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:10:04">
+    <controller name="SummaryDailySupplier" />
+    <actionGroup id="ag5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:10:08">
+    <controller name="SummaryDailySupplier" />
+    <actionGroup id="ag7" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:14:41">
+    <controller name="TxnFc" />
+    <actionGroup id="ag5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:14:45">
+    <controller name="TxnFc" />
+    <actionGroup id="ag7" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:14:52">
+    <controller name="TxnFcNotConcilied" />
+    <actionGroup id="ag5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:14:56">
+    <controller name="TxnFcNotConcilied" />
+    <actionGroup id="ag7" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:15:04">
+    <controller name="TxnPaid" />
+    <actionGroup id="ag5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:15:08">
+    <controller name="TxnPaid" />
+    <actionGroup id="ag7" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:15:16">
+    <controller name="TxnReconciled" />
+    <actionGroup id="ag5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:15:21">
+    <controller name="TxnReconciled" />
+    <actionGroup id="ag7" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:15:32">
+    <controller name="TxnTtp" />
+    <actionGroup id="ag5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:15:37">
+    <controller name="TxnTtp" />
+    <actionGroup id="ag7" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:15:47">
+    <controller name="TxnTtpNotConcilied" />
+    <actionGroup id="ag5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:15:51">
+    <controller name="TxnTtpNotConcilied" />
+    <actionGroup id="ag7" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:15:59">
+    <controller name="TxnXzedi" />
+    <actionGroup id="ag5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:16:03">
+    <controller name="TxnXzedi" />
+    <actionGroup id="ag7" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:16:13">
+    <controller name="TxnXzediNotConcilied" />
+    <actionGroup id="ag5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:16:17">
+    <controller name="TxnXzediNotConcilied" />
+    <actionGroup id="ag7" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:19:29">
+    <controller name="ReportExecution" />
+    <view id="grid1" />
+    <dataField fieldName="LastDayProcess" />
+    <update>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:19:37">
+    <controller name="ReportExecution" />
+    <view id="grid1" />
+    <dataField fieldName="User" />
+    <before>
+      <controller name="ReportExecution" />
+      <view id="grid1" />
+      <dataField fieldName="LastDayProcess" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:24:44">
+    <controller name="Reports" />
+    <view id="grid1" />
+    <update>
+      <Label>Reportes</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:24:56">
+    <controller name="Reports" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reportes</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:25:06">
+    <controller name="Reports" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reportes</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:25:17">
+    <controller name="Reports" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:25:26">
+    <controller name="Reports" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reportes</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:54:23">
+    <controller name="ReportExecution" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Informe de Ejecución</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:54:28">
+    <controller name="ReportExecution" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Informe de Ejecución</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:54:37">
+    <controller name="ReportExecution" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Informe de Ejecución</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:54:50">
+    <controller name="ReportExecution" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Informe de Ejecución</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T08:58:39">
+    <controller name="MyProfile" />
+    <field name="UserName" />
+    <update>
+      <Label>Nombre Usuario</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T08:59:05">
+    <controller name="MyProfile" />
+    <field name="RememberMe" />
+    <update>
+      <Label>Recuerdame la proxima vez</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T08:59:17">
+    <controller name="MyProfile" />
+    <field name="Password" />
+    <update>
+      <Label>Clave</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T08:59:38">
+    <controller name="MyProfile" />
+    <field name="ConfirmPassword" />
+    <update>
+      <Label>Confirmar Clave</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T08:59:51">
+    <controller name="MyProfile" />
+    <field name="OldPassword" />
+    <update>
+      <Label>Clave Anterior</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T09:00:03">
+    <controller name="MyProfile" />
+    <field name="Email" />
+    <update>
+      <Label>Correo electronico</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T09:00:18">
+    <controller name="MyProfile" />
+    <field name="PasswordQuestion" />
+    <update>
+      <Label>Pregunta Clave</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T09:00:41">
+    <controller name="MyProfile" />
+    <field name="PasswordAnswer" />
+    <update>
+      <Label>Respuesta Clave</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T09:01:00">
+    <controller name="MyProfile" />
+    <view id="loginForm" />
+    <update>
+      <Label>Inicio</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T09:02:40">
+    <controller name="MyProfile" />
+    <view id="signUpForm" />
+    <update>
+      <Label>Registrar cuenta</Label>
+      <HeaderText>Rellene este formulario y haga clic en el botón Aceptar para registrarse en una cuenta. Haga clic en Cancelar para volver a la pantalla anterior.</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T09:06:19">
+    <controller name="MyProfile" />
+    <view id="passwordRequestForm" />
+    <update>
+      <Label>Recuperar clave: Paso 1 of 2</Label>
+      <HeaderText>Rellene este formulario y haga clic en el botón Continuar para recuperar la contraseña olvidada. Haga clic en Cancelar para volver a la pantalla anterior.</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T09:07:18">
+    <controller name="MyProfile" />
+    <view id="identityConfirmationForm" />
+    <update>
+      <Label>Recuperar Clave: Paso 2 of 2</Label>
+      <HeaderText>Rellene este formulario y haga clic en el botón Enviar para recuperar la contraseña olvidada. Haga clic en Cancelar para volver a la pantalla anterior.</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T09:08:22">
+    <controller name="MyProfile" />
+    <view id="signUpForm" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Nueva información de usuario</HeaderText>
+      <Description>Por favor, introduzca el nombre de usuario y la contraseña. Tenga en cuenta que la contraseña debe tener al menos 7 caracteres e incluir un carácter no alfanumérico. Solo los usuarios aprobados podrán iniciar sesión en el sitio web.</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T09:09:27">
+    <controller name="MyProfile" />
+    <view id="signUpForm" />
+    <category id="c2" />
+    <update>
+      <HeaderText>Recuperar Clave</HeaderText>
+      <Description>                          
+                        Estos campos son necesarios para ayudarlo a recuperar una contraseña olvidada. Durante el proceso de recuperación, se le pedirá que ingrese un nombre de usuario.
+Si existe una cuenta de usuario, se solicita una pregunta de seguridad para ser respondida. Una respuesta correcta activará un correo electrónico con una contraseña temporal que se enviará al correo electrónico registrado.
+                      
+                        </Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T09:10:54">
+    <controller name="MyProfile" />
+    <view id="passwordRequestForm" />
+    <category id="c1" />
+    <update>
+      <HeaderText>¿Olvidaste tu clave?</HeaderText>
+      <Description>Por favor, ingrese un nombre de usuario.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T09:12:13">
+    <controller name="MyProfile" />
+    <view id="identityConfirmationForm" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Confirmacion de identidad</HeaderText>
+      <Description>Responde la siguiente pregunta para recibir tu contraseña.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T09:13:22">
+    <controller name="MyProfile" />
+    <view id="myAccountForm" />
+    <category id="c1" />
+    <update>
+      <HeaderText>1. Clave Actual</HeaderText>
+      <Description>Ingrese su contraseña actual para crear una nueva contraseña, actualizar su dirección de correo electrónico o cambiar la pregunta y respuesta de recuperación de contraseña.</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T09:14:28">
+    <controller name="MyProfile" />
+    <view id="myAccountForm" />
+    <category id="c2" />
+    <update>
+      <HeaderText>2. Nueva Clave (Opcional)</HeaderText>
+      <Description>Por favor, introduzca la nueva contraseña. Tenga en cuenta que la contraseña debe tener al menos 7 caracteres e incluir un carácter no alfanumérico.</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T09:19:19">
+    <controller name="MyProfile" />
+    <view id="myAccountForm" />
+    <category id="c3" />
+    <update>
+      <HeaderText>3. Recuperación de correo electrónico y clave (Opcional)</HeaderText>
+      <Description>                          
+                        Durante la recuperación de una contraseña olvidada, se le pedirá que ingrese su nombre de usuario.
+Si existe una cuenta de usuario, se debe responder una pregunta de contraseña. Una respuesta correcta activará un correo electrónico con una contraseña temporal que se le enviará.                      
+                        </Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T10:32:52">
+    <controller name="MyProfile" />
+    <view id="myAccountForm" />
+    <update>
+      <Label>Mi Cuenta</Label>
+      <HeaderText>Por favor revise la información de su membresía a continuación. Haga clic en Actualizar mi cuenta para cambiar este registro, o haga clic en Cancelar para volver.</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T10:33:09">
+    <controller name="MyProfile" />
+    <view id="myAccountForm" />
+    <dataField fieldName="OldPassword" />
+    <update>
+      <HeaderText>Clave Actual</HeaderText>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T10:33:20">
+    <controller name="MyProfile" />
+    <view id="myAccountForm" />
+    <dataField fieldName="Password" />
+    <update>
+      <HeaderText>Nueva Clave</HeaderText>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T10:33:35">
+    <controller name="MyProfile" />
+    <view id="myAccountForm" />
+    <dataField fieldName="ConfirmPassword" />
+    <update>
+      <HeaderText>Confirmar Nueva Clave</HeaderText>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T10:34:15">
+    <controller name="MyProfile" />
+    <view id="myAccountForm" />
+    <dataField fieldName="PasswordAnswer" />
+    <update>
+      <HeaderText>Respuesta Clave (No se muestra para su protecciòn)</HeaderText>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:51:29">
+    <controller name="MerchantSummary" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Resumen de Comercios</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:51:38">
+    <controller name="MerchantSummary" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Resumen de Comercios</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:51:46">
+    <controller name="MerchantSummary" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Resumen de Comercios</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:51:57">
+    <controller name="MerchantSummary" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Resumen de Comercios</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:52:01">
+    <controller name="MerchantSummary" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Resumen de Comercios</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:52:05">
+    <controller name="MerchantSummary" />
+    <actionGroup id="ag5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:52:09">
+    <controller name="MerchantSummary" />
+    <actionGroup id="ag7" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:53:36">
+    <controller name="SummaryDailySupplier" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Pago a Proveedores</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:53:44">
+    <controller name="SummaryDailySupplier" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Pago a Proveedores</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:53:50">
+    <controller name="SummaryDailySupplier" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Pago a Proveedores</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:53:58">
+    <controller name="SummaryDailySupplier" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Pago a Proveedores</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:54:04">
+    <controller name="SummaryDailySupplier" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Pago a Proveedores</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:55:56">
+    <controller name="EntityAssort" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Cuadre por Producto</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:56:02">
+    <controller name="EntityAssort" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Cuadre por Producto</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:56:12">
+    <controller name="EntityAssort" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Cuadre por Producto</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:56:19">
+    <controller name="EntityAssort" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Cuadre por Producto</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:56:26">
+    <controller name="EntityAssort" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Cuadre por Producto</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:08:46">
+    <controller name="TxnPaidMonth" />
+    <view id="grid1" />
+    <update>
+      <Label>Trx Pagadas por Mes</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:08:58">
+    <controller name="TxnPaidMonth" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Trx Pagadas por Mes</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:09:10">
+    <controller name="TxnPaidMonth" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nueva Trx Pagadas por Mes</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:09:16">
+    <controller name="TxnPaidMonth" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Trx Pagadas por Mes</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:09:20">
+    <controller name="TxnPaidMonth" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Trx Pagadas por Mes</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:09:29">
+    <controller name="TxnPaidMonth" />
+    <actionGroup id="ag5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:09:32">
+    <controller name="TxnPaidMonth" />
+    <actionGroup id="ag7" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:10:32">
+    <controller name="SummaryMonthPayment" />
+    <view id="grid1" />
+    <update>
+      <Label>Resumen Pago Mes</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:10:44">
+    <controller name="SummaryMonthPayment" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Resumen Pago Mes</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:10:51">
+    <controller name="SummaryMonthPayment" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Resumen Pago Mes</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:10:56">
+    <controller name="SummaryMonthPayment" />
+    <actionGroup id="ag5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:11:00">
+    <controller name="SummaryMonthPayment" />
+    <actionGroup id="ag7" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:11:07">
+    <controller name="SummaryMonthPayment" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Resumen Pago Mes</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:11:16">
+    <controller name="SummaryMonthPayment" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Resumen Pago Mes</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:12:02">
+    <controller name="MerchantCreditMonth" />
+    <view id="grid1" />
+    <update>
+      <Label>Resumen Abonos de Comercios Mes</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:12:10">
+    <controller name="MerchantCreditMonth" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Resumen Abonos de Comercios Mes</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:12:18">
+    <controller name="MerchantCreditMonth" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Resumen Abonos de Comercios Mes</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:12:28">
+    <controller name="MerchantCreditMonth" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Resumen Abonos de Comercios Mes</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:12:32">
+    <controller name="MerchantCreditMonth" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Resumen Abonos de Comercios Mes</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:12:36">
+    <controller name="MerchantCreditMonth" />
+    <actionGroup id="ag5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:12:40">
+    <controller name="MerchantCreditMonth" />
+    <actionGroup id="ag7" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:17:10">
+    <controller name="SummaryMonthPayment" />
+    <field name="MontoTotal" />
+    <update>
+      <DataFormatString>N2</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:17:55">
+    <controller name="MerchantCreditMonth" />
+    <field name="ComisiónRecaudo" />
+    <update>
+      <DataFormatString>N2</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:22:24">
+    <controller name="MerchantCredit" />
+    <field name="ComisiónRecaudo" />
+    <update>
+      <DataFormatString>N2</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:28:59">
+    <controller name="ReportreportAmounts" />
+    <actionGroup id="ag5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:29:02">
+    <controller name="ReportreportAmounts" />
+    <actionGroup id="ag7" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:29:41">
+    <controller name="ReportreportAmounts" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Resumen de Transacciones General</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:29:47">
+    <controller name="ReportreportAmounts" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Resumen de Transacciones General</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:29:53">
+    <controller name="ReportreportAmounts" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Resumen de Transacciones General</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:29:59">
+    <controller name="ReportreportAmounts" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Resumen de Transacciones General</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:31:07">
+    <controller name="ReportreportAmounts" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Resumen de Transacciones General</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T13:00:21">
+    <controller name="TxnReconciled" />
+    <field name="MontodeTrnx" />
+    <update>
+      <DataFormatString>N2</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T21:24:53">
+    <controller name="ReportreportAmounts" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte General de Transacciones</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T21:25:01">
+    <controller name="ReportreportAmounts" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte General de Transacciones</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T21:25:06">
+    <controller name="ReportreportAmounts" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte General de Transacciones</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T21:25:17">
+    <controller name="ReportreportAmounts" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte General de Transacciones</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T21:25:27">
+    <controller name="ReportreportAmounts" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte General de Transacciones</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:15:39">
+    <controller name="TxnFc" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte FullCarga</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:15:44">
+    <controller name="TxnFc" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte FullCarga</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:15:49">
+    <controller name="TxnFc" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte FullCarga</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:15:56">
+    <controller name="TxnFc" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte FullCarga</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:16:04">
+    <controller name="TxnFc" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte FullCarga</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:24:20">
+    <controller name="MerchantCredit" />
+    <field name="MontodeAbono" />
+    <update>
+      <DataFormatString>N2</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:30:56">
+    <controller name="MyProfile" />
+    <actionGroup id="ag1" />
+    <action id="a7" />
+    <update>
+      <HeaderText>Finalizar</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:31:14">
+    <controller name="MyProfile" />
+    <actionGroup id="ag1" />
+    <action id="a8" />
+    <update>
+      <HeaderText>Actualizar Mi Cuenta</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:31:27">
+    <controller name="MyProfile" />
+    <actionGroup id="ag1" />
+    <action id="a6" />
+    <update>
+      <HeaderText>Regresar</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:31:44">
+    <controller name="MyProfile" />
+    <actionGroup id="ag1" />
+    <action id="a5" />
+    <update>
+      <HeaderText>Siguiente</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:32:02">
+    <controller name="MyProfile" />
+    <actionGroup id="ag1" />
+    <action id="a1" />
+    <update>
+      <HeaderText>Registrarte</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:32:29">
+    <controller name="MyProfile" />
+    <actionGroup id="ag1" />
+    <action id="a12" />
+    <update>
+      <HeaderText>Olvidaste tu clave?</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:32:38">
+    <controller name="MyProfile" />
+    <actionGroup id="ag1" />
+    <action id="a10" />
+    <update>
+      <HeaderText>Iniciar</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:34:46">
+    <controller name="ReportExecution" />
+    <view id="createForm1" />
+    <dataField fieldName="LastDayProcess" />
+    <update>
+      <Visibility>$row.IDReport==2</Visibility>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:35:12">
+    <controller name="ReportExecution" />
+    <view id="editForm1" />
+    <dataField fieldName="LastDayProcess" />
+    <update>
+      <Hidden>false</Hidden>
+      <Visibility>$row.IDReport==2</Visibility>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:35:19">
+    <controller name="ReportExecution" />
+    <view id="createForm1" />
+    <dataField fieldName="LastDayProcess" />
+    <update>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:35:23">
+    <controller name="ReportExecution" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <dataField fieldName="LastDayProcess" />
+    <before>
+      <controller name="ReportExecution" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="FirsDayProcess" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:37:08">
+    <controller name="ReportExecution" />
+    <actionGroup id="ag1" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:37:09">
+    <controller name="ReportExecution" />
+    <actionGroup id="ag1" />
+    <action id="a3" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:37:09">
+    <controller name="ReportExecution" />
+    <actionGroup id="ag1" />
+    <action id="a7" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:37:09">
+    <controller name="ReportExecution" />
+    <actionGroup id="ag1" />
+    <action id="a8" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:37:15">
+    <controller name="ReportExecution" />
+    <actionGroup id="ag2" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:37:25">
+    <controller name="ReportExecution" />
+    <actionGroup id="ag4" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:37:57">
+    <controller name="Reports" />
+    <actionGroup id="ag1" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:37:57">
+    <controller name="Reports" />
+    <actionGroup id="ag1" />
+    <action id="a3" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:37:57">
+    <controller name="Reports" />
+    <actionGroup id="ag1" />
+    <action id="a7" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:37:57">
+    <controller name="Reports" />
+    <actionGroup id="ag1" />
+    <action id="a8" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:38:02">
+    <controller name="Reports" />
+    <actionGroup id="ag2" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:38:08">
+    <controller name="Reports" />
+    <actionGroup id="ag4" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:39:24">
+    <controller name="Reports" />
+    <actionGroup id="ag2" />
+    <action id="a1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:39:46">
+    <controller name="Reports" />
+    <actionGroup id="ag2" />
+    <copy>
+      <controller name="ReportExecution" />
+      <actionGroup id="ag2" />
+      <action id="a1" />
+    </copy>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:39:53">
+    <controller name="ReportExecution" />
+    <actionGroup id="ag2" />
+    <action id="a1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:40:10">
+    <controller name="Reports" />
+    <actionGroup id="ag2" />
+    <action id="a5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:41:13">
+    <controller name="ReportExecution" />
+    <field name="FirsDayProcess" />
+    <update>
+      <Label>Fecha Trnx</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:41:24">
+    <controller name="ReportExecution" />
+    <field name="LastDayProcess" />
+    <update>
+      <Label>Segunda Fecha Trnx</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T23:39:54">
+    <controller name="ReportExecution" />
+    <actionGroup id="ag2" />
+    <action id="a5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T23:41:24">
+    <controller name="Reports" />
+    <actionGroup id="ag2" />
+    <action id="a1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T23:58:28">
+    <controller name="EntityAssort" />
+    <field name="DescripciónProceso" />
+    <rename>DescripcionProceso</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-03T23:58:48">
+    <controller name="EntityAssort" />
+    <field name="ComisiónComercio" />
+    <rename>ComisionComercio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-03T23:59:02">
+    <controller name="EntityAssort" />
+    <field name="ComisiónV2" />
+    <rename>ComisionV2</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-03T23:59:23">
+    <controller name="MerchantCredit" />
+    <field name="CódigodeComerico" />
+    <rename>CodigodeComerico</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-03T23:59:34">
+    <controller name="MerchantCredit" />
+    <field name="CódigodeRecaudo" />
+    <rename>CodigodeRecaudo</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-03T23:59:46">
+    <controller name="MerchantCredit" />
+    <field name="ComisiónRecaudo" />
+    <rename>ComisionRecaudo</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:00:12">
+    <controller name="MerchantCreditMonth" />
+    <field name="CódigodeComerico" />
+    <rename>CodigodeComerico</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:00:29">
+    <controller name="MerchantCreditMonth" />
+    <field name="CodigodeComerico" />
+    <update>
+      <Label>Código de Comercio</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:00:47">
+    <controller name="MerchantCreditMonth" />
+    <field name="CódigodeRecaudo" />
+    <rename>CodigodeRecaudo</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:00:55">
+    <controller name="MerchantCreditMonth" />
+    <field name="ComisiónRecaudo" />
+    <rename>ComisionRecaudo</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:01:11">
+    <controller name="MerchantSummary" />
+    <field name="CódigoDeComercio" />
+    <rename>CodigoDeComercio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:01:21">
+    <controller name="MerchantSummary" />
+    <field name="FechaAfiliación" />
+    <rename>FechaAfiliacion</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:01:31">
+    <controller name="MerchantSummary" />
+    <field name="CódigoDeRecaudo" />
+    <rename>CodigoDeRecaudo</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:02:12">
+    <controller name="ReportreportAmounts" />
+    <field name="DescripciónProceso" />
+    <rename>DescripcionProceso</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:02:24">
+    <controller name="ReportreportAmounts" />
+    <field name="TotalComisiónV2" />
+    <rename>TotalComisionV2</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:02:35">
+    <controller name="ReportreportAmounts" />
+    <field name="TotalComisiónComercios" />
+    <rename>TotalComisionComercios</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:02:54">
+    <controller name="ReportreportAmounts" />
+    <field name="TotalComisiónV2NoConciliada" />
+    <rename>TotalComisionV2NoConciliada</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:03:25">
+    <controller name="SubscriptionFile" />
+    <field name="DescripciónProceso" />
+    <rename>DescripcionProceso</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:03:34">
+    <controller name="SubscriptionFile" />
+    <field name="CódEntidad" />
+    <rename>CodEntidad</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:03:45">
+    <controller name="SubscriptionFile" />
+    <field name="NúmeroCuenta" />
+    <rename>NumeroCuenta</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:04:06">
+    <controller name="SummaryDailySupplier" />
+    <field name="CódigoDeEntidad" />
+    <rename>CodigoDeEntidad</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:04:25">
+    <controller name="SummaryDailySupplier" />
+    <field name="ComisiónV2" />
+    <rename>ComisionV2</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:04:33">
+    <controller name="SummaryDailySupplier" />
+    <field name="ComisiónComercio" />
+    <rename>ComisionComercio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:04:53">
+    <controller name="SummaryDailySupplier" />
+    <field name="EstadoDeLaOperación" />
+    <rename>EstadoDeLaOperacion</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:05:03">
+    <controller name="SummaryMonthPayment" />
+    <field name="DescripciónProceso" />
+    <rename>DescripcionProceso</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:05:16">
+    <controller name="SummaryMonthPayment" />
+    <field name="CódigoDeEntidad" />
+    <rename>CodigoDeEntidad</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:05:27">
+    <controller name="SummaryMonthPayment" />
+    <field name="ComisiónV2" />
+    <rename>ComisionV2</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:05:37">
+    <controller name="SummaryMonthPayment" />
+    <field name="ComisiónComercio" />
+    <rename>ComisionComercio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:06:03">
+    <controller name="TxnFc" />
+    <field name="CódigoBolsa" />
+    <rename>CodigoBolsa</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:06:15">
+    <controller name="TxnFc" />
+    <field name="Dirección" />
+    <rename>Direccion</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:06:31">
+    <controller name="TxnFc" />
+    <field name="TeléfonoIDServicio" />
+    <rename>TelefonoIDServicio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:06:39">
+    <controller name="TxnFc" />
+    <field name="NúmeroTarjeta" />
+    <rename>NumeroTarjeta</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:06:48">
+    <controller name="TxnFc" />
+    <field name="ReferenciaH2h" />
+    <update>
+      <Label>Referencia H2h</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:07:22">
+    <controller name="TxnFcNotConcilied" />
+    <field name="Dirección" />
+    <rename>Direccion</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:07:28">
+    <controller name="TxnFcNotConcilied" />
+    <field name="DescripciónProceso" />
+    <rename>DescripcionProceso</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:07:36">
+    <controller name="TxnFcNotConcilied" />
+    <field name="CódigoBolsa" />
+    <rename>CodigoBolsa</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:07:48">
+    <controller name="TxnFcNotConcilied" />
+    <field name="TeléfonoIDServicio" />
+    <rename>TelefonoIDServicio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:07:57">
+    <controller name="TxnFcNotConcilied" />
+    <field name="NúmeroTarjeta" />
+    <rename>NumeroTarjeta</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:08:28">
+    <controller name="TxnPaid" />
+    <field name="DescripciónProceso" />
+    <rename>DescripcionProceso</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:08:42">
+    <controller name="TxnPaid" />
+    <field name="CódigoDeMoneda" />
+    <rename>CodigoDeMoneda</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:08:49">
+    <controller name="TxnPaid" />
+    <field name="CódigoDeRecaudo" />
+    <rename>CodigoDeRecaudo</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:08:57">
+    <controller name="TxnPaid" />
+    <field name="CódigoDeComercio" />
+    <rename>CodigoDeComercio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:09:13">
+    <controller name="TxnPaid" />
+    <field name="MccInt" />
+    <update>
+      <Label>MCC INT</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:09:34">
+    <controller name="TxnPaid" />
+    <field name="TipoComisiónComercio" />
+    <rename>TipoComisionComercio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:09:42">
+    <controller name="TxnPaid" />
+    <field name="ValorComisiónComercio" />
+    <rename>ValorComisionComercio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:09:48">
+    <controller name="TxnPaid" />
+    <field name="ComisiónComercioCalculado" />
+    <rename>ComisionComercioCalculado</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:09:55">
+    <controller name="TxnPaid" />
+    <field name="TipoComisiónV2" />
+    <rename>TipoComisionV2</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:10:03">
+    <controller name="TxnPaid" />
+    <field name="ValorComisiónV2" />
+    <rename>ValorComisionV2</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:10:19">
+    <controller name="TxnPaid" />
+    <field name="ComisiónV2Calculada" />
+    <rename>ComisionV2Calculada</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:10:31">
+    <controller name="TxnPaid" />
+    <field name="ComisiónDeServicio" />
+    <rename>ComisionDeServicio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:10:40">
+    <controller name="TxnPaid" />
+    <field name="TipoDeOperación" />
+    <rename>TipoDeOperacion</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:10:58">
+    <controller name="TxnPaidMonth" />
+    <field name="DescripciónProceso" />
+    <rename>DescripcionProceso</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:11:07">
+    <controller name="TxnPaidMonth" />
+    <field name="CódxzoDeMoneda" />
+    <rename>CodxzoDeMoneda</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:11:17">
+    <controller name="TxnPaidMonth" />
+    <field name="CódigoDeRecaudo" />
+    <rename>CodigoDeRecaudo</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:11:23">
+    <controller name="TxnPaidMonth" />
+    <field name="CódigoDeComercio" />
+    <rename>CodigoDeComercio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:11:36">
+    <controller name="TxnPaidMonth" />
+    <field name="TipoComisiónComercio" />
+    <rename>TipoComisionComercio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:11:42">
+    <controller name="TxnPaidMonth" />
+    <field name="ValorComisiónComercio" />
+    <rename>ValorComisionComercio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:11:50">
+    <controller name="TxnPaidMonth" />
+    <field name="ComisiónComercioCalculado" />
+    <rename>ComisionComercioCalculado</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:12:01">
+    <controller name="TxnPaidMonth" />
+    <field name="TipoComisiónV2" />
+    <rename>TipoComisionV2</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:12:08">
+    <controller name="TxnPaidMonth" />
+    <field name="ValorComisiónV2" />
+    <rename>ValorComisionV2</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:12:14">
+    <controller name="TxnPaidMonth" />
+    <field name="ComisiónV2Calculada" />
+    <rename>ComisionV2Calculada</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:12:21">
+    <controller name="TxnPaidMonth" />
+    <field name="ComisiónDeServicio" />
+    <rename>ComisionDeServicio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:12:31">
+    <controller name="TxnPaidMonth" />
+    <field name="TipoDeOperación" />
+    <rename>TipoDeOperacion</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:12:46">
+    <controller name="TxnReconciled" />
+    <field name="DescripciónProceso" />
+    <rename>DescripcionProceso</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:12:54">
+    <controller name="TxnReconciled" />
+    <field name="CódigodeMoneda" />
+    <rename>CodigodeMoneda</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:13:01">
+    <controller name="TxnReconciled" />
+    <field name="CódigodeRecaudo" />
+    <rename>CodigodeRecaudo</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:13:07">
+    <controller name="TxnReconciled" />
+    <field name="CódigodeComercio" />
+    <rename>CodigodeComercio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:13:21">
+    <controller name="TxnReconciled" />
+    <field name="TipoComisiónComercio" />
+    <rename>TipoComisionComercio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:13:31">
+    <controller name="TxnReconciled" />
+    <field name="ValorComisiónComercio" />
+    <rename>ValorComisionComercio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:13:38">
+    <controller name="TxnReconciled" />
+    <field name="ComisiónComercioCalculado" />
+    <rename>ComisionComercioCalculado</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:13:44">
+    <controller name="TxnReconciled" />
+    <field name="TipoComisiónV2" />
+    <rename>TipoComisionV2</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:13:50">
+    <controller name="TxnReconciled" />
+    <field name="ValorComisiónV2" />
+    <rename>ValorComisionV2</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:13:57">
+    <controller name="TxnReconciled" />
+    <field name="ComisiónV2Calculada" />
+    <rename>ComisionV2Calculada</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:14:03">
+    <controller name="TxnReconciled" />
+    <field name="ComisióndeServicio" />
+    <rename>ComisiondeServicio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:14:11">
+    <controller name="TxnReconciled" />
+    <field name="TipodeOperación" />
+    <rename>TipodeOperacion</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:14:30">
+    <controller name="TxnTtpNotConcilied" />
+    <field name="CódigoDeComercio" />
+    <rename>CodigoDeComercio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:14:38">
+    <controller name="TxnTtpNotConcilied" />
+    <field name="CodigoOperación" />
+    <rename>CodigoOperacion</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:14:44">
+    <controller name="TxnTtpNotConcilied" />
+    <field name="NúmeroTarjeta" />
+    <rename>NumeroTarjeta</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:14:52">
+    <controller name="TxnTtpNotConcilied" />
+    <field name="Comisión" />
+    <rename>Comision</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:15:07">
+    <controller name="TxnXzedi" />
+    <field name="CódigoDeMoneda" />
+    <rename>CodigoDeMoneda</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:15:13">
+    <controller name="TxnXzedi" />
+    <field name="CódigoDeRecaudo" />
+    <rename>CodigoDeRecaudo</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:15:22">
+    <controller name="TxnXzedi" />
+    <field name="CódigoDeComercio" />
+    <rename>CodigoDeComercio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:15:39">
+    <controller name="TxnXzedi" />
+    <field name="MccInt" />
+    <update>
+      <Label>MCC INT</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:15:50">
+    <controller name="TxnXzedi" />
+    <field name="TipoComisiónComercio" />
+    <rename>TipoComisionComercio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:15:57">
+    <controller name="TxnXzedi" />
+    <field name="ValorComisiónComercio" />
+    <rename>ValorComisionComercio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:16:06">
+    <controller name="TxnXzedi" />
+    <field name="ComisiónComercioCalculado" />
+    <rename>ComisionComercioCalculado</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:16:13">
+    <controller name="TxnXzedi" />
+    <field name="TipoComisiónV2" />
+    <rename>TipoComisionV2</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:16:19">
+    <controller name="TxnXzedi" />
+    <field name="ValorComisiónV2" />
+    <rename>ValorComisionV2</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:16:25">
+    <controller name="TxnXzedi" />
+    <field name="ComisiónV2Calculada" />
+    <rename>ComisionV2Calculada</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:16:34">
+    <controller name="TxnXzedi" />
+    <field name="ComisiónDeServicio" />
+    <rename>ComisionDeServicio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:16:42">
+    <controller name="TxnXzedi" />
+    <field name="TipoDeOperación" />
+    <rename>TipoDeOperacion</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:16:52">
+    <controller name="TxnXzedi" />
+    <field name="CódigoRespuestaProveedor" />
+    <rename>CodigoRespuestaProveedor</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:17:06">
+    <controller name="TxnXzediNotConcilied" />
+    <field name="DescripciónProceso" />
+    <rename>DescripcionProceso</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:17:11">
+    <controller name="TxnXzediNotConcilied" />
+    <field name="CódigoDeMoneda" />
+    <rename>CodigoDeMoneda</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:17:18">
+    <controller name="TxnXzediNotConcilied" />
+    <field name="CódigoDeRecaudo" />
+    <rename>CodigoDeRecaudo</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:17:23">
+    <controller name="TxnXzediNotConcilied" />
+    <field name="CódigoDeComercio" />
+    <rename>CodigoDeComercio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:17:33">
+    <controller name="TxnXzediNotConcilied" />
+    <field name="MccInt" />
+    <update>
+      <Label>MCC INT</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:17:42">
+    <controller name="TxnXzediNotConcilied" />
+    <field name="TipoComisiónComercio" />
+    <rename>TipoComisionComercio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:17:48">
+    <controller name="TxnXzediNotConcilied" />
+    <field name="ValorComisiónComercio" />
+    <rename>ValorComisionComercio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:17:53">
+    <controller name="TxnXzediNotConcilied" />
+    <field name="ComisiónComercioCalculado" />
+    <rename>ComisionComercioCalculado</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:17:59">
+    <controller name="TxnXzediNotConcilied" />
+    <field name="TipoComisiónV2" />
+    <rename>TipoComisionV2</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:18:05">
+    <controller name="TxnXzediNotConcilied" />
+    <field name="ValorComisiónV2" />
+    <rename>ValorComisionV2</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:18:18">
+    <controller name="TxnXzediNotConcilied" />
+    <field name="ComisiónV2Calculada" />
+    <rename>ComisionV2Calculada</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:18:30">
+    <controller name="TxnXzediNotConcilied" />
+    <field name="ComisiónDeServicio" />
+    <rename>ComisionDeServicio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:48:57">
+    <controller name="ReportExecution" />
+    <insert type="rule">
+      <Type>Sql</Type>
+      <CommandName>Insert</CommandName>
+      <Phase>Before</Phase>
+      <Script>if @IDReport&gt;2 or @IDReport&lt;1
+begin
+
+end</Script>
+    </insert>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:50:25">
+    <controller name="ReportExecution" />
+    <rule id="r100" />
+    <update>
+      <Script>if (@IDReport &gt;2) or (@IDReport&lt;1)
+begin
+	set @Result_Error='Solo tiene permitido los numeros 1 y 2.'
+end</Script>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:54:53">
+    <controller name="ReportExecution" />
+    <rule id="r100" />
+    <update>
+      <Script>if (@IDReport &gt;2) or (@IDReport&lt;1)
+begin
+	set @Result_Error='Solo tiene permitido los numeros 1 y 2.'
+end
+
+if (@IDReport=2)
+begin 
+	if (@LastDayProcess&lt;=@FirsDayProcess)
+	begin
+		set @Result_Error='La segunda fecha no puede ser menor que la primera'
+	end
+end</Script>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:55:45">
+    <controller name="ReportExecution" />
+    <rule id="r100" />
+    <update>
+      <Script>if (@IDReport &gt;2) or (@IDReport&lt;1)
+begin
+	set @Result_Error='Solo tiene permitido los numeros 1 y 2.'
+end
+
+if (@IDReport=2)
+begin 
+	if (@LastDayProcess &lt; @FirsDayProcess)
+	begin
+		set @Result_Error='Segunda Fecha Trnx no puede ser menor ha fecha trnx.'
+	end
+end</Script>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:03:30">
+    <controller name="ReportreportAmounts" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Resumen General de Transacciones</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:03:36">
+    <controller name="ReportreportAmounts" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Resumen General de Transacciones</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:03:42">
+    <controller name="ReportreportAmounts" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Resumen General de Transacciones</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:03:52">
+    <controller name="ReportreportAmounts" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Resumen General de Transacciones</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:04:01">
+    <controller name="ReportreportAmounts" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Resumen General de Transacciones</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:07:44">
+    <controller name="TxnTtp" />
+    <field name="PromoAmount" />
+    <update>
+      <Label>promoAmount</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:14:51">
+    <controller name="Reports" />
+    <actionGroup id="ag4" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:20:43">
+    <controller name="TxnXzedi" />
+    <actionGroup id="ag1" />
+    <action id="a1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:20:55">
+    <controller name="TxnFc" />
+    <actionGroup id="ag1" />
+    <action id="a1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:21:09">
+    <controller name="TxnTtp" />
+    <actionGroup id="ag1" />
+    <action id="a1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:21:19">
+    <controller name="ReportreportAmounts" />
+    <actionGroup id="ag1" />
+    <action id="a1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:21:30">
+    <controller name="TxnReconciled" />
+    <actionGroup id="ag1" />
+    <action id="a1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:21:39">
+    <controller name="TxnXzediNotConcilied" />
+    <actionGroup id="ag1" />
+    <action id="a1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:21:49">
+    <controller name="TxnFcNotConcilied" />
+    <actionGroup id="ag1" />
+    <action id="a1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:22:01">
+    <controller name="TxnTtpNotConcilied" />
+    <actionGroup id="ag1" />
+    <action id="a1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:22:11">
+    <controller name="EntityAssort" />
+    <actionGroup id="ag1" />
+    <action id="a1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:22:23">
+    <controller name="SummaryDailySupplier" />
+    <actionGroup id="ag1" />
+    <action id="a1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:22:34">
+    <controller name="TxnPaid" />
+    <actionGroup id="ag1" />
+    <action id="a1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:22:43">
+    <controller name="MerchantCredit" />
+    <actionGroup id="ag1" />
+    <action id="a1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:22:54">
+    <controller name="MerchantSummary" />
+    <actionGroup id="ag1" />
+    <action id="a1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:23:07">
+    <controller name="TxnPaidMonth" />
+    <actionGroup id="ag1" />
+    <action id="a1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:23:16">
+    <controller name="SummaryMonthPayment" />
+    <actionGroup id="ag1" />
+    <action id="a1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:23:25">
+    <controller name="MerchantCreditMonth" />
+    <actionGroup id="ag1" />
+    <action id="a1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:41:33">
+    <controller name="MyProfile" />
+    <insert type="rule">
+      <Type>Sql</Type>
+      <CommandName>Insert</CommandName>
+      <Phase>Before</Phase>
+      <Script>Declare @validar int
+
+select @validar=select isnull([Report].[fn_ValidaEmail](@Email),0)
+
+if @validar==0
+begin
+        set @Result_Error='El correo Ingresado no es valido, favor verificarlo.'
+end</Script>
+    </insert>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:45:25">
+    <controller name="EntityAssort" />
+    <field name="TipoDeOperación" />
+    <rename>TipoDeOperacion</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:57:02">
+    <controller name="MyProfile" />
+    <rule id="r103" />
+    <update>
+      <Script>Declare @validar int
+
+select @validar=len(isnull([Report].[fn_ValidaEmail](@Email),0))
+
+if @validar=1
+begin
+        set @Result_Error='El correo Ingresado no es valido, favor verificarlo.'
+end</Script>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T02:10:37">
+    <controller name="TxnXzedi" />
+    <actionGroup id="ag4" />
+    <action id="a1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T02:11:36">
+    <controller name="TxnXzedi" />
+    <actionGroup id="ag1" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T02:12:40">
+    <controller name="TxnXzedi" />
+    <actionGroup id="ag2" />
+    <action id="a13" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T02:14:09">
+    <controller name="TxnXzedi" />
+    <actionGroup id="ag1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T02:14:15">
+    <controller name="TxnXzedi" />
+    <actionGroup id="ag2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T02:14:21">
+    <controller name="TxnXzedi" />
+    <actionGroup id="ag3" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T02:14:27">
+    <controller name="TxnXzedi" />
+    <actionGroup id="ag4" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T02:14:34">
+    <controller name="TxnXzedi" />
+    <actionGroup id="ag6" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T02:14:40">
+    <controller name="TxnXzedi" />
+    <actionGroup id="ag8" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T02:23:13">
+    <controller name="ReportExecution" />
+    <actionGroup id="ag4" />
+    <action id="a1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-04T02:25:50">
+    <controller name="TxnXzedi" />
+    <view id="grid1" />
+    <update>
+      <ShowInSelector>false</ShowInSelector>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T02:27:30">
+    <controller name="TxnXzedi" />
+    <view id="grid1" />
+    <update>
+      <ShowInSelector>true</ShowInSelector>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-05T18:22:21">
+    <controller name="TxnFcNotConcilied" />
+    <field name="Distrito" />
+    <before>
+      <controller name="TxnFcNotConcilied" />
+      <field name="Direccion" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-05-07T11:08:00">
+    <controller name="MerchantCredit" />
+    <field name="FechaProceso" />
+    <update>
+      <DataFormatString />
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:50:41">
+    <controller name="TxnXzediNotConcilied" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Transacciones no Conciliadas XZEDI</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:50:49">
+    <controller name="TxnXzediNotConcilied" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Transacciones no Conciliadas XZEDI</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:50:57">
+    <controller name="TxnXzediNotConcilied" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Transacciones no Conciliadas XZEDI</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:51:17">
+    <controller name="TxnXzediNotConcilied" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Transacciones no Conciliadas XZEDI</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:51:24">
+    <controller name="TxnXzediNotConcilied" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Transacciones no Conciliadas XZEDI</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:53:00">
+    <controller name="TxnFcNotConcilied" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Transacciones no Conciliadas Full Carga</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:53:09">
+    <controller name="TxnFcNotConcilied" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Transacciones no Conciliadas Full Carga</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:53:18">
+    <controller name="TxnFcNotConcilied" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Transacciones no Conciliadas Full Carga</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:53:27">
+    <controller name="TxnFcNotConcilied" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Transacciones no Conciliadas Full Carga</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:53:43">
+    <controller name="TxnFcNotConcilied" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Transacciones no Conciliadas Full Carga</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:55:13">
+    <controller name="TxnTtpNotConcilied" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Transacciones no Conciliadas TPP</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:55:22">
+    <controller name="TxnTtpNotConcilied" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Transacciones no Conciliadas TPP</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:55:33">
+    <controller name="TxnTtpNotConcilied" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Transacciones no Conciliadas TPP</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:55:44">
+    <controller name="TxnTtpNotConcilied" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Transacciones no Conciliadas TPP</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:55:52">
+    <controller name="TxnTtpNotConcilied" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Transacciones no Conciliadas TPP</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-12T21:29:02">
+    <controller name="MerchantCredit" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Abono Comercios</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-12T21:29:09">
+    <controller name="MerchantCredit" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Abono Comercios</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-12T21:29:21">
+    <controller name="MerchantCredit" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Abono Comercios</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-12T21:29:29">
+    <controller name="MerchantCredit" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Abono Comercios</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-12T21:29:36">
+    <controller name="MerchantCredit" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Abono Comercios</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-12T21:30:56">
+    <controller name="MerchantSummary" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Resumen Comercios</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-12T21:31:04">
+    <controller name="MerchantSummary" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Resumen Comercios</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-12T21:31:10">
+    <controller name="MerchantSummary" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Resumen Comercios</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-12T21:31:23">
+    <controller name="MerchantSummary" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Resumen Comercios</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-12T21:31:32">
+    <controller name="MerchantSummary" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Resumen Comercios</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-13T13:32:18">
+    <controller name="TxnPaidMonth" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Transacciones Pagadas por Mes</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-13T13:32:29">
+    <controller name="TxnPaidMonth" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Transacciones Pagadas por Mes</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-13T13:32:36">
+    <controller name="TxnPaidMonth" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nueva Reporte Transacciones Pagadas por Mes</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-13T13:32:43">
+    <controller name="TxnPaidMonth" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Transacciones Pagadas por Mes</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-13T13:32:51">
+    <controller name="TxnPaidMonth" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Transacciones Pagadas por Mes</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-13T13:32:56">
+    <controller name="TxnPaidMonth" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Transacciones Pagadas por Mes</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-13T13:34:03">
+    <controller name="SummaryMonthPayment" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Resumen Pago por Mes</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-13T13:34:10">
+    <controller name="SummaryMonthPayment" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Resumen Pago por Mes</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-13T13:34:17">
+    <controller name="SummaryMonthPayment" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Resumen Pago por Mes</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-13T13:34:23">
+    <controller name="SummaryMonthPayment" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Resumen Pago por Mes</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-13T13:34:29">
+    <controller name="SummaryMonthPayment" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Resumen Pago por Mes</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-13T13:38:25">
+    <controller name="MerchantCreditMonth" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Resumen Abonos a Comercios por Mes</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-13T13:38:33">
+    <controller name="MerchantCreditMonth" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Resumen Abonos a Comercios por Mes</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-13T13:38:40">
+    <controller name="MerchantCreditMonth" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Resumen Abonos a Comercios por Mes</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-13T13:38:47">
+    <controller name="MerchantCreditMonth" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Resumen Abonos a Comercios por Mes</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-13T13:38:54">
+    <controller name="MerchantCreditMonth" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Resumen Abonos a Comercios por Mes</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-13T15:56:49">
+    <controller name="TxnPaid" />
+    <field name="CódigoRespuestaProveedor" />
+    <rename>CodigoRespuestaProveedor</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-13T16:11:14">
+    <controller name="TxnReconciled" />
+    <field name="CódigoDeRecaudo" />
+    <rename>CodigoDeRecaudo</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-13T16:11:26">
+    <controller name="TxnReconciled" />
+    <field name="CódigoDeComercio" />
+    <rename>CodigoDeComercio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-13T16:11:32">
+    <controller name="TxnReconciled" />
+    <field name="CódigoRespuestaProveedor" />
+    <rename>CodigoRespuestaProveedor</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-13T16:11:43">
+    <controller name="TxnReconciled" />
+    <field name="CódigoDeMoneda" />
+    <rename>CodigoDeMoneda</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-13T16:12:10">
+    <controller name="TxnReconciled" />
+    <field name="ComisiónDeServicio" />
+    <rename>ComisionDeServicio</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-13T16:13:14">
+    <controller name="TxnReconciled" />
+    <field name="MccInt" />
+    <update>
+      <Label>MCC INT</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-13T16:18:47">
+    <controller name="TxnPaidMonth" />
+    <field name="CódigoDeMoneda" />
+    <rename>CodigoDeMoneda</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-13T17:06:00">
+    <controller name="TxnReconciled" />
+    <field name="TipoDeOperación" />
+    <rename>TipoDeOperacion</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-13T17:07:55">
+    <controller name="TxnXzediNotConcilied" />
+    <field name="TipoDeOperación" />
+    <rename>TipoDeOperacion</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-20T17:35:06">
+    <controller name="TxnFc" />
+    <field name="Hora" />
+    <update>
+      <Type>Time</Type>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-20T18:06:42">
+    <controller name="TxnFc" />
+    <field name="Hora" />
+    <update>
+      <Type>String</Type>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-21T08:24:21">
+    <controller name="ReportAmounts" />
+    <field name="TotalTrnxConciliadas" />
+    <update>
+      <Type>Int32</Type>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-21T08:27:33">
+    <controller name="MerchantCreditMonth" />
+    <field name="ComisionRecaudo" />
+    <update>
+      <Label>Comisión Recaudo</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-21T08:28:23">
+    <controller name="ReportAmounts" />
+    <field name="DescripciónProceso" />
+    <rename>DescripcionProceso</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-21T08:28:37">
+    <controller name="ReportAmounts" />
+    <field name="TotalComisiónV2" />
+    <rename>TotalComisionV2</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-21T08:28:53">
+    <controller name="ReportAmounts" />
+    <field name="TotalComisiónComercios" />
+    <rename>TotalComisionComercios</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-21T08:29:10">
+    <controller name="ReportAmounts" />
+    <field name="TotalComisiónV2NoConciliada" />
+    <rename>TotalComisionV2NoConciliada</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-21T08:30:55">
+    <controller name="TxnFc" />
+    <field name="Direccion" />
+    <update>
+      <Label>Dirección</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T09:12:11">
+    <controller name="MerchantCreditMonth" />
+    <field name="MesDeAbono" />
+    <update>
+      <DataFormatString>d</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T09:13:32">
+    <controller name="TxnXzedi" />
+    <field name="FechaDeTrnx" />
+    <update>
+      <DataFormatString>d</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T09:34:46">
+    <controller name="TxnFc" />
+    <field name="Fecha" />
+    <update>
+      <Type>Date</Type>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T09:35:27">
+    <controller name="MerchantCreditMonth" />
+    <field name="MesDeAbono" />
+    <update>
+      <DataFormatString>ddmmaaaa</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T09:36:23">
+    <controller name="MerchantCreditMonth" />
+    <field name="MesDeAbono" />
+    <update>
+      <DataFormatString>dd/mm/aaaa</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T09:39:31">
+    <controller name="MerchantCreditMonth" />
+    <field name="MesDeAbono" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T09:52:33">
+    <controller name="EntityAssort" />
+    <field name="FechaProceso" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T09:52:53">
+    <controller name="MerchantCredit" />
+    <field name="FechadeAbono" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T09:55:46">
+    <controller name="MerchantCredit" />
+    <field name="FechaProceso" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T09:56:15">
+    <controller name="MerchantSummary" />
+    <field name="FechaAfiliacion" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T09:56:33">
+    <controller name="ReportAmounts" />
+    <field name="FechaProceso" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T09:56:57">
+    <controller name="ReportExecution" />
+    <field name="FirsDayProcess" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T09:57:04">
+    <controller name="ReportExecution" />
+    <field name="CreatedAt" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T09:57:09">
+    <controller name="ReportExecution" />
+    <field name="LastDayProcess" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T09:57:27">
+    <controller name="SummaryDailySupplier" />
+    <field name="FechaInicioPeriodo" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T09:57:33">
+    <controller name="SummaryDailySupplier" />
+    <field name="FechaFinPeriodo" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T09:57:46">
+    <controller name="SummaryMonthPayment" />
+    <field name="FechaProceso" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T09:58:05">
+    <controller name="TxnFc" />
+    <field name="Fecha" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T09:58:17">
+    <controller name="TxnFc" />
+    <field name="FechaDeCarga" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T09:59:47">
+    <controller name="TxnFcNotConcilied" />
+    <field name="FechaProceso" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T10:00:06">
+    <controller name="TxnFcNotConcilied" />
+    <field name="Fecha" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T10:00:21">
+    <controller name="TxnFcNotConcilied" />
+    <field name="FechaDeCarga" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T10:00:35">
+    <controller name="TxnPaid" />
+    <field name="FechaProceso" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T10:00:46">
+    <controller name="TxnPaid" />
+    <field name="FechaDeTrnx" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T10:01:09">
+    <controller name="TxnPaidMonth" />
+    <field name="FechaProceso" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T10:01:17">
+    <controller name="TxnPaidMonth" />
+    <field name="FechaDeTrnx" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T10:02:12">
+    <controller name="TxnReconciled" />
+    <field name="FechaProceso" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T10:02:19">
+    <controller name="TxnReconciled" />
+    <field name="FechaDeTrnx" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T10:02:40">
+    <controller name="TxnTtp" />
+    <field name="Timestamp" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T10:06:58">
+    <controller name="TxnTtpNotConcilied" />
+    <field name="FechaDeTrnx" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T10:07:07">
+    <controller name="TxnTtpNotConcilied" />
+    <field name="FechaDeCarga" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T10:07:26">
+    <controller name="TxnXzedi" />
+    <field name="FechaDeTrnx" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T10:07:43">
+    <controller name="TxnXzediNotConcilied" />
+    <field name="FechaProceso" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T10:07:53">
+    <controller name="TxnXzediNotConcilied" />
+    <field name="FechaDeTrnx" />
+    <update>
+      <DataFormatString>dd/MM/yyyy</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-22T11:59:28">
+    <controller name="MerchantCredit" />
+    <field name="NombreDeComercio" />
+    <rename>NombredeComercio</rename>
+  </c>
+  <c y="NodeSet" t="2019-06-10T11:24:56">
+    <controller name="SummaryDailySupplier" />
+    <actionGroup id="ag2" />
+    <insert type="action">
+      <CommandName>Custom</CommandName>
+      <HeaderText>Pagado</HeaderText>
+      <CausesValidation>true</CausesValidation>
+      <WhenLastCommandName>Edit</WhenLastCommandName>
+    </insert>
+  </c>
+  <c y="NodeSet" t="2019-06-10T11:31:59">
+    <controller name="SummaryDailySupplier" />
+    <actionGroup id="ag1" />
+    <move>
+      <controller name="SummaryDailySupplier" />
+      <actionGroup id="ag2" />
+      <action id="a100" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-06-10T11:32:06">
+    <controller name="SummaryDailySupplier" />
+    <actionGroup id="ag1" />
+    <action id="a100" />
+    <update>
+      <WhenLastCommandName />
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-10T11:34:18">
+    <controller name="SummaryDailySupplier" />
+    <actionGroup id="ag1" />
+    <action id="a100" />
+    <update>
+      <WhenLastCommandName>Select</WhenLastCommandName>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-10T11:39:53">
+    <controller name="SummaryDailySupplier" />
+    <actionGroup id="ag1" />
+    <action id="a100" />
+    <update>
+      <CommandArgument>Select</CommandArgument>
+      <WhenLastCommandName />
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-10T11:44:26">
+    <controller name="SummaryDailySupplier" />
+    <actionGroup id="ag7" />
+    <move>
+      <controller name="SummaryDailySupplier" />
+      <actionGroup id="ag1" />
+      <action id="a100" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-06-10T11:44:33">
+    <controller name="SummaryDailySupplier" />
+    <actionGroup id="ag7" />
+    <action id="a100" />
+    <update>
+      <CommandArgument />
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-10T11:58:32">
+    <controller name="SummaryDailySupplier" />
+    <actionGroup id="ag8" />
+    <copy>
+      <controller name="SummaryDailySupplier" />
+      <actionGroup id="ag7" />
+      <action id="a100" />
+    </copy>
+  </c>
+  <c y="NodeSet" t="2019-06-10T11:58:54">
+    <controller name="SummaryDailySupplier" />
+    <actionGroup id="ag8" />
+    <action id="a100" />
+    <update>
+      <WhenLastCommandName>Select</WhenLastCommandName>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-10T12:00:44">
+    <controller name="SummaryDailySupplier" />
+    <actionGroup id="ag8" />
+    <action id="a100" />
+    <update>
+      <WhenLastCommandName />
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-10T16:35:17">
+    <controller name="SummaryDailySupplier" />
+    <actionGroup id="ag8" />
+    <action id="a100" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-06-10T16:35:25">
+    <controller name="SummaryDailySupplier" />
+    <actionGroup id="ag7" />
+    <action id="a100" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-06-11T11:24:18">
+    <controller name="ReportExecution" />
+    <insert type="rule">
+      <Type>Code</Type>
+      <CommandName>DownloadFile</CommandName>
+      <CommandArgument>ExternalDoc</CommandArgument>
+      <Phase>Execute</Phase>
+    </insert>
+  </c>
+  <c y="NodeSet" t="2019-06-17T20:06:01">
+    <controller name="ReportConciliationTpp" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Conciliación TPP</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T20:06:39">
+    <controller name="ReportConciliationTpp" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Conciliación TPP</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T20:07:27">
+    <controller name="ReportConciliationTpp" />
+    <actionGroup id="ag5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-06-17T21:52:54">
+    <controller name="ReportExecution" />
+    <view id="editForm1" />
+    <dataField fieldName="LastDayProcess" />
+    <update>
+      <Hidden>false</Hidden>
+      <Visibility>$row.IDReport==2 or $row.IDReport==3</Visibility>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T21:53:19">
+    <controller name="ReportExecution" />
+    <view id="createForm1" />
+    <dataField fieldName="LastDayProcess" />
+    <update>
+      <Hidden>false</Hidden>
+      <Visibility>$row.IDReport==2 OR $row.IDReport==3</Visibility>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T21:53:29">
+    <controller name="ReportExecution" />
+    <view id="editForm1" />
+    <dataField fieldName="LastDayProcess" />
+    <update>
+      <Hidden>false</Hidden>
+      <Visibility>$row.IDReport==2 OR $row.IDReport==3</Visibility>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T21:58:41">
+    <controller name="ReportExecution" />
+    <view id="editForm1" />
+    <dataField fieldName="LastDayProcess" />
+    <update>
+      <Hidden>false</Hidden>
+      <Visibility>$row.IDReport==2 || $row.IDReport==3</Visibility>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T21:58:53">
+    <controller name="ReportExecution" />
+    <view id="createForm1" />
+    <dataField fieldName="LastDayProcess" />
+    <update>
+      <Hidden>false</Hidden>
+      <Visibility>$row.IDReport==2 || $row.IDReport==3</Visibility>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:01:08">
+    <controller name="ReportExecution" />
+    <field name="IDReport" />
+    <update>
+      <ItemsStyle>AutoComplete</ItemsStyle>
+      <ItemsDataController>Reports</ItemsDataController>
+      <ItemsDataValueField>IDReport</ItemsDataValueField>
+      <ItemsDataTextField>IDReport</ItemsDataTextField>
+      <Copy>NameReport=NameReport</Copy>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:01:35">
+    <controller name="ReportExecution" />
+    <view id="editForm1" />
+    <dataField fieldName="User" />
+    <update>
+      <Hidden>true</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:02:54">
+    <controller name="ReportExecution" />
+    <field name="IDReport" />
+    <update>
+      <ItemsStyle>Lookup</ItemsStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:05:06">
+    <controller name="ReportExecution" />
+    <field name="IDReport" />
+    <update>
+      <ItemsStyle>DropDownList</ItemsStyle>
+      <Copy>NameReport==NameReport</Copy>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:06:20">
+    <controller name="ReportExecution" />
+    <view id="editForm1" />
+    <dataField fieldName="NameReport" />
+    <update>
+      <Hidden>true</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:24:47">
+    <controller name="ReportConciliationTpp" />
+    <field name="Monto" />
+    <update>
+      <DataFormatString>N2</DataFormatString>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:25:53">
+    <controller name="ReportConciliationTpp" />
+    <field name="Idpago" />
+    <update>
+      <Label>Id Pago</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:27:25">
+    <controller name="ReportConciliationTpp" />
+    <field name="Fecha" />
+    <update>
+      <ReadOnly>true</ReadOnly>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:27:33">
+    <controller name="ReportConciliationTpp" />
+    <field name="Monto" />
+    <update>
+      <ReadOnly>true</ReadOnly>
+      <ShowInSummary>true</ShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:27:37">
+    <controller name="ReportConciliationTpp" />
+    <field name="Idpago" />
+    <update>
+      <ReadOnly>true</ReadOnly>
+      <ShowInSummary>true</ShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:34:28">
+    <controller name="ReportConciliationTpp" />
+    <field name="Fecha" />
+    <update>
+      <DataFormatString />
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:36:12">
+    <controller name="ReportConciliationTpp" />
+    <field name="Monto" />
+    <update>
+      <Type>Double</Type>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:36:27">
+    <controller name="ReportConciliationTpp" />
+    <field name="Monto" />
+    <update>
+      <Type>Decimal</Type>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:47:59">
+    <controller name="ReportConciliationTpp" />
+    <actionGroup id="ag7" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:49:34">
+    <controller name="ReportConciliationTpp" />
+    <actionGroup id="ag1" />
+    <action id="a1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-06-18T16:38:58">
+    <controller name="TppLiquidation" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Liquidación TPP</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-18T17:11:17">
+    <controller name="ReportConciliationTpp" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Conciliación TPP</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-18T17:11:47">
+    <controller name="TppLiquidation" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Liquidación TPP</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-18T17:11:57">
+    <controller name="TppLiquidation" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Liquidación TPP</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-18T17:12:03">
+    <controller name="TppLiquidation" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Liquidación TPP</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-18T17:12:08">
+    <controller name="TppLiquidation" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Liquidación TPP</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-18T17:13:52">
+    <controller name="ReportConciliationTpp" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Conciliación TPP</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-18T17:14:03">
+    <controller name="ReportConciliationTpp" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Conciliación TPP</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-18T17:14:46">
+    <controller name="TppLiquidation" />
+    <actionGroup id="ag5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-06-18T17:14:51">
+    <controller name="TppLiquidation" />
+    <actionGroup id="ag7" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-06-18T17:15:59">
+    <controller name="TppLiquidation" />
+    <actionGroup id="ag1" />
+    <action id="a1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-06-21T16:16:15">
+    <controller name="ReportExecution" />
+    <rule id="r100" />
+    <update>
+      <Script>if (@IDReport &gt;3) or (@IDReport&lt;1)
+begin
+	set @Result_Error='Solo tiene permitido los numeros 1,2,3.'
+end
+
+if (@IDReport=2)
+begin 
+	if (@LastDayProcess &lt; @FirsDayProcess)
+	begin
+		set @Result_Error='Segunda Fecha Trnx no puede ser menor ha fecha trnx.'
+	end
+end
+if (@IDReport=3)
+begin 
+	if (@LastDayProcess &lt; @FirsDayProcess)
+	begin
+		set @Result_Error='Segunda Fecha Trnx no puede ser menor ha fecha trnx.'
+	end
+end</Script>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-21T16:26:25">
+    <controller name="ReportExecution" />
+    <rule id="r100" />
+    <update>
+      <Script>if (@IDReport &gt;3) or (@IDReport&lt;1)
+begin
+	set @Result_Error='Solo tiene permitido los numeros 1,2,3.'
+end
+
+if (@IDReport=2)
+begin 
+	if (@LastDayProcess &lt; @FirsDayProcess)
+	begin
+		set @Result_Error='Segunda Fecha Trnx no puede ser menor ha fecha trnx.'
+	end
+end
+if (@IDReport=3)
+begin 
+	if (@LastDayProcess &lt; @FirsDayProcess)
+	begin
+		set @Result_Error='Segunda Fecha Trnx no puede ser menor ha fecha trnx.'
+	end
+end</Script>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-24T15:51:47">
+    <controller name="ReportMonthlyInvoice" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Facturación a Comercios</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-24T15:51:56">
+    <controller name="ReportMonthlyInvoice" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Facturación a Comercios</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-24T15:52:04">
+    <controller name="ReportMonthlyInvoice" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Facturación a Comercios</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-24T15:52:11">
+    <controller name="ReportMonthlyInvoice" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Facturación a Comercios</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-24T15:52:21">
+    <controller name="ReportMonthlyInvoice" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Facturación a Comercios</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-24T15:52:34">
+    <controller name="ReportMonthlyInvoice" />
+    <actionGroup id="ag5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-06-24T15:52:38">
+    <controller name="ReportMonthlyInvoice" />
+    <actionGroup id="ag7" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-06-24T15:52:46">
+    <controller name="ReportMonthlyInvoice" />
+    <actionGroup id="ag1" />
+    <action id="a1" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-06-25T19:56:07">
+    <controller name="ReportXlsInvoice" />
+    <view id="grid1" />
+    <update>
+      <Label>Reporte Formato Emisión TeFacturo</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-25T19:56:17">
+    <controller name="ReportXlsInvoice" />
+    <view id="editForm1" />
+    <update>
+      <Label>Visualizar Reporte Formato Emisión TeFacturo</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-25T19:56:25">
+    <controller name="ReportXlsInvoice" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Formato Emisión TeFacturo</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-25T19:56:35">
+    <controller name="ReportXlsInvoice" />
+    <view id="createForm1" />
+    <update>
+      <Label>Nuevo Reporte Formato Emisión TeFacturo</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-25T19:56:40">
+    <controller name="ReportXlsInvoice" />
+    <view id="createForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Reporte Formato Emisión TeFacturo</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-25T19:56:52">
+    <controller name="ReportXlsInvoice" />
+    <actionGroup id="ag5" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-06-25T19:57:06">
+    <controller name="ReportXlsInvoice" />
+    <actionGroup id="ag7" />
+    <action id="a2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-06-25T20:36:06">
+    <controller name="TppLiquidation" />
+    <field name="Monto" />
+    <update>
+      <DataFormatString>N2</DataFormatString>
+    </update>
+  </c>
+</log>

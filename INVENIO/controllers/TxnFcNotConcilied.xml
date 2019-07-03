@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataController name="TxnFcNotConcilied" conflictDetection="overwriteChanges" label="Txn Fc Not Concilied" plugIn="INVENIO.Data.AnnotationPlugIn" xmlns="urn:schemas-codeontime-com:data-aquarium">
+  <commands>
+    <command id="command1" type="Text">
+      <text><![CDATA[
+select
+	"TXN_FC_NOT_CONCILIED"."Fecha_Proceso" "FechaProceso"
+	,"TXN_FC_NOT_CONCILIED"."Descripción_Proceso" "DescripcionProceso"
+	,"TXN_FC_NOT_CONCILIED"."Id_Proceso" "IDProceso"
+	,"TXN_FC_NOT_CONCILIED"."Estado_trnx" "EstadoTrnx"
+	,"TXN_FC_NOT_CONCILIED"."Código_Bolsa" "CodigoBolsa"
+	,"TXN_FC_NOT_CONCILIED"."Nombre" "Nombre"
+	,"TXN_FC_NOT_CONCILIED"."Ejecutivo_De_Ventas" "EjecutivoDeVentas"
+	,"TXN_FC_NOT_CONCILIED"."Dirección" "Direccion"
+	,"TXN_FC_NOT_CONCILIED"."Distrito" "Distrito"
+	,"TXN_FC_NOT_CONCILIED"."Terminal" "Terminal"
+	,"TXN_FC_NOT_CONCILIED"."Serial_Terminal" "SerialTerminal"
+	,"TXN_FC_NOT_CONCILIED"."Tipo" "Tipo"
+	,"TXN_FC_NOT_CONCILIED"."Tarjeta" "Tarjeta"
+	,"TXN_FC_NOT_CONCILIED"."Fecha" "Fecha"
+	,"TXN_FC_NOT_CONCILIED"."Hora" "Hora"
+	,"TXN_FC_NOT_CONCILIED"."Teléfono_Id_Servicio" "TelefonoIDServicio"
+	,"TXN_FC_NOT_CONCILIED"."Referencia" "Referencia"
+	,"TXN_FC_NOT_CONCILIED"."Recarga" "Recarga"
+	,"TXN_FC_NOT_CONCILIED"."Número_Tarjeta" "NumeroTarjeta"
+	,"TXN_FC_NOT_CONCILIED"."Referencia H2h" "ReferenciaH2h"
+	,"TXN_FC_NOT_CONCILIED"."Monto_Real" "MontoReal"
+	,"TXN_FC_NOT_CONCILIED"."Descuento" "Descuento"
+	,"TXN_FC_NOT_CONCILIED"."Monto" "Monto"
+	,"TXN_FC_NOT_CONCILIED"."Fecha_de_Carga" "FechaDeCarga"
+from "REPORT"."TXN_FC_NOT_CONCILIED" "TXN_FC_NOT_CONCILIED"
+]]></text>
+    </command>
+  </commands>
+  <fields>
+    <field name="FechaProceso" type="DateTime" label="Fecha Proceso" readOnly="true" showInSummary="true" dataFormatString="dd/MM/yyyy" />
+    <field name="DescripcionProceso" type="String" label="Descripción Proceso" length="100" showInSummary="true" />
+    <field name="IDProceso" type="Double" label="Id Proceso" showInSummary="true" />
+    <field name="EstadoTrnx" type="String" label="Estado Trnx" readOnly="true" length="13" showInSummary="true" />
+    <field name="CodigoBolsa" type="String" label="Código Bolsa" length="255" showInSummary="true" />
+    <field name="Nombre" type="String" label="Nombre" length="255" />
+    <field name="EjecutivoDeVentas" type="String" label="Ejecutivo De Ventas" length="255" />
+    <field name="Direccion" type="String" label="Dirección" length="255" />
+    <field name="Distrito" type="String" label="Distrito" length="255" />
+    <field name="Terminal" type="Decimal" label="Terminal" />
+    <field name="SerialTerminal" type="String" label="Serial Terminal" length="255" />
+    <field name="Tipo" type="String" label="Tipo" length="255" />
+    <field name="Tarjeta" type="String" label="Tarjeta" length="255" />
+    <field name="Fecha" type="DateTime" label="Fecha" readOnly="true" dataFormatString="dd/MM/yyyy" />
+    <field name="Hora" type="String" label="Hora" readOnly="true" length="8" />
+    <field name="TelefonoIDServicio" type="Decimal" label="Teléfono Id Servicio" />
+    <field name="Referencia" type="Decimal" label="Referencia" />
+    <field name="Recarga" type="String" label="Recarga" length="255" />
+    <field name="NumeroTarjeta" type="Decimal" allowNulls="false" label="Número Tarjeta" readOnly="true" />
+    <field name="ReferenciaH2h" type="String" label="Referencia H2h" length="255" />
+    <field name="MontoReal" type="Decimal" dataFormatString="N2" label="Monto Real" />
+    <field name="Descuento" type="Decimal" dataFormatString="N2" label="Descuento" />
+    <field name="Monto" type="Decimal" dataFormatString="N2" label="Monto" />
+    <field name="FechaDeCarga" type="DateTime" label="Fecha de Carga" readOnly="true" dataFormatString="dd/MM/yyyy" />
+  </fields>
+  <views>
+    <view id="grid1" type="Grid" commandId="command1" label="Reporte Transacciones no Conciliadas Full Carga">
+      <headerText>$DefaultGridViewDescription</headerText>
+      <dataFields>
+        <dataField fieldName="FechaProceso" columns="10" />
+        <dataField fieldName="DescripcionProceso" />
+        <dataField fieldName="IDProceso" columns="15" />
+        <dataField fieldName="EstadoTrnx" columns="13" />
+        <dataField fieldName="CodigoBolsa" />
+        <dataField fieldName="Nombre" />
+        <dataField fieldName="EjecutivoDeVentas" />
+        <dataField fieldName="Direccion" />
+        <dataField fieldName="Distrito" />
+        <dataField fieldName="Terminal" columns="15" />
+        <dataField fieldName="SerialTerminal" />
+        <dataField fieldName="Tipo" />
+        <dataField fieldName="Tarjeta" />
+        <dataField fieldName="Fecha" columns="10" />
+        <dataField fieldName="Hora" columns="8" />
+        <dataField fieldName="TelefonoIDServicio" columns="15" />
+        <dataField fieldName="Referencia" columns="15" />
+        <dataField fieldName="Recarga" />
+        <dataField fieldName="NumeroTarjeta" columns="15" />
+        <dataField fieldName="ReferenciaH2h" />
+        <dataField fieldName="MontoReal" columns="15" />
+        <dataField fieldName="Descuento" columns="15" />
+        <dataField fieldName="Monto" columns="15" />
+        <dataField fieldName="FechaDeCarga" columns="10" />
+      </dataFields>
+    </view>
+    <view id="editForm1" type="Form" commandId="command1" label="Visualizar Reporte Transacciones no Conciliadas Full Carga">
+      <headerText>$DefaultEditViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="Reporte Transacciones no Conciliadas Full Carga" flow="NewColumn">
+          <description><![CDATA[$DefaultEditDescription]]></description>
+          <dataFields>
+            <dataField fieldName="FechaProceso" columns="10" />
+            <dataField fieldName="DescripcionProceso" />
+            <dataField fieldName="IDProceso" columns="15" />
+            <dataField fieldName="EstadoTrnx" columns="13" />
+            <dataField fieldName="CodigoBolsa" />
+            <dataField fieldName="Nombre" />
+            <dataField fieldName="EjecutivoDeVentas" />
+            <dataField fieldName="Direccion" />
+            <dataField fieldName="Distrito" />
+            <dataField fieldName="Terminal" columns="15" />
+            <dataField fieldName="SerialTerminal" />
+            <dataField fieldName="Tipo" />
+            <dataField fieldName="Tarjeta" />
+            <dataField fieldName="Fecha" columns="10" />
+            <dataField fieldName="Hora" columns="8" />
+            <dataField fieldName="TelefonoIDServicio" columns="15" />
+            <dataField fieldName="Referencia" columns="15" />
+            <dataField fieldName="Recarga" />
+            <dataField fieldName="NumeroTarjeta" columns="15" />
+            <dataField fieldName="ReferenciaH2h" />
+            <dataField fieldName="MontoReal" columns="15" />
+            <dataField fieldName="Descuento" columns="15" />
+            <dataField fieldName="Monto" columns="15" />
+            <dataField fieldName="FechaDeCarga" columns="10" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+    <view id="createForm1" type="Form" commandId="command1" label="Nuevo Reporte Transacciones no Conciliadas Full Carga">
+      <headerText>$DefaultCreateViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="Reporte Transacciones no Conciliadas Full Carga" flow="NewColumn">
+          <description><![CDATA[$DefaultNewDescription]]></description>
+          <dataFields>
+            <dataField fieldName="FechaProceso" columns="10" />
+            <dataField fieldName="DescripcionProceso" />
+            <dataField fieldName="IDProceso" columns="15" />
+            <dataField fieldName="EstadoTrnx" columns="13" />
+            <dataField fieldName="CodigoBolsa" />
+            <dataField fieldName="Nombre" />
+            <dataField fieldName="EjecutivoDeVentas" />
+            <dataField fieldName="Direccion" />
+            <dataField fieldName="Distrito" />
+            <dataField fieldName="Terminal" columns="15" />
+            <dataField fieldName="SerialTerminal" />
+            <dataField fieldName="Tipo" />
+            <dataField fieldName="Tarjeta" />
+            <dataField fieldName="Fecha" columns="10" />
+            <dataField fieldName="Hora" columns="8" />
+            <dataField fieldName="TelefonoIDServicio" columns="15" />
+            <dataField fieldName="Referencia" columns="15" />
+            <dataField fieldName="Recarga" />
+            <dataField fieldName="NumeroTarjeta" columns="15" />
+            <dataField fieldName="ReferenciaH2h" />
+            <dataField fieldName="MontoReal" columns="15" />
+            <dataField fieldName="Descuento" columns="15" />
+            <dataField fieldName="Monto" columns="15" />
+            <dataField fieldName="FechaDeCarga" columns="10" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+  </views>
+  <actions>
+    <actionGroup id="ag1" scope="Grid">
+      <action id="a2" commandName="Edit" />
+      <action id="a3" commandName="Delete" />
+      <action id="a6" />
+      <action id="a7" commandName="New" commandArgument="grid1" />
+      <action id="a8" commandName="Duplicate" commandArgument="createForm1" />
+    </actionGroup>
+    <actionGroup id="ag2" scope="Form">
+      <action id="a1" commandName="Edit" />
+      <action id="a2" commandName="Delete" />
+      <action id="a3" commandName="Cancel" />
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Delete" />
+      <action id="a6" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a7" whenLastCommandName="New" commandName="Insert" />
+      <action id="a8" whenLastCommandName="New" commandName="Cancel" />
+      <action id="a9" whenLastCommandName="Duplicate" commandName="Insert" />
+      <action id="a10" whenLastCommandName="Duplicate" commandName="Cancel" />
+      <action id="a13" whenLastCommandName="Insert" whenView="createForm1" commandName="Select" commandArgument="editForm1" whenKeySelected="true" whenClientScript="this.hasDetails()" />
+    </actionGroup>
+    <actionGroup id="ag3" scope="ActionBar" headerText="New" flat="true">
+      <action id="a1" commandName="New" commandArgument="createForm1" cssClass="NewIcon" />
+    </actionGroup>
+    <actionGroup id="ag4" scope="ActionBar" headerText="Edit/Delete" flat="true">
+      <action id="a1" whenKeySelected="true" commandName="Edit" commandArgument="editForm1" cssClass="EditIcon" whenView="grid1" />
+      <action id="a2" whenKeySelected="true" commandName="Delete" cssClass="DeleteIcon" whenView="grid1" />
+    </actionGroup>
+    <actionGroup id="ag6" scope="ActionBar" headerText="Record">
+      <action id="a1" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a2" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a3" whenLastCommandName="New" commandName="Insert" />
+      <action id="a4" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+    <actionGroup id="ag7" scope="ActionBar" headerText="Report">
+      <action id="a1" commandName="ReportAsPdf" />
+      <action id="a3" commandName="ReportAsExcel" />
+      <action id="a4" commandName="ReportAsWord" />
+    </actionGroup>
+    <actionGroup id="ag8" scope="Row">
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a6" whenLastCommandName="New" commandName="Insert" />
+      <action id="a7" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+  </actions>
+</dataController>

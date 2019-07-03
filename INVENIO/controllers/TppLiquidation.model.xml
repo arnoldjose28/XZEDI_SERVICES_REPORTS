@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="REPORT" baseTable="TPP_LIQUIDATION" alias="TPP_LIQUIDATION" created="2019-06-25T19:54:19" modified="2019-06-25T19:54:33" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys />
+  <columns>
+    <column name="Proveedor" fieldName="Proveedor" label="Proveedor" />
+    <column name="Servicio" fieldName="Servicio" label="Servicio" />
+    <column name="Moneda" fieldName="Moneda" label="Moneda" />
+    <column name="Fecha" fieldName="Fecha" label="Fecha" />
+    <column name="Tarjeta" fieldName="Tarjeta" label="Tarjeta" />
+    <column name="Monto" fieldName="Monto" label="Monto" />
+    <column name="Id_Pago" fieldName="IDPago" label="Id Pago" />
+  </columns>
+</dataModel>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="REPORT" baseTable="TXN_FC_NOT_CONCILIED" alias="TXN_FC_NOT_CONCILIED" created="2019-05-03T13:20:14" modified="2019-05-05T18:23:36" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys />
+  <columns>
+    <column name="Fecha_Proceso" fieldName="FechaProceso" label="Fecha Proceso" />
+    <column name="Descripción_Proceso" fieldName="DescripciónProceso" label="Descripción Proceso" />
+    <column name="Id_Proceso" fieldName="IDProceso" label="Id Proceso" />
+    <column name="Estado_trnx" fieldName="EstadoTrnx" label="Estado Trnx" />
+    <column name="Código_Bolsa" fieldName="CódigoBolsa" label="Código Bolsa" />
+    <column name="Nombre" fieldName="Nombre" label="Nombre" />
+    <column name="Ejecutivo_De_Ventas" fieldName="EjecutivoDeVentas" label="Ejecutivo De Ventas" />
+    <column name="Dirección" fieldName="Dirección" label="Dirección" />
+    <column name="Distrito" fieldName="Distrito" label="Distrito" />
+    <column name="Terminal" fieldName="Terminal" label="Terminal" />
+    <column name="Serial_Terminal" fieldName="SerialTerminal" label="Serial Terminal" />
+    <column name="Tipo" fieldName="Tipo" label="Tipo" />
+    <column name="Tarjeta" fieldName="Tarjeta" label="Tarjeta" />
+    <column name="Fecha" fieldName="Fecha" label="Fecha" />
+    <column name="Hora" fieldName="Hora" label="Hora" />
+    <column name="Teléfono_Id_Servicio" fieldName="TeléfonoIDServicio" label="Teléfono Id Servicio" />
+    <column name="Referencia" fieldName="Referencia" label="Referencia" />
+    <column name="Recarga" fieldName="Recarga" label="Recarga" />
+    <column name="Número_Tarjeta" fieldName="NúmeroTarjeta" label="Número Tarjeta" />
+    <column name="Referencia H2h" fieldName="ReferenciaH2h" label="Referencia H2h" />
+    <column name="Monto_Real" fieldName="MontoReal" label="Monto Real" format="N2" />
+    <column name="Descuento" fieldName="Descuento" label="Descuento" format="N2" />
+    <column name="Monto" fieldName="Monto" label="Monto" format="N2" />
+    <column name="Fecha_de_Carga" fieldName="FechaDeCarga" label="Fecha de Carga" />
+  </columns>
+</dataModel>

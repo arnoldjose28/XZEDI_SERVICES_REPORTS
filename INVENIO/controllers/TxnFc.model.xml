@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="REPORT" baseTable="TXN_FC" alias="TXN_FC" created="2019-05-20T18:04:19" modified="2019-05-20T18:05:50" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys />
+  <columns>
+    <column name="Código_Bolsa" fieldName="CodigoBolsa" label="Código Bolsa" />
+    <column name="Nombre" fieldName="Nombre" label="Nombre" />
+    <column name="Ejecutivo_De_Ventas" fieldName="EjecutivoDeVentas" label="Ejecutivo De Ventas" />
+    <column name="Dirección" fieldName="Direccion" label="Direccion" />
+    <column name="Distrito" fieldName="Distrito" label="Distrito" />
+    <column name="Terminal" fieldName="Terminal" label="Terminal" />
+    <column name="Serie_Terminal" fieldName="SerieTerminal" label="Serie Terminal" />
+    <column name="Tipo" fieldName="Tipo" label="Tipo" />
+    <column name="Tarjeta" fieldName="Tarjeta" label="Tarjeta" />
+    <column name="Fecha" fieldName="Fecha" label="Fecha" />
+    <column name="Hora" fieldName="Hora" label="Hora" />
+    <column name="Teléfono_Id_Servicio" fieldName="TelefonoIDServicio" label="Teléfono Id Servicio" />
+    <column name="Referencia" fieldName="Referencia" label="Referencia" />
+    <column name="Recarga" fieldName="Recarga" label="Recarga" />
+    <column name="Número_Tarjeta" fieldName="NumeroTarjeta" label="Número Tarjeta" />
+    <column name="Referencia_H2h" fieldName="ReferenciaH2h" label="Referencia H2h" />
+    <column name="Monto_Real" fieldName="MontoReal" label="Monto Real" format="N2" />
+    <column name="Descuento" fieldName="Descuento" label="Descuento" format="N2" />
+    <column name="Monto" fieldName="Monto" label="Monto" format="N2" />
+    <column name="Fecha_de_Carga" fieldName="FechaDeCarga" label="Fecha de Carga" />
+  </columns>
+</dataModel>

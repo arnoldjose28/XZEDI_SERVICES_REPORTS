@@ -1,0 +1,14 @@
+﻿{
+  "appName": "REPORTS XZEDI SERVICES",
+  "splash": {
+    "Enabled": true,
+    "logo": "/images/logo_xzedi.jpg",
+    "background": "/images/fondo_logo.jpg",
+    "duration": 2500
+  },
+  "settings": {
+    "options": {
+      "theme": false
+    }
+  }
+}

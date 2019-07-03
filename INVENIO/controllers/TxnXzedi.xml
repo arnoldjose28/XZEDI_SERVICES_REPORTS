@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataController name="TxnXzedi" conflictDetection="overwriteChanges" label="Txn Xzedi" plugIn="INVENIO.Data.AnnotationPlugIn" xmlns="urn:schemas-codeontime-com:data-aquarium">
+  <commands>
+    <command id="command1" type="Text">
+      <text><![CDATA[
+select
+	"TXN_XZEDI"."ID_Trnx" "IDTrnx"
+	,"TXN_XZEDI"."Monto_de_Trnx" "MontoDeTrnx"
+	,"TXN_XZEDI"."Código_de_Moneda" "CodigoDeMoneda"
+	,"TXN_XZEDI"."Fecha_de_Trnx" "FechaDeTrnx"
+	,"TXN_XZEDI"."Cardacceptorid" "Cardacceptorid"
+	,"TXN_XZEDI"."Código_de_Recaudo" "CodigoDeRecaudo"
+	,"TXN_XZEDI"."Código_de_Comercio" "CodigoDeComercio"
+	,"TXN_XZEDI"."MCC_INT" "MccInt"
+	,"TXN_XZEDI"."Nombre_Comercial" "NombreComercial"
+	,"TXN_XZEDI"."Nro_de_Serie_de_Terminal" "NroDeSerieDeTerminal"
+	,"TXN_XZEDI"."Modelo_de_Terminal" "ModeloDeTerminal"
+	,"TXN_XZEDI"."Comercedistrict" "Comercedistrict"
+	,"TXN_XZEDI"."Terminal_Id" "TerminalID"
+	,"TXN_XZEDI"."Core_Account_Number" "CoreAccountNumber"
+	,"TXN_XZEDI"."Owner_Id" "OwnerID"
+	,"TXN_XZEDI"."ID_de_Trnx_Entidad" "IDDeTrnxEntidad"
+	,"TXN_XZEDI"."Nombre_de_Entidad" "NombreDeEntidad"
+	,"TXN_XZEDI"."Tipo_Comisión_Comercio" "TipoComisionComercio"
+	,"TXN_XZEDI"."Valor_Comisión_Comercio" "ValorComisionComercio"
+	,"TXN_XZEDI"."Comisión_Comercio_Calculado" "ComisionComercioCalculado"
+	,"TXN_XZEDI"."Tipo_Comisión_V2" "TipoComisionV2"
+	,"TXN_XZEDI"."Valor_Comisión_V2" "ValorComisionV2"
+	,"TXN_XZEDI"."Comisión_V2_Calculada" "ComisionV2Calculada"
+	,"TXN_XZEDI"."Monto_de_Servicio" "MontoDeServicio"
+	,"TXN_XZEDI"."Comisión_de_Servicio" "ComisionDeServicio"
+	,"TXN_XZEDI"."Monto_Total" "MontoTotal"
+	,"TXN_XZEDI"."Tipo_de_Operación" "TipoDeOperacion"
+	,"TXN_XZEDI"."Tipo_de_Respuesta" "TipoDeRespuesta"
+	,"TXN_XZEDI"."Código_Respuesta_Proveedor" "CodigoRespuestaProveedor"
+	,"TXN_XZEDI"."Mensaje_Respuesta_Proveedor" "MensajeRespuestaProveedor"
+from "REPORT"."TXN_XZEDI" "TXN_XZEDI"
+]]></text>
+    </command>
+  </commands>
+  <fields>
+    <field name="IDTrnx" type="String" label="ID Trnx" length="12" showInSummary="true" />
+    <field name="MontoDeTrnx" type="Decimal" allowNulls="false" dataFormatString="N2" label="Monto de Trnx" readOnly="true" showInSummary="true" />
+    <field name="CodigoDeMoneda" type="String" label="Código de Moneda" length="3" showInSummary="true" />
+    <field name="FechaDeTrnx" type="DateTime" label="Fecha de Trnx" readOnly="true" showInSummary="true" dataFormatString="dd/MM/yyyy" />
+    <field name="Cardacceptorid" type="String" label="Cardacceptorid" length="15" showInSummary="true" />
+    <field name="CodigoDeRecaudo" type="String" label="Código de Recaudo" length="20" />
+    <field name="CodigoDeComercio" type="String" label="Código de Comercio" length="15" />
+    <field name="MccInt" type="String" allowNulls="false" label="MCC INT" length="4" />
+    <field name="NombreComercial" type="String" allowNulls="false" label="Nombre Comercial" length="60" />
+    <field name="NroDeSerieDeTerminal" type="Decimal" label="Nro de Serie de Terminal" />
+    <field name="ModeloDeTerminal" type="String" label="Modelo de Terminal" length="12" />
+    <field name="Comercedistrict" type="String" label="Comercedistrict" length="16" />
+    <field name="TerminalID" type="String" label="Terminal Id" length="8" />
+    <field name="CoreAccountNumber" type="String" label="Core Account Number" length="34" />
+    <field name="OwnerID" type="String" label="Owner Id" length="20" />
+    <field name="IDDeTrnxEntidad" type="String" label="ID de Trnx Entidad" length="1024" />
+    <field name="NombreDeEntidad" type="String" label="Nombre de Entidad" length="100" />
+    <field name="TipoComisionComercio" type="String" label="Tipo Comisión Comercio" length="20" />
+    <field name="ValorComisionComercio" type="Decimal" dataFormatString="N2" label="Valor Comisión Comercio" readOnly="true" />
+    <field name="ComisionComercioCalculado" type="Decimal" allowNulls="false" dataFormatString="N2" label="Comisión Comercio Calculado" readOnly="true" />
+    <field name="TipoComisionV2" type="String" allowNulls="false" label="Tipo Comisión V2" readOnly="true" length="20" />
+    <field name="ValorComisionV2" type="Decimal" allowNulls="false" dataFormatString="N2" label="Valor Comisión V2" readOnly="true" />
+    <field name="ComisionV2Calculada" type="Decimal" allowNulls="false" dataFormatString="N2" label="Comisión V2 Calculada" readOnly="true" />
+    <field name="MontoDeServicio" type="Decimal" allowNulls="false" dataFormatString="N2" label="Monto de Servicio" readOnly="true" />
+    <field name="ComisionDeServicio" type="Decimal" dataFormatString="N2" label="Comisión de Servicio" readOnly="true" />
+    <field name="MontoTotal" type="Decimal" allowNulls="false" dataFormatString="N2" label="Monto Total" readOnly="true" />
+    <field name="TipoDeOperacion" type="String" label="Tipo de Operación" length="100" />
+    <field name="TipoDeRespuesta" type="String" label="Tipo de Respuesta" length="100" />
+    <field name="CodigoRespuestaProveedor" type="String" allowNulls="false" label="Código Respuesta Proveedor" readOnly="true" length="6" />
+    <field name="MensajeRespuestaProveedor" type="String" allowNulls="false" label="Mensaje Respuesta Proveedor" readOnly="true" length="100" />
+  </fields>
+  <views>
+    <view id="grid1" type="Grid" commandId="command1" label="Reporte Xzedi">
+      <headerText>$DefaultGridViewDescription</headerText>
+      <dataFields>
+        <dataField fieldName="IDTrnx" columns="12" />
+        <dataField fieldName="MontoDeTrnx" columns="15" />
+        <dataField fieldName="CodigoDeMoneda" columns="3" />
+        <dataField fieldName="FechaDeTrnx" columns="10" />
+        <dataField fieldName="Cardacceptorid" columns="15" />
+        <dataField fieldName="CodigoDeRecaudo" columns="20" />
+        <dataField fieldName="CodigoDeComercio" columns="15" />
+        <dataField fieldName="MccInt" columns="4" />
+        <dataField fieldName="NombreComercial" />
+        <dataField fieldName="NroDeSerieDeTerminal" columns="15" />
+        <dataField fieldName="ModeloDeTerminal" columns="12" />
+        <dataField fieldName="Comercedistrict" columns="16" />
+        <dataField fieldName="TerminalID" columns="8" />
+        <dataField fieldName="CoreAccountNumber" columns="34" />
+        <dataField fieldName="OwnerID" columns="20" />
+        <dataField fieldName="IDDeTrnxEntidad" />
+        <dataField fieldName="NombreDeEntidad" />
+        <dataField fieldName="TipoComisionComercio" columns="20" />
+        <dataField fieldName="ValorComisionComercio" columns="15" />
+        <dataField fieldName="ComisionComercioCalculado" columns="15" />
+        <dataField fieldName="TipoComisionV2" columns="20" />
+        <dataField fieldName="ValorComisionV2" columns="15" />
+        <dataField fieldName="ComisionV2Calculada" columns="15" />
+        <dataField fieldName="MontoDeServicio" columns="15" />
+        <dataField fieldName="ComisionDeServicio" columns="15" />
+        <dataField fieldName="MontoTotal" columns="15" />
+        <dataField fieldName="TipoDeOperacion" />
+        <dataField fieldName="TipoDeRespuesta" />
+        <dataField fieldName="CodigoRespuestaProveedor" columns="6" />
+        <dataField fieldName="MensajeRespuestaProveedor" />
+      </dataFields>
+    </view>
+    <view id="editForm1" type="Form" commandId="command1" label="Visualizar Reporte Xzedi">
+      <headerText>$DefaultEditViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="Reporte Xzedi" flow="NewColumn">
+          <description><![CDATA[$DefaultEditDescription]]></description>
+          <dataFields>
+            <dataField fieldName="IDTrnx" columns="12" />
+            <dataField fieldName="MontoDeTrnx" columns="15" />
+            <dataField fieldName="CodigoDeMoneda" columns="3" />
+            <dataField fieldName="FechaDeTrnx" columns="10" />
+            <dataField fieldName="Cardacceptorid" columns="15" />
+            <dataField fieldName="CodigoDeRecaudo" columns="20" />
+            <dataField fieldName="CodigoDeComercio" columns="15" />
+            <dataField fieldName="MccInt" columns="4" />
+            <dataField fieldName="NombreComercial" />
+            <dataField fieldName="NroDeSerieDeTerminal" columns="15" />
+            <dataField fieldName="ModeloDeTerminal" columns="12" />
+            <dataField fieldName="Comercedistrict" columns="16" />
+            <dataField fieldName="TerminalID" columns="8" />
+            <dataField fieldName="CoreAccountNumber" columns="34" />
+            <dataField fieldName="OwnerID" columns="20" />
+            <dataField fieldName="IDDeTrnxEntidad" />
+            <dataField fieldName="NombreDeEntidad" />
+            <dataField fieldName="TipoComisionComercio" columns="20" />
+            <dataField fieldName="ValorComisionComercio" columns="15" />
+            <dataField fieldName="ComisionComercioCalculado" columns="15" />
+            <dataField fieldName="TipoComisionV2" columns="20" />
+            <dataField fieldName="ValorComisionV2" columns="15" />
+            <dataField fieldName="ComisionV2Calculada" columns="15" />
+            <dataField fieldName="MontoDeServicio" columns="15" />
+            <dataField fieldName="ComisionDeServicio" columns="15" />
+            <dataField fieldName="MontoTotal" columns="15" />
+            <dataField fieldName="TipoDeOperacion" />
+            <dataField fieldName="TipoDeRespuesta" />
+            <dataField fieldName="CodigoRespuestaProveedor" columns="6" />
+            <dataField fieldName="MensajeRespuestaProveedor" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+    <view id="createForm1" type="Form" commandId="command1" label="Nuevo Reporte Xzedi">
+      <headerText>$DefaultCreateViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="Reporte Xzedi" flow="NewColumn">
+          <description><![CDATA[$DefaultNewDescription]]></description>
+          <dataFields>
+            <dataField fieldName="IDTrnx" columns="12" />
+            <dataField fieldName="MontoDeTrnx" columns="15" />
+            <dataField fieldName="CodigoDeMoneda" columns="3" />
+            <dataField fieldName="FechaDeTrnx" columns="10" />
+            <dataField fieldName="Cardacceptorid" columns="15" />
+            <dataField fieldName="CodigoDeRecaudo" columns="20" />
+            <dataField fieldName="CodigoDeComercio" columns="15" />
+            <dataField fieldName="MccInt" columns="4" />
+            <dataField fieldName="NombreComercial" />
+            <dataField fieldName="NroDeSerieDeTerminal" columns="15" />
+            <dataField fieldName="ModeloDeTerminal" columns="12" />
+            <dataField fieldName="Comercedistrict" columns="16" />
+            <dataField fieldName="TerminalID" columns="8" />
+            <dataField fieldName="CoreAccountNumber" columns="34" />
+            <dataField fieldName="OwnerID" columns="20" />
+            <dataField fieldName="IDDeTrnxEntidad" />
+            <dataField fieldName="NombreDeEntidad" />
+            <dataField fieldName="TipoComisionComercio" columns="20" />
+            <dataField fieldName="ValorComisionComercio" columns="15" />
+            <dataField fieldName="ComisionComercioCalculado" columns="15" />
+            <dataField fieldName="TipoComisionV2" columns="20" />
+            <dataField fieldName="ValorComisionV2" columns="15" />
+            <dataField fieldName="ComisionV2Calculada" columns="15" />
+            <dataField fieldName="MontoDeServicio" columns="15" />
+            <dataField fieldName="ComisionDeServicio" columns="15" />
+            <dataField fieldName="MontoTotal" columns="15" />
+            <dataField fieldName="TipoDeOperacion" />
+            <dataField fieldName="TipoDeRespuesta" />
+            <dataField fieldName="CodigoRespuestaProveedor" columns="6" />
+            <dataField fieldName="MensajeRespuestaProveedor" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+  </views>
+  <actions>
+    <actionGroup id="ag7" scope="ActionBar" headerText="Report">
+      <action id="a1" commandName="ReportAsPdf" />
+      <action id="a3" commandName="ReportAsExcel" />
+      <action id="a4" commandName="ReportAsWord" />
+    </actionGroup>
+  </actions>
+</dataController>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="REPORT" baseTable="REPORT_AMOUNTS" alias="REPORT_AMOUNTS" created="2019-05-20T17:10:02" modified="2019-05-20T17:12:41" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys />
+  <columns>
+    <column name="Fecha_Proceso" fieldName="FechaProceso" label="Fecha Proceso" />
+    <column name="Descripción_Proceso" fieldName="DescripciónProceso" label="Descripción Proceso" />
+    <column name="Id_Proceso" fieldName="IDProceso" label="Id Proceso" />
+    <column name="Nombre_Empresa" fieldName="NombreEmpresa" label="Nombre Empresa" />
+    <column name="Total_Trnx" fieldName="TotalTrnx" label="Total Trnx" />
+    <column name="Total_Monto" fieldName="TotalMonto" label="Total Monto" format="N2" />
+    <column name="Total_Comisión_V2" fieldName="TotalComisiónV2" label="Total Comisión V2" format="N2" />
+    <column name="Total_Comisión_Comercios" fieldName="TotalComisiónComercios" label="Total Comisión Comercios" format="N2" />
+    <column name="Total_Trnx_Conciliadas" fieldName="TotalTrnxConciliadas" label="Total Trnx Conciliadas" />
+    <column name="Total_Monto_Conciliadas" fieldName="TotalMontoConciliadas" label="Total Monto Conciliadas" format="N2" />
+    <column name="Total_Comisiones_V2_Conciliadas" fieldName="TotalComisionesV2Conciliadas" label="Total Comisiones V2 Conciliadas" format="N2" />
+    <column name="Total_Comisiones_Comercios_Conciliadas" fieldName="TotalComisionesComerciosConciliadas" label="Total Comisiones Comercios Conciliadas" format="N2" />
+    <column name="Total_Trnx_No_Conciliadas" fieldName="TotalTrnxNoConciliadas" label="Total Trnx No Conciliadas" />
+    <column name="Total_Monto_No_Conciliado" fieldName="TotalMontoNoConciliado" label="Total Monto No Conciliado" format="N2" />
+    <column name="Total_Comisión_V2_No_Conciliada" fieldName="TotalComisiónV2NoConciliada" label="Total Comisión V2 No Conciliada" format="N2" />
+    <column name="Total_Comisiones_Comercio_No_Conciliadas" fieldName="TotalComisionesComercioNoConciliadas" label="Total Comisiones Comercio No Conciliadas" format="N2" />
+  </columns>
+</dataModel>

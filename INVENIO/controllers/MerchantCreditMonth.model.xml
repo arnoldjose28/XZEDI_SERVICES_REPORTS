@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="REPORT" baseTable="MERCHANT_CREDIT_MONTH" alias="MERCHANT_CREDIT_MONTH" created="2019-05-20T17:22:25" modified="2019-05-20T17:23:22" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys />
+  <columns>
+    <column name="Código_de_Comercio" fieldName="CodigoDeComercio" label="Código de Comercio" />
+    <column name="Nombre_de_Comercio" fieldName="NombreDeComercio" label="Nombre de Comercio" />
+    <column name="Monto_de_Abono" fieldName="MontoDeAbono" label="Monto de Abono" format="N2" />
+    <column name="Código_de_Recaudo" fieldName="CodigoDeRecaudo" label="Código de Recaudo" />
+    <column name="Comisión_Recaudo" fieldName="ComisionRecaudo" label="Comision Recaudo" format="N2" />
+  </columns>
+</dataModel>

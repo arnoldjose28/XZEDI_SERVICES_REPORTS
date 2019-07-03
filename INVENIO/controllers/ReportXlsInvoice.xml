@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataController name="ReportXlsInvoice" conflictDetection="overwriteChanges" label="Report Xls Invoice" plugIn="INVENIO.Data.AnnotationPlugIn" xmlns="urn:schemas-codeontime-com:data-aquarium">
+  <commands>
+    <command id="command1" type="Text">
+      <text><![CDATA[
+select
+	"REPORT_XLS_INVOICE"."IDPROCESO" "Idproceso"
+	,"REPORT_XLS_INVOICE"."FECHA_EMISION" "FechaEmision"
+	,"REPORT_XLS_INVOICE"."TIPO_DOCUMENTO" "TipoDocumento"
+	,"REPORT_XLS_INVOICE"."SERIE" "Serie"
+	,"REPORT_XLS_INVOICE"."NUM_DOCUMENTO" "NumDocumento"
+	,"REPORT_XLS_INVOICE"."TIPO_DOC_CLIENTE" "TipoDocCliente"
+	,"REPORT_XLS_INVOICE"."DOCUMENTO" "Documento"
+	,"REPORT_XLS_INVOICE"."RAZON_SOCIAL" "RazonSocial"
+	,"REPORT_XLS_INVOICE"."DIRECCION" "Direccion"
+	,"REPORT_XLS_INVOICE"."EMAIL_COMERCIAL" "EmailComercial"
+	,"REPORT_XLS_INVOICE"."CORREO_COPIA" "CorreoCopia"
+	,"REPORT_XLS_INVOICE"."MONEDA" "Moneda"
+	,"REPORT_XLS_INVOICE"."FORMA_PAGO" "FormaPago"
+	,"REPORT_XLS_INVOICE"."OBSERVACIONES" "Observaciones"
+	,"REPORT_XLS_INVOICE"."IGV" "Igv"
+	,"REPORT_XLS_INVOICE"."TIPO_OPERACION" "TipoOperacion"
+	,"REPORT_XLS_INVOICE"."DETRACCION" "Detraccion"
+	,"REPORT_XLS_INVOICE"."SERVICIO_DETRACC" "ServicioDetracc"
+	,"REPORT_XLS_INVOICE"."PORCENTAJE_DETRACC" "PorcentajeDetracc"
+	,"REPORT_XLS_INVOICE"."FECHA_VENCIMIENTO" "FechaVencimiento"
+	,"REPORT_XLS_INVOICE"."ITEM" "Item"
+	,"REPORT_XLS_INVOICE"."CODIGO" "Codigo"
+	,"REPORT_XLS_INVOICE"."DESCRIPCION" "Descripcion"
+	,"REPORT_XLS_INVOICE"."CANTIDAD" "Cantidad"
+	,"REPORT_XLS_INVOICE"."UNIDAD" "Unidad"
+	,"REPORT_XLS_INVOICE"."TIPO_AFEC" "TipoAfec"
+	,"REPORT_XLS_INVOICE"."TOTAL_FACTURAR" "TotalFacturar"
+	,"REPORT_XLS_INVOICE"."REF_FACTURA" "RefFactura"
+from "REPORT"."REPORT_XLS_INVOICE" "REPORT_XLS_INVOICE"
+]]></text>
+    </command>
+  </commands>
+  <fields>
+    <field name="Idproceso" type="Int32" label="Id Proceso" showInSummary="true" />
+    <field name="FechaEmision" type="DateTime" dataFormatString="" label="Fecha Emisión" readOnly="true" showInSummary="true" />
+    <field name="TipoDocumento" type="String" label="Tipo Documento" length="7" showInSummary="true" />
+    <field name="Serie" type="String" label="Serie" length="4" showInSummary="true" />
+    <field name="NumDocumento" type="String" label="Num Documento" length="1" showInSummary="true" />
+    <field name="TipoDocCliente" type="String" label="Tipo Doc Cliente" length="25" />
+    <field name="Documento" type="String" label="Documento" length="250" />
+    <field name="RazonSocial" type="String" label="Razon Social" length="250" />
+    <field name="Direccion" type="String" label="Dirección" length="1006" />
+    <field name="EmailComercial" type="String" label="Email Comercial" length="250" />
+    <field name="CorreoCopia" type="String" label="Correo Copia" length="1" />
+    <field name="Moneda" type="String" label="Moneda" length="5" />
+    <field name="FormaPago" type="String" label="Forma Pago" length="16" />
+    <field name="Observaciones" type="String" label="Observaciones" length="258" />
+    <field name="Igv" type="String" label="Igv" length="2" />
+    <field name="TipoOperacion" type="String" label="Tipo Operación" length="13" />
+    <field name="Detraccion" type="String" label="Detracción" length="2" />
+    <field name="ServicioDetracc" type="String" label="Servicio Detracc" length="1" />
+    <field name="PorcentajeDetracc" type="String" label="Porcentaje Detracc" length="1" />
+    <field name="FechaVencimiento" type="DateTime" dataFormatString="" label="Fecha Vencimiento" readOnly="true" />
+    <field name="Item" type="String" label="Item" length="1" />
+    <field name="Codigo" type="String" label="Código" length="6" />
+    <field name="Descripcion" type="String" label="Descripción" length="42" />
+    <field name="Cantidad" type="String" label="Cantidad" length="1" />
+    <field name="Unidad" type="String" label="Unidad" length="16" />
+    <field name="TipoAfec" type="String" label="Tipo Afec" length="25" />
+    <field name="TotalFacturar" type="Decimal" dataFormatString="N2" label="Total Facturar" />
+    <field name="RefFactura" type="String" label="Ref Factura" length="200" />
+  </fields>
+  <views>
+    <view id="grid1" type="Grid" commandId="command1" label="Reporte Formato Emisión TeFacturo">
+      <headerText>$DefaultGridViewDescription</headerText>
+      <dataFields>
+        <dataField fieldName="Idproceso" columns="15" />
+        <dataField fieldName="FechaEmision" columns="20" />
+        <dataField fieldName="TipoDocumento" columns="7" />
+        <dataField fieldName="Serie" columns="4" />
+        <dataField fieldName="NumDocumento" columns="1" />
+        <dataField fieldName="TipoDocCliente" columns="25" />
+        <dataField fieldName="Documento" />
+        <dataField fieldName="RazonSocial" />
+        <dataField fieldName="Direccion" />
+        <dataField fieldName="EmailComercial" />
+        <dataField fieldName="CorreoCopia" columns="1" />
+        <dataField fieldName="Moneda" columns="5" />
+        <dataField fieldName="FormaPago" columns="16" />
+        <dataField fieldName="Observaciones" />
+        <dataField fieldName="Igv" columns="2" />
+        <dataField fieldName="TipoOperacion" columns="13" />
+        <dataField fieldName="Detraccion" columns="2" />
+        <dataField fieldName="ServicioDetracc" columns="1" />
+        <dataField fieldName="PorcentajeDetracc" columns="1" />
+        <dataField fieldName="FechaVencimiento" columns="20" />
+        <dataField fieldName="Item" columns="1" />
+        <dataField fieldName="Codigo" columns="6" />
+        <dataField fieldName="Descripcion" columns="42" />
+        <dataField fieldName="Cantidad" columns="1" />
+        <dataField fieldName="Unidad" columns="16" />
+        <dataField fieldName="TipoAfec" columns="25" />
+        <dataField fieldName="TotalFacturar" columns="15" />
+        <dataField fieldName="RefFactura" />
+      </dataFields>
+    </view>
+    <view id="editForm1" type="Form" commandId="command1" label="Visualizar Reporte Formato Emisión TeFacturo">
+      <headerText>$DefaultEditViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="Reporte Formato Emisión TeFacturo" flow="NewColumn">
+          <description><![CDATA[$DefaultEditDescription]]></description>
+          <dataFields>
+            <dataField fieldName="Idproceso" columns="15" />
+            <dataField fieldName="FechaEmision" columns="20" />
+            <dataField fieldName="TipoDocumento" columns="7" />
+            <dataField fieldName="Serie" columns="4" />
+            <dataField fieldName="NumDocumento" columns="1" />
+            <dataField fieldName="TipoDocCliente" columns="25" />
+            <dataField fieldName="Documento" />
+            <dataField fieldName="RazonSocial" />
+            <dataField fieldName="Direccion" />
+            <dataField fieldName="EmailComercial" />
+            <dataField fieldName="CorreoCopia" columns="1" />
+            <dataField fieldName="Moneda" columns="5" />
+            <dataField fieldName="FormaPago" columns="16" />
+            <dataField fieldName="Observaciones" />
+            <dataField fieldName="Igv" columns="2" />
+            <dataField fieldName="TipoOperacion" columns="13" />
+            <dataField fieldName="Detraccion" columns="2" />
+            <dataField fieldName="ServicioDetracc" columns="1" />
+            <dataField fieldName="PorcentajeDetracc" columns="1" />
+            <dataField fieldName="FechaVencimiento" columns="20" />
+            <dataField fieldName="Item" columns="1" />
+            <dataField fieldName="Codigo" columns="6" />
+            <dataField fieldName="Descripcion" columns="42" />
+            <dataField fieldName="Cantidad" columns="1" />
+            <dataField fieldName="Unidad" columns="16" />
+            <dataField fieldName="TipoAfec" columns="25" />
+            <dataField fieldName="TotalFacturar" columns="15" />
+            <dataField fieldName="RefFactura" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+    <view id="createForm1" type="Form" commandId="command1" label="Nuevo Reporte Formato Emisión TeFacturo">
+      <headerText>$DefaultCreateViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="Reporte Formato Emisión TeFacturo" flow="NewColumn">
+          <description><![CDATA[$DefaultNewDescription]]></description>
+          <dataFields>
+            <dataField fieldName="Idproceso" columns="15" />
+            <dataField fieldName="FechaEmision" columns="20" />
+            <dataField fieldName="TipoDocumento" columns="7" />
+            <dataField fieldName="Serie" columns="4" />
+            <dataField fieldName="NumDocumento" columns="1" />
+            <dataField fieldName="TipoDocCliente" columns="25" />
+            <dataField fieldName="Documento" />
+            <dataField fieldName="RazonSocial" />
+            <dataField fieldName="Direccion" />
+            <dataField fieldName="EmailComercial" />
+            <dataField fieldName="CorreoCopia" columns="1" />
+            <dataField fieldName="Moneda" columns="5" />
+            <dataField fieldName="FormaPago" columns="16" />
+            <dataField fieldName="Observaciones" />
+            <dataField fieldName="Igv" columns="2" />
+            <dataField fieldName="TipoOperacion" columns="13" />
+            <dataField fieldName="Detraccion" columns="2" />
+            <dataField fieldName="ServicioDetracc" columns="1" />
+            <dataField fieldName="PorcentajeDetracc" columns="1" />
+            <dataField fieldName="FechaVencimiento" columns="20" />
+            <dataField fieldName="Item" columns="1" />
+            <dataField fieldName="Codigo" columns="6" />
+            <dataField fieldName="Descripcion" columns="42" />
+            <dataField fieldName="Cantidad" columns="1" />
+            <dataField fieldName="Unidad" columns="16" />
+            <dataField fieldName="TipoAfec" columns="25" />
+            <dataField fieldName="TotalFacturar" columns="15" />
+            <dataField fieldName="RefFactura" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+  </views>
+  <actions>
+    <actionGroup id="ag1" scope="Grid">
+      <action id="a1" commandName="Select" commandArgument="editForm1" />
+      <action id="a2" commandName="Edit" />
+      <action id="a3" commandName="Delete" />
+      <action id="a6" />
+      <action id="a7" commandName="New" commandArgument="grid1" />
+      <action id="a8" commandName="Duplicate" commandArgument="createForm1" />
+    </actionGroup>
+    <actionGroup id="ag2" scope="Form">
+      <action id="a1" commandName="Edit" />
+      <action id="a2" commandName="Delete" />
+      <action id="a3" commandName="Cancel" />
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Delete" />
+      <action id="a6" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a7" whenLastCommandName="New" commandName="Insert" />
+      <action id="a8" whenLastCommandName="New" commandName="Cancel" />
+      <action id="a9" whenLastCommandName="Duplicate" commandName="Insert" />
+      <action id="a10" whenLastCommandName="Duplicate" commandName="Cancel" />
+      <action id="a13" whenLastCommandName="Insert" whenView="createForm1" commandName="Select" commandArgument="editForm1" whenKeySelected="true" whenClientScript="this.hasDetails()" />
+    </actionGroup>
+    <actionGroup id="ag3" scope="ActionBar" headerText="New" flat="true">
+      <action id="a1" commandName="New" commandArgument="createForm1" cssClass="NewIcon" />
+    </actionGroup>
+    <actionGroup id="ag4" scope="ActionBar" headerText="Edit/Delete" flat="true">
+      <action id="a1" whenKeySelected="true" commandName="Edit" commandArgument="editForm1" cssClass="EditIcon" whenView="grid1" />
+      <action id="a2" whenKeySelected="true" commandName="Delete" cssClass="DeleteIcon" whenView="grid1" />
+    </actionGroup>
+    <actionGroup id="ag6" scope="ActionBar" headerText="Record">
+      <action id="a1" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a2" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a3" whenLastCommandName="New" commandName="Insert" />
+      <action id="a4" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+    <actionGroup id="ag7" scope="ActionBar" headerText="Report">
+      <action id="a1" commandName="ReportAsPdf" />
+      <action id="a3" commandName="ReportAsExcel" />
+      <action id="a4" commandName="ReportAsWord" />
+    </actionGroup>
+    <actionGroup id="ag8" scope="Row">
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a6" whenLastCommandName="New" commandName="Insert" />
+      <action id="a7" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+  </actions>
+</dataController>

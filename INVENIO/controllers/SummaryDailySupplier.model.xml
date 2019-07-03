@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="REPORT" baseTable="SUMMARY_DAILY_SUPPLIER" alias="SUMMARY_DAILY_SUPPLIER" created="2019-05-22T10:38:08" modified="2019-05-22T10:40:44" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys />
+  <columns>
+    <column name="Fecha_Inicio_Periodo" fieldName="FechaInicioPeriodo" label="Fecha Inicio Periodo" format="dd/MM/yyyy" />
+    <column name="Fecha_Fin_Periodo" fieldName="FechaFinPeriodo" label="Fecha Fin Periodo" format="dd/MM/yyyy" />
+    <column name="Frecuencia" fieldName="Frecuencia" label="Frecuencia" />
+    <column name="Nombre_de_Entidad" fieldName="NombreDeEntidad" label="Nombre de Entidad" />
+    <column name="Código_de_Entidad" fieldName="CodigoDeEntidad" label="Código de Entidad" />
+    <column name="Monto_Total" fieldName="MontoTotal" label="Monto Total" format="N2" />
+    <column name="Total_Trnx" fieldName="TotalTrnx" label="Total Trnx" />
+    <column name="Comisión_V2" fieldName="ComisionV2" label="Comisión V2" format="N2" />
+    <column name="Comisión_Comercio" fieldName="ComisionComercio" label="Comisión Comercio" format="N2" />
+    <column name="Total_Pagar_Proveedor" fieldName="TotalPagarProveedor" label="Total Pagar Proveedor" format="N2" />
+    <column name="Estado_de_la_Operación" fieldName="EstadoDeLaOperacion" label="Estado de la Operación" />
+  </columns>
+</dataModel>

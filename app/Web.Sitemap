@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode title="^SiteHome^Home^SiteHome^" description="" url="~/index.html">
+    <siteMapNode title="^HomePath^Home^HomePath^" description="^HomeDesc^Paguina de inicio^HomeDesc^" url="~/pages/home" cssClass="Wide" />
+    <siteMapNode title="Compensación Diaria" description="Visualizar Reportes Compensación Diaria" url="~/pages/compensacion-diaria" roles="Administrators,User,Tpp" cssClass="material-icon-assignment">
+      <siteMapNode title="Reporte Xzedi" description="Visualizar Reporte Xzedi" url="~/pages/txn-xzedi" roles="Administrators,User" cssClass="material-icon-chrome-reader-mode" />
+      <siteMapNode title="Proveedores" description="Visualizar Reportes de Proveedores" url="~/pages/proveedores" roles="Administrators,User" cssClass="material-icon-store-mall-directory">
+        <siteMapNode title="Reporte FullCarga" description="Visualizar Reporte FullCarga" url="~/pages/txn-fc" cssClass="material-icon-description" />
+        <siteMapNode title="Reporte TPP" description="Visualizar Reporte TPP" url="~/pages/txn-ttp" cssClass="material-icon-low-priority" />
+      </siteMapNode>
+      <siteMapNode title="Conciliación" description="Visualizar Reportes de Conciliación" url="~/pages/conciliacion" roles="Administrators,User,Tpp" cssClass="material-icon-subject">
+        <siteMapNode title="Reporte Resumen de Transacciones General" description="Visualizar Reporte Resumen de Transacciones General" url="~/pages/report-amounts" roles="Administrators,User" cssClass="material-icon-storage" />
+        <siteMapNode title="Reporte Transacciones Conciliadas" description="Visualizar Reporte Transacciones Conciliadas" url="~/pages/txn-reconciled" roles="Administrators,User" cssClass="material-icon-tune" />
+        <siteMapNode title="Reporte Conciliación TPP" description="Visualizar Reporte Conciliación TPP" url="~/pages/report-conciliation-tpp" roles="Tpp" cssClass="material-icon-link" />
+        <siteMapNode title="Reporte Liquidación TPP" description="Visualizar Reporte Liquidación TPP" url="~/pages/tpp-liquidation" roles="Administrators,User" cssClass="material-icon-offline-pin" />
+      </siteMapNode>
+      <siteMapNode title="Transacciones no Conciliadas" description="Visualizar Reporte Transacciones no conciliadas" url="~/pages/transaccionesno-conciliadas" roles="Administrators,User" cssClass="material-icon-pie-chart">
+        <siteMapNode title="Reporte Transacciones no Conciliadas XZEDI" description="Visualizar Reporte Transacciones no Conciliadas XZEDI" url="~/pages/txn-xzedi-not-concilied" cssClass="material-icon-gradient" />
+        <siteMapNode title="Reporte Transacciones no Conciliadas Full Carga" description="Visualizar Reporte Transacciones no Conciliadas Full Carga" url="~/pages/txn-fc-not-concilied" cssClass="material-icon-filter-list" />
+        <siteMapNode title="Reporte Transacciones no Conciliadas TPP" description="Visualizar Reporte Transacciones no Conciliadas TPP" url="~/pages/txn-ttp-not-concilied" cssClass="material-icon-input" />
+      </siteMapNode>
+      <siteMapNode title="Reporte Cuadre por Producto" description="Visualizar Reporte Cuadre por Producto" url="~/pages/entity-assort" roles="Administrators,User" cssClass="material-icon-tonality" />
+      <siteMapNode title="Reporte Pago a Proveedores" description="Visualizar Reporte Pago a Proveedores" url="~/pages/summary-daily-supplier" roles="Administrators,User" cssClass="material-icon-table-chart" />
+      <siteMapNode title="Reporte Transacciones Pagadas" description="Visualizar Reporte Transacciones Pagadas" url="~/pages/txn-paid" roles="Administrators,User" cssClass="material-icon-monetization-on" />
+    </siteMapNode>
+    <siteMapNode title="Comercios" description="Visualizar Reportes de Comercios" url="~/pages/comercios" roles="Administrators,User" cssClass="material-icon-store">
+      <siteMapNode title="Reporte Abono Comercios" description="Visualizar Reporte Abono Comercios" url="~/pages/merchant-credit" cssClass="material-icon-attach-money" />
+      <siteMapNode title="Reporte Resumen Comercios" description="Visualizar Reporte Resumen Comercios" url="~/pages/merchant-summary" cssClass="material-icon-multiline-chart" />
+    </siteMapNode>
+    <siteMapNode title="Compensación Mensual" description="Visualizar Reportes de Compensación Mensual" url="~/pages/compensacion-mensual" roles="Administrators,User" cssClass="material-icon-iso">
+      <siteMapNode title="Reporte Transacciones Pagadas por Mes" description="Visualizar Reporte Transacciones Pagadas por Mes" url="~/pages/txn-paid-month" cssClass="material-icon-tune" />
+      <siteMapNode title="Reporte Resumen Pago por Mes" description="Visualizar Reporte Resumen Pago por Mes" url="~/pages/summary-month-payment" cssClass="material-icon-apps" />
+      <siteMapNode title="Reporte Resumen Abonos a Comercios por Mes" description="Visualizar Reporte Resumen Abonos a Comercios por Mes" url="~/pages/merchant-credit-month" cssClass="material-icon-more-horiz" />
+      <siteMapNode title="Reporte Facturación a Comercios" description="Visualizar Reporte Facturación a Comercios" url="~/pages/report-monthly-invoice" cssClass="material-icon-view-module" />
+      <siteMapNode title="Reporte Formato Emisión TeFacturo" description="Visualizar Reporte Formato Emisión TeFacturo" url="~/pages/report-xls-invoice" roles=")" cssClass="material-icon-playlist-add-check" />
+    </siteMapNode>
+    <siteMapNode title="Gestión" description="Visualizar Gestiones" url="~/pages/gestion" roles="Administrators,User" cssClass="material-icon-dns">
+      <siteMapNode title="Informe de Ejecución" description="Visualizar Informe de Ejecución" url="~/pages/report-execution" cssClass="material-icon-build" />
+      <siteMapNode title="Reportes" description="Visualizar Reportes" url="~/pages/reports" cssClass="material-icon-note" />
+    </siteMapNode>
+    <siteMapNode title="Seguridad" description="Usuarios y Roles " url="~/pages/membership" roles="Administrators" />
+  </siteMapNode>
+</siteMap>

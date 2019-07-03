@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="REPORT" baseTable="REPORT_CONCILIATION_TPP" alias="REPORT_CONCILIATION_TPP" created="2019-06-17T20:00:10" modified="2019-06-17T20:00:34" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys />
+  <columns>
+    <column name="PROVEEDOR" fieldName="Proveedor" label="Proveedor" />
+    <column name="SERVICIO" fieldName="Servicio" label="Servicio" />
+    <column name="MONEDA" fieldName="Moneda" label="Moneda" />
+    <column name="FECHA" fieldName="Fecha" label="Fecha" format="g" />
+    <column name="TARJETA" fieldName="Tarjeta" label="Tarjeta" />
+    <column name="MONTO" fieldName="Monto" label="Monto" />
+    <column name="IDPAGO" fieldName="Idpago" label="Idpago" />
+  </columns>
+</dataModel>

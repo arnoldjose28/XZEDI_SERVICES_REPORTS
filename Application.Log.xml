@@ -1,0 +1,2170 @@
+<log xmlns="urn:schemas-codeontime-com:xml-builder" xmlns:aquarium="urn:schemas-codeontime-com:data-aquarium" xmlns:app="urn:schemas-codeontime-com:data-aquarium-application" xmlns:a="urn:schemas-codeontime-com:data-aquarium">
+  <c y="NodeSet" t="2019-03-22T12:43:17">
+    <pages />
+    <insert type="page">
+      <Name>Compensaci_nDiaria</Name>
+      <Generate>Always</Generate>
+      <UseExtenders>false</UseExtenders>
+      <Path>Compensación Diaria</Path>
+      <Title>Compensación Diaria</Title>
+    </insert>
+  </c>
+  <c y="NodeSet" t="2019-03-22T12:48:59">
+    <page name="Compensaci_nDiaria" />
+    <update>
+      <Name>CompensacionDiaria</Name>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-22T12:49:06">
+    <page name="TxnIgnis" />
+    <before>
+      <page name="CompensacionDiaria" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-03-22T12:51:56">
+    <page name="CompensacionDiaria" />
+    <move>
+      <page name="TxnIgnis" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-03-22T12:51:59">
+    <page name="CompensacionDiaria" />
+    <move>
+      <page name="TxnFc" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-03-22T12:52:02">
+    <page name="CompensacionDiaria" />
+    <move>
+      <page name="ReportAmounts" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-03-22T12:54:52">
+    <pages />
+    <insert type="page">
+      <Name>Gestion</Name>
+      <Generate>Always</Generate>
+      <UseExtenders>false</UseExtenders>
+      <Path>Gestion</Path>
+      <Title>Gestión</Title>
+    </insert>
+  </c>
+  <c y="NodeSet" t="2019-03-22T15:36:40">
+    <page name="ReportAmounts" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Title>Informe de Ejecución</Title>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-22T15:36:50">
+    <page name="ReportExecution" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Title>Informe de Ejecución</Title>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-22T15:37:00">
+    <page name="TxnIgnis" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Title>Ignis</Title>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-22T15:37:09">
+    <page name="TxnFc" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Title>Fc</Title>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-22T15:37:26">
+    <page name="ReportAmounts" />
+    <update>
+      <Title>Conciliación</Title>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T08:43:39">
+    <page name="Gestion" />
+    <move>
+      <page name="ReportExecution" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-03-25T08:52:42">
+    <page name="Membership" />
+    <before>
+      <page name="Gestion" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-03-25T09:02:46">
+    <page name="ReportAmounts" />
+    <rename>Conciliación</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-25T09:03:08">
+    <page name="TxnFc" />
+    <update>
+      <Name>FC</Name>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T09:03:31">
+    <page name="FC" />
+    <update>
+      <Name>TxnFc</Name>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-25T09:03:51">
+    <page name="TxnFc" />
+    <rename>FC</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-25T09:04:01">
+    <page name="TxnIgnis" />
+    <rename>Ignis</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-25T09:04:27">
+    <page name="TxnFc" />
+    <rename>Fc</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-25T09:06:46">
+    <page name="Gestion" />
+    <rename>Gestión</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-25T09:07:21">
+    <page name="ReportExecution" />
+    <rename>Informe Ejecución</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-25T09:07:45">
+    <page name="ReportExecution" />
+    <rename>Informe de Ejecución</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-25T09:08:08">
+    <page name="Membership" />
+    <rename>Seguridad</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-25T11:05:49">
+    <page name="Gestion" />
+    <move>
+      <page name="Reports" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-03-25T11:36:40">
+    <page name="Reports" />
+    <rename>Reportes</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-25T11:36:49">
+    <page name="Reports" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Title>Reportes</Title>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-26T10:53:06">
+    <page name="CompensacionDiaria" />
+    <move>
+      <page name="TxnReconciled" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-03-26T10:53:12">
+    <page name="CompensacionDiaria" />
+    <move>
+      <page name="EntityAssort" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-03-26T11:13:40">
+    <page name="EntityAssort" />
+    <rename>Cuadre por Entidades</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-26T11:14:01">
+    <page name="TxnReconciled" />
+    <rename>Txn Conciliadas</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-26T11:14:34">
+    <page name="TxnReconciled" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Title>Txn Conciliadas</Title>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-26T11:14:47">
+    <page name="EntityAssort" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Title>Cuadre por Entidades</Title>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-26T11:15:08">
+    <page name="TxnReconciled" />
+    <update>
+      <Title>Trx Conciliadas</Title>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-26T11:15:18">
+    <page name="TxnReconciled" />
+    <rename>Trx Conciliadas</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-26T11:22:16">
+    <page name="TxnIgnis" />
+    <update>
+      <Title>Xzedi</Title>
+      <Description>View Txn Xzedi</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-26T11:22:22">
+    <page name="TxnIgnis" />
+    <rename>Xzedi</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-26T11:24:54">
+    <page name="TxnIgnis" />
+    <update>
+      <About>This page allows txn Xzedi management.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-26T14:25:53">
+    <page name="TxnXzedi" />
+    <rename>Xzedi</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-26T14:26:03">
+    <page name="TxnXzedi" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Title>Xzedi</Title>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-26T14:26:11">
+    <page name="TxnFc" />
+    <before>
+      <page name="TxnXzedi" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-03-26T14:26:15">
+    <page name="Gestion" />
+    <before>
+      <page name="CompensacionDiaria" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-03-27T10:21:42">
+    <page name="ReportAmounts" />
+    <update>
+      <Description>View Report Conciliación</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-27T10:21:54">
+    <page name="TxnReconciled" />
+    <update>
+      <Description>View Txn Conciliadas</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-27T10:22:20">
+    <page name="EntityAssort" />
+    <update>
+      <Description>View Cuadre por Entidades</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-28T14:04:20">
+    <page name="SummaryDailySupplier" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Title>Resumen Diario por Prov</Title>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-28T14:04:25">
+    <page name="SummaryDailySupplier" />
+    <rename>Resumen Diario por Prov</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-28T14:04:29">
+    <page name="CompensacionDiaria" />
+    <move>
+      <page name="SummaryDailySupplier" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-03-28T14:05:09">
+    <page name="TxnPaid" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Title>Trx Pagadas</Title>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-28T14:05:17">
+    <page name="TxnPaid" />
+    <rename>Trx Pagadas</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-28T14:05:21">
+    <page name="CompensacionDiaria" />
+    <move>
+      <page name="TxnPaid" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-03-28T14:08:26">
+    <page name="TxnPaid" />
+    <before>
+      <page name="SubscriptionFile" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-03-28T14:08:48">
+    <page name="SubscriptionFile" />
+    <rename>Archivo de Abono</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-28T14:09:00">
+    <page name="SubscriptionFile" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Title>Archivo de Abono</Title>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-28T14:09:58">
+    <page name="Membership" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Title>^MembershipTitle^Seguridad^MembershipTitle^</Title>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T13:43:48">
+    <page name="Home" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Roles>%</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T13:44:09">
+    <page name="CompensacionDiaria" />
+    <update>
+      <CustomStyle>material-icon-assignment</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T13:50:53">
+    <page name="TxnXzedi" />
+    <update>
+      <CustomStyle>material-icon-chrome-reader-mode</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T13:51:36">
+    <page name="TxnFc" />
+    <update>
+      <CustomStyle>material-icon-description</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T13:54:17">
+    <page name="ReportAmounts" />
+    <update>
+      <CustomStyle>material-icon-vertical-split</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T13:58:21">
+    <page name="TxnReconciled" />
+    <update>
+      <CustomStyle>material-icon-tune</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T14:00:46">
+    <page name="EntityAssort" />
+    <update>
+      <CustomStyle>material-icon-tonality</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T14:04:05">
+    <page name="SummaryDailySupplier" />
+    <update>
+      <CustomStyle>material-icon-table-chart</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T14:06:07">
+    <page name="SubscriptionFile" />
+    <update>
+      <CustomStyle>material-icon-receipt</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T14:08:05">
+    <page name="TxnPaid" />
+    <update>
+      <CustomStyle>material-icon-list</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T14:09:11">
+    <page name="Gestion" />
+    <update>
+      <CustomStyle>material-icon-dns</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T14:10:36">
+    <page name="ReportExecution" />
+    <update>
+      <CustomStyle>material-icon-build</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T14:12:46">
+    <page name="Reports" />
+    <update>
+      <CustomStyle>material-icon-note</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T14:13:34">
+    <page name="Home" />
+    <update>
+      <Roles />
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T14:28:52">
+    <page name="ReportAmounts" />
+    <update>
+      <CustomStyle>material-icon-list-alt</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T14:30:19">
+    <page name="TxnPaid" />
+    <update>
+      <Description>View Trx Pagadas</Description>
+      <About>Esta pagina permitirá manejar las trx pagadas.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T14:30:40">
+    <page name="CompensacionDiaria" />
+    <update>
+      <About>Esta pagina permitirá manejar todas las compensaciones diarias.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T14:30:53">
+    <page name="TxnXzedi" />
+    <update>
+      <Description>Visualizar Txn Xzedi</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T14:31:09">
+    <page name="TxnXzedi" />
+    <update>
+      <About>Esta pagina permitirá manejar las txn xzedi.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T14:31:33">
+    <page name="TxnFc" />
+    <update>
+      <Description>Visualizar Txn Fc</Description>
+      <About>Esta pagina permitirá manejar las txn fc.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T14:32:26">
+    <page name="ReportAmounts" />
+    <update>
+      <Description>Visualizar Reporte Conciliación</Description>
+      <About>Esta pagina permitirá manejar la conciliación.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T14:32:58">
+    <page name="TxnReconciled" />
+    <update>
+      <Description>Visualizar Txn Conciliadas</Description>
+      <About>Esta pagina permitirá manejar las txn conciliadas.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T14:33:38">
+    <page name="EntityAssort" />
+    <update>
+      <Description>Visualizar Cuadre por Entidades</Description>
+      <About>Esta pagina permitirá manejar el cuadre por entidades.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T14:34:22">
+    <page name="SummaryDailySupplier" />
+    <update>
+      <Description>Visualizar Resumen diario por Proveedor</Description>
+      <About>Esta pagina permitirá manejar el resumen diario por proveedor.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T14:35:04">
+    <page name="SubscriptionFile" />
+    <update>
+      <Description>Visualizar Archivo de Abono</Description>
+      <About>Esta pagina permitirá manejar el archivo de abono.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T14:35:17">
+    <page name="TxnPaid" />
+    <update>
+      <Description>Visualizar Trx Pagadas</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T14:35:53">
+    <page name="ReportExecution" />
+    <update>
+      <Description>Visualizar Informe de Ejecución</Description>
+      <About>Esta pagina permitirá manejar el informe de ejecución.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T14:36:14">
+    <page name="Reports" />
+    <update>
+      <Description>Visualizar Reportes</Description>
+      <About>Esta pagina permitirá manejar los Reportes.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T14:36:51">
+    <page name="Membership" />
+    <update>
+      <Description>Usuarios y Roles </Description>
+      <About>Esta pagina permitirá manejar los usuarios y roles.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:23:44">
+    <page name="CompensacionDiaria" />
+    <update>
+      <Description>Visualizar Compensación Diaria</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:24:01">
+    <page name="Gestion" />
+    <update>
+      <Description>Visualizar Gestiones</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:24:25">
+    <page name="Gestion" />
+    <update>
+      <About>Esta pagina permitirá manejar todas las Gestiones.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:49:15">
+    <page name="CompensacionDiaria" />
+    <update>
+      <Title>Reportes Compensación Diaria</Title>
+      <Description>Visualizar Reportes Compensación Diaria</Description>
+      <About>Esta pagina permitirá manejar todos los reportes de compensación diarias.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:49:27">
+    <page name="CompensacionDiaria" />
+    <rename>Reportes Compensación Diaria</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:50:09">
+    <page name="TxnXzedi" />
+    <update>
+      <Title>Reporte Xzedi</Title>
+      <Description>Visualizar Reporte Xzedi</Description>
+      <About>Esta pagina permitirá manejar el reporte xzedi.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:50:43">
+    <page name="TxnXzedi" />
+    <rename>Reporte Xzedi</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:54:22">
+    <page name="TxnFc" />
+    <update>
+      <Title>Reporte FullCargas</Title>
+      <Description>Visualizar Reporte FullCargas</Description>
+      <About>Esta pagina permitirá manejar el reporte fullcargas.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:54:38">
+    <page name="TxnFc" />
+    <rename>Reporte FullCargas</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-29T15:56:44">
+    <page name="ReportAmounts" />
+    <rename>Reporte Conciliación</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:02:24">
+    <page name="ReportAmounts" />
+    <update>
+      <Title>Reporte Conciliación</Title>
+      <About>Esta pagina permitirá manejar el reporte conciliación.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:02:49">
+    <page name="CompensacionDiaria" />
+    <update>
+      <About>Esta pagina permitirá manejar todos los reportes de compensación diaria.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:34:28">
+    <page name="TxnReconciled" />
+    <rename>Reporte Transacciones Conciliadas</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:35:03">
+    <page name="TxnReconciled" />
+    <update>
+      <About>Esta pagina permitirá manejar el reporte de transacciones conciliadas.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:35:38">
+    <page name="TxnReconciled" />
+    <update>
+      <Title>Reporte Transacciones Conciliadas</Title>
+      <Description>Visualizar Reporte Transacciones Conciliadas</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:47:34">
+    <page name="EntityAssort" />
+    <rename>Reporte Cuadre por Entidades</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:47:48">
+    <page name="EntityAssort" />
+    <update>
+      <Description>Visualizar Reporte Cuadre por Entidades</Description>
+      <About>Esta pagina permitirá manejar el reporte cuadre por entidades.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:50:09">
+    <page name="SummaryDailySupplier" />
+    <update>
+      <Title>Reporte Resumen Diario por Prov</Title>
+      <Description>Visualizar Reporte Resumen diario por Proveedor</Description>
+      <About>Esta pagina permitirá manejar el reporte resumen diario por proveedor.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:50:52">
+    <page name="SummaryDailySupplier" />
+    <rename>Reporte Resumen Diario por Proveedor</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:51:04">
+    <page name="SummaryDailySupplier" />
+    <update>
+      <Title>Reporte Resumen Diario por Proveedor</Title>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:53:13">
+    <page name="SubscriptionFile" />
+    <update>
+      <Title>Reporte Archivo de Abono</Title>
+      <Description>Visualizar Reporte Archivo de Abono</Description>
+      <About>Esta pagina permitirá manejar el reporte archivo de abono.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:53:29">
+    <page name="SubscriptionFile" />
+    <rename>Reporte Archivo de Abono</rename>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:55:41">
+    <page name="TxnPaid" />
+    <update>
+      <Title>Reporte Transacciones Pagadas</Title>
+      <Description>Visualizar Reporte Transacciones Pagadas</Description>
+      <About>Esta pagina permitirá manejar el reporte transacciones pagadas.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-03-29T16:55:47">
+    <page name="TxnPaid" />
+    <rename>Reporte Transacciones Pagadas</rename>
+  </c>
+  <c y="NodeSet" t="2019-04-05T14:59:01">
+    <page name="CompensacionDiaria" />
+    <rename>Compensación Diaria</rename>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:00:22">
+    <pages />
+    <insert type="page">
+      <Name>Proveedores</Name>
+      <Generate>Always</Generate>
+      <UseExtenders>false</UseExtenders>
+      <Path>Proveedores</Path>
+      <Title>Proveedores</Title>
+      <Roles>*</Roles>
+    </insert>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:01:18">
+    <page name="CompensacionDiaria" />
+    <update>
+      <Title>Compensación Diaria</Title>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:01:41">
+    <page name="Proveedores" />
+    <update>
+      <Description>Visualizar Reportes de Proveedores</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:02:57">
+    <page name="Proveedores" />
+    <update>
+      <About>Esta pagina permitirá manejar todos los reportes de proveedores.</About>
+      <Roles />
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:09:04">
+    <page name="Proveedores" />
+    <update>
+      <CustomStyle>material-icon-store-mall-directory</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:10:16">
+    <page name="CompensacionDiaria" />
+    <move>
+      <page name="Proveedores" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:10:33">
+    <page name="TxnFc" />
+    <before>
+      <page name="Proveedores" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:10:36">
+    <page name="Proveedores" />
+    <move>
+      <page name="TxnFc" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:28:38">
+    <pages />
+    <insert type="page">
+      <Name>Conciliacion</Name>
+      <Generate>Always</Generate>
+      <UseExtenders>false</UseExtenders>
+      <Path>Conciliacion</Path>
+      <Title>Conciliacion</Title>
+      <Roles>*</Roles>
+    </insert>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:28:54">
+    <page name="Conciliacion" />
+    <rename>Conciliación</rename>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:28:59">
+    <page name="Conciliacion" />
+    <update>
+      <Title>Conciliación</Title>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:29:12">
+    <page name="CompensacionDiaria" />
+    <move>
+      <page name="Conciliacion" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:29:17">
+    <page name="ReportAmounts" />
+    <before>
+      <page name="Conciliacion" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:29:20">
+    <page name="Conciliacion" />
+    <move>
+      <page name="ReportAmounts" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:31:07">
+    <page name="ReportAmounts" />
+    <update>
+      <Title>Reporte Resumen de Transacciones General</Title>
+      <Description>Visualizar Reporte Resumen de Transacciones General</Description>
+      <About>Esta pagina permitirá manejar el reporte resumen de transacciones general.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:31:47">
+    <page name="ReportAmounts" />
+    <rename>Reporte Resumen de Transacciones General</rename>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:37:35">
+    <page name="Conciliacion" />
+    <update>
+      <Description>Visualizar Reportes de Conciliación</Description>
+      <CustomStyle>material-icon-subject</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:38:08">
+    <page name="Conciliacion" />
+    <update>
+      <About>Esta pagina permitirá manejar todos los reportes de conciliación.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:38:23">
+    <page name="Conciliacion" />
+    <update>
+      <Roles />
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:45:30">
+    <pages />
+    <insert type="page">
+      <Name>TransaccionesnoConciliadas</Name>
+      <Generate>Always</Generate>
+      <UseExtenders>false</UseExtenders>
+      <Path>Transacciones no Conciliadas</Path>
+      <Title>Transacciones no Conciliadas</Title>
+      <Description>Visualizar Reporte Transacciones no conciliadas</Description>
+      <CustomStyle>material-icon-list-alt</CustomStyle>
+    </insert>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:45:38">
+    <page name="CompensacionDiaria" />
+    <move>
+      <page name="TransaccionesnoConciliadas" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:45:45">
+    <page name="TxnReconciled" />
+    <before>
+      <page name="TransaccionesnoConciliadas" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:46:30">
+    <page name="TransaccionesnoConciliadas" />
+    <update>
+      <About>Esta pagina permitirá manejar todos los reportes de transacciones no conciliadas.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:47:09">
+    <page name="EntityAssort" />
+    <rename>Reporte Cuadre por Porveedor</rename>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:47:27">
+    <page name="EntityAssort" />
+    <update>
+      <Title>Reporte Cuadre por Porveedor</Title>
+      <Description>Visualizar Reporte Cuadre por Porveedor</Description>
+      <About>Esta pagina permitirá manejar el reporte cuadre por proveedor.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:48:10">
+    <page name="SummaryDailySupplier" />
+    <rename>Reporte Resumen Diario por Producto</rename>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:50:03">
+    <page name="SubscriptionFile" />
+    <rename>Reporte Pago a Proveedores</rename>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:50:28">
+    <page name="SubscriptionFile" />
+    <update>
+      <Title>Reporte Pago a Proveedores</Title>
+      <Description>Visualizar Reporte Pago a Proveedores</Description>
+      <About>Esta pagina permitirá manejar el reporte pago a proveedores.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:54:29">
+    <page name="ReportAmounts" />
+    <update>
+      <CustomStyle>material-icon-storage</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:55:11">
+    <page name="TransaccionesnoConciliadas" />
+    <update>
+      <CustomStyle>material-icon-pie-chart</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-05T15:55:50">
+    <page name="TxnPaid" />
+    <update>
+      <CustomStyle>material-icon-monetization-on</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-05T16:05:31">
+    <page name="Proveedores" />
+    <move>
+      <page name="TxnTtp" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-04-05T16:05:50">
+    <page name="TxnTtp" />
+    <rename>Reporte TPP</rename>
+  </c>
+  <c y="NodeSet" t="2019-04-05T16:07:24">
+    <page name="TxnTtp" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Title>Reporte TPP</Title>
+      <Description>Visualizar Reporte TPP</Description>
+      <CustomStyle>material-icon-low-priority</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-05T16:07:47">
+    <page name="TxnTtp" />
+    <update>
+      <About>Esta pagina permitirá manejar todos los reportes de tpp.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-05T16:26:12">
+    <page name="TransaccionesnoConciliadas" />
+    <move>
+      <page name="TxnFcNotConcilied" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-04-05T16:26:33">
+    <page name="TxnFcNotConcilied" />
+    <rename>Reporte de Transacciones no Conciliadas Full Carga</rename>
+  </c>
+  <c y="NodeSet" t="2019-04-05T16:27:32">
+    <page name="TxnFcNotConcilied" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Title>Reporte de Transacciones no Conciliadas Full Carga</Title>
+      <Description>Visualizar Reporte de Transacciones no Conciliadas Full Carga</Description>
+      <CustomStyle>material-icon-filter-list</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-05T16:28:02">
+    <page name="TxnFcNotConcilied" />
+    <update>
+      <About>Esta pagina permitirá manejar todos los reportes de transacciones no conciliadas full carga.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-05T16:49:10">
+    <page name="TransaccionesnoConciliadas" />
+    <move>
+      <page name="TxnXzediNotConcilied" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-04-05T16:49:13">
+    <page name="TransaccionesnoConciliadas" />
+    <move>
+      <page name="TxnXzediNotConcilied" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-04-05T16:49:18">
+    <page name="TxnFcNotConcilied" />
+    <before>
+      <page name="TxnXzediNotConcilied" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-04-05T16:49:38">
+    <page name="TxnXzediNotConcilied" />
+    <rename>Reporte de Transacciones no Conciliadas XZEDI</rename>
+  </c>
+  <c y="NodeSet" t="2019-04-05T16:50:29">
+    <page name="TxnXzediNotConcilied" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Title>Reporte de Transacciones no Conciliadas XZEDI</Title>
+      <Description>Visualizar Reporte de Transacciones no Conciliadas XZEDI</Description>
+      <CustomStyle>material-icon-ballot</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-05T16:50:58">
+    <page name="TxnXzediNotConcilied" />
+    <update>
+      <About>Esta pagina permitirá manejar todos los reportes de transacciones no conciliadas Xzedi.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-05T21:41:00">
+    <page name="TransaccionesnoConciliadas" />
+    <move>
+      <page name="TxnTtpNotConcilied" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:06:04">
+    <page name="TxnTtpNotConcilied" />
+    <rename>Reporte de Transacciones no Conciliadas TPP</rename>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:06:13">
+    <page name="TxnFcNotConcilied" />
+    <before>
+      <page name="TxnTtpNotConcilied" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:07:02">
+    <page name="TxnTtpNotConcilied" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Title>Reporte de Transacciones no Conciliadas TPP</Title>
+      <Description>Visualizar Reporte de Transacciones no Conciliadas TPP</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:08:14">
+    <page name="TxnTtpNotConcilied" />
+    <update>
+      <About>Esta pagina permitirá manejar todos los reportes de transacciones no conciliadas tpp.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:08:44">
+    <page name="Conciliacion" />
+    <move>
+      <page name="TxnReconciled" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:26:42">
+    <page name="MerchantCredit" />
+    <rename>Reporte Abonos de Comercios</rename>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:27:37">
+    <page name="MerchantCredit" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Title>Reporte Abonos de Comercios</Title>
+      <Description>Visualizar Reporte Abonos de Comercios</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:28:36">
+    <page name="MerchantCredit" />
+    <update>
+      <About>Esta pagina permitirá manejar el reporte de abono de comercios.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:28:55">
+    <page name="Gestion" />
+    <before>
+      <page name="MerchantCredit" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:55:47">
+    <page name="EntityAssort" />
+    <update>
+      <Title>Reporte Cuadre por Proveedor</Title>
+      <Description>Visualizar Reporte Cuadre por Proveedor</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-04-06T00:55:59">
+    <page name="EntityAssort" />
+    <rename>Reporte Cuadre por Proveedor</rename>
+  </c>
+  <c y="NodeSet" t="2019-04-06T01:00:45">
+    <page name="SummaryDailySupplier" />
+    <update>
+      <Title>Reporte Resumen Diario por Producto</Title>
+      <Description>Visualizar Reporte Resumen Diario por Producto</Description>
+      <About>Esta pagina permitirá manejar el reporte resumen diario por producto.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:02:31">
+    <page name="TxnXzedi" />
+    <dataView id="view1" />
+    <update>
+      <ShowViewSelector>false</ShowViewSelector>
+      <ShowQuickFind>false</ShowQuickFind>
+      <ShowDetailsInListMode>false</ShowDetailsInListMode>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:02:59">
+    <page name="TxnFc" />
+    <dataView id="view1" />
+    <update>
+      <ShowViewSelector>false</ShowViewSelector>
+      <ShowQuickFind>false</ShowQuickFind>
+      <ShowDetailsInListMode>false</ShowDetailsInListMode>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:03:16">
+    <page name="TxnTtp" />
+    <dataView id="view1" />
+    <update>
+      <ShowViewSelector>false</ShowViewSelector>
+      <ShowQuickFind>false</ShowQuickFind>
+      <ShowDetailsInListMode>false</ShowDetailsInListMode>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:03:30">
+    <page name="ReportAmounts" />
+    <dataView id="view1" />
+    <update>
+      <ShowViewSelector>false</ShowViewSelector>
+      <ShowQuickFind>false</ShowQuickFind>
+      <ShowDetailsInListMode>false</ShowDetailsInListMode>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:03:39">
+    <page name="TxnReconciled" />
+    <dataView id="view1" />
+    <update>
+      <ShowViewSelector>false</ShowViewSelector>
+      <ShowQuickFind>false</ShowQuickFind>
+      <ShowDetailsInListMode>false</ShowDetailsInListMode>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:03:51">
+    <page name="TxnXzediNotConcilied" />
+    <dataView id="view1" />
+    <update>
+      <ShowViewSelector>false</ShowViewSelector>
+      <ShowQuickFind>false</ShowQuickFind>
+      <ShowDetailsInListMode>false</ShowDetailsInListMode>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:04:05">
+    <page name="TxnTtpNotConcilied" />
+    <dataView id="view1" />
+    <update>
+      <ShowViewSelector>false</ShowViewSelector>
+      <ShowQuickFind>false</ShowQuickFind>
+      <ShowDetailsInListMode>false</ShowDetailsInListMode>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:04:18">
+    <page name="TxnFcNotConcilied" />
+    <dataView id="view1" />
+    <update>
+      <ShowViewSelector>false</ShowViewSelector>
+      <ShowQuickFind>false</ShowQuickFind>
+      <ShowDetailsInListMode>false</ShowDetailsInListMode>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:04:29">
+    <page name="EntityAssort" />
+    <dataView id="view1" />
+    <update>
+      <ShowViewSelector>false</ShowViewSelector>
+      <ShowQuickFind>false</ShowQuickFind>
+      <ShowDetailsInListMode>false</ShowDetailsInListMode>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:04:40">
+    <page name="SummaryDailySupplier" />
+    <dataView id="view1" />
+    <update>
+      <ShowViewSelector>false</ShowViewSelector>
+      <ShowQuickFind>false</ShowQuickFind>
+      <ShowDetailsInListMode>false</ShowDetailsInListMode>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:04:56">
+    <page name="SubscriptionFile" />
+    <dataView id="view1" />
+    <update>
+      <ShowViewSelector>false</ShowViewSelector>
+      <ShowQuickFind>false</ShowQuickFind>
+      <ShowDetailsInListMode>false</ShowDetailsInListMode>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:05:08">
+    <page name="TxnPaid" />
+    <dataView id="view1" />
+    <update>
+      <ShowViewSelector>false</ShowViewSelector>
+      <ShowQuickFind>false</ShowQuickFind>
+      <ShowDetailsInListMode>false</ShowDetailsInListMode>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:05:19">
+    <page name="MerchantCredit" />
+    <dataView id="view1" />
+    <update>
+      <ShowViewSelector>false</ShowViewSelector>
+      <ShowQuickFind>false</ShowQuickFind>
+      <ShowDetailsInListMode>false</ShowDetailsInListMode>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:05:32">
+    <page name="ReportExecution" />
+    <dataView id="view1" />
+    <update>
+      <ShowViewSelector>false</ShowViewSelector>
+      <ShowQuickFind>false</ShowQuickFind>
+      <ShowDetailsInListMode>false</ShowDetailsInListMode>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:05:42">
+    <page name="Reports" />
+    <dataView id="view1" />
+    <update>
+      <ShowViewSelector>false</ShowViewSelector>
+      <ShowQuickFind>false</ShowQuickFind>
+      <ShowDetailsInListMode>false</ShowDetailsInListMode>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T00:23:37">
+    <page name="Home" />
+    <update>
+      <Title>Inicio</Title>
+      <Description>^HomeDesc^Paguina de inicio^HomeDesc^</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:44:43">
+    <userControl name="MembershipManager" />
+    <update>
+      <Body>                  
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;body&gt;
+    &lt;div data-activator="Tab|{Web.MembershipResources.Manager.UsersTab}"&gt;
+        &lt;div id="users" data-controller="aspnet_Membership" data-show-in-summary="true" data-show-view-selector="false" data-show-modal-forms="true" data-show-details-in-list-mode="false" data-show-quick-find="false"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div data-activator="Tab|{Web.MembershipResources.Manager.RolesTab}"&gt;
+        &lt;div id="roles" data-controller="aspnet_Roles" data-show-in-summary="true" data-show-view-selector="false" data-show-modal-forms="true" data-show-details-in-list-mode="false" data-show-quick-find="false"&gt;&lt;/div&gt;
+        &lt;div id="role-users" data-controller="aspnet_Membership" data-view="usersInRolesGrid" 
+			 data-show-in-summary="true" data-show-view-selector="false" data-show-modal-forms="true" data-show-details-in-list-mode="false" data-show-quick-find="false"
+             data-filter-source="roles" data-filter-fields="RoleId" data-page-size="5" 
+             data-auto-hide="self"
+             data-page-header="{Web.MembershipResources.Manager.UsersInRole}"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </Body>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:49:13">
+    <page name="MerchantSummary" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Title>Reporte Resumen de Comercios</Title>
+      <Description>Visualizar Reporte Resumen de Comercios</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:49:19">
+    <page name="MerchantSummary" />
+    <rename>Reporte Resumen de Comercios</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:49:25">
+    <page name="Gestion" />
+    <before>
+      <page name="MerchantSummary" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:51:07">
+    <page name="MerchantSummary" />
+    <update>
+      <About>Esta pagina permitirá manejar el reporte resumen de comercios.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:51:20">
+    <page name="MerchantSummary" />
+    <dataView id="view1" />
+    <update>
+      <ShowViewSelector>false</ShowViewSelector>
+      <ShowQuickFind>false</ShowQuickFind>
+      <ShowDetailsInListMode>false</ShowDetailsInListMode>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:53:04">
+    <page name="SubscriptionFile" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:53:23">
+    <page name="SummaryDailySupplier" />
+    <rename>Reporte Pago a Proveedores</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:54:38">
+    <page name="SummaryDailySupplier" />
+    <update>
+      <Title>Reporte Pago a Proveedores</Title>
+      <Description>Visualizar Reporte Pago a Proveedores</Description>
+      <About>Esta pagina permitirá manejar el reporte pago a proveedores.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:54:57">
+    <page name="EntityAssort" />
+    <rename>Reporte Cuadre por Producto</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:54:57">
+    <page name="EntityAssort" />
+    <update>
+      <Title>Reporte Cuadre por Producto</Title>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:55:09">
+    <page name="EntityAssort" />
+    <update>
+      <Description>Visualizar Reporte Cuadre por Producto</Description>
+      <About>Esta pagina permitirá manejar el reporte cuadre por producto.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:57:58">
+    <pages />
+    <insert type="page">
+      <Name>CompensacionMensual</Name>
+      <Generate>Always</Generate>
+      <UseExtenders>false</UseExtenders>
+      <Path>Compensación Mensual</Path>
+      <Title>Compensación Mensual</Title>
+      <Roles>*</Roles>
+    </insert>
+  </c>
+  <c y="NodeSet" t="2019-05-03T11:58:02">
+    <page name="Gestion" />
+    <before>
+      <page name="CompensacionMensual" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:07:58">
+    <page name="CompensacionMensual" />
+    <move>
+      <page name="TxnPaidMonth" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:07:58">
+    <page name="CompensacionMensual" />
+    <move>
+      <page name="SummaryMonthPayment" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:07:58">
+    <page name="CompensacionMensual" />
+    <move>
+      <page name="MerchantCreditMonth" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:08:17">
+    <page name="TxnPaidMonth" />
+    <rename>Trx Pagadas por Mes</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:08:31">
+    <page name="TxnPaidMonth" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Description>Visualizar Trx Pagadas por Mes</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:08:40">
+    <page name="TxnPaidMonth" />
+    <dataView id="view1" />
+    <update>
+      <ShowViewSelector>false</ShowViewSelector>
+      <ShowQuickFind>false</ShowQuickFind>
+      <ShowDetailsInListMode>false</ShowDetailsInListMode>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:09:57">
+    <page name="SummaryMonthPayment" />
+    <rename>Resumen Pago Mes</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:09:59">
+    <page name="SummaryMonthPayment" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:10:10">
+    <page name="SummaryMonthPayment" />
+    <dataView id="view1" />
+    <update>
+      <ShowViewSelector>false</ShowViewSelector>
+      <ShowQuickFind>false</ShowQuickFind>
+      <ShowDetailsInListMode>false</ShowDetailsInListMode>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:11:36">
+    <page name="MerchantCreditMonth" />
+    <rename>Resumen Abonos de Comercios Mes</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:11:44">
+    <page name="MerchantCreditMonth" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Description>Visualizar Resumen Abonos de Comercios Mes</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:11:56">
+    <page name="MerchantCreditMonth" />
+    <dataView id="view1" />
+    <update>
+      <ShowViewSelector>false</ShowViewSelector>
+      <ShowQuickFind>false</ShowQuickFind>
+      <ShowDetailsInListMode>false</ShowDetailsInListMode>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:13:04">
+    <page name="CompensacionMensual" />
+    <update>
+      <About>Esta pagina permitirá manejar todos los reportes de compensación mensual.</About>
+      <Roles />
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:13:36">
+    <page name="TxnPaidMonth" />
+    <update>
+      <Title>Trx Pagadas por Mes</Title>
+      <About>Esta pagina permitirá manejar todos los reportes de trx pagadas por mes.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:14:14">
+    <page name="SummaryMonthPayment" />
+    <update>
+      <Title>Resumen Pago Mes</Title>
+      <Description>Visualizar Resumen Pago Mes</Description>
+      <About>Esta pagina permitirá manejar todos los reportes de resumen pago por mes.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:14:28">
+    <page name="MerchantCreditMonth" />
+    <update>
+      <Title>Resumen Abonos de Comercios Mes</Title>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:14:51">
+    <page name="MerchantCreditMonth" />
+    <update>
+      <About>Esta pagina permitirá manejar todos los reportes de resumen abonos de comercios mes.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:27:29">
+    <page name="TransaccionesnoConciliadas" />
+    <before>
+      <page name="Conciliacion" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:27:33">
+    <page name="Conciliacion" />
+    <move>
+      <page name="ReportreportAmounts" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:27:36">
+    <page name="TxnReconciled" />
+    <before>
+      <page name="ReportreportAmounts" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:28:06">
+    <page name="ReportreportAmounts" />
+    <rename>Reporte Resumen de Transacciones General</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:28:07">
+    <page name="ReportreportAmounts" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:28:12">
+    <page name="ReportreportAmounts" />
+    <update>
+      <Title>Reporte Resumen de Transacciones General</Title>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:28:23">
+    <page name="ReportreportAmounts" />
+    <update>
+      <Description>Visualizar Reporte Resumen de Transacciones General</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:28:47">
+    <page name="ReportreportAmounts" />
+    <update>
+      <About>Esta pagina permitirá manejar todos los reportes de resumen de transacciones general.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T12:28:56">
+    <page name="ReportreportAmounts" />
+    <dataView id="view1" />
+    <update>
+      <ShowViewSelector>false</ShowViewSelector>
+      <ShowQuickFind>false</ShowQuickFind>
+      <ShowDetailsInListMode>false</ShowDetailsInListMode>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T13:37:09">
+    <userControl name="TableOfContents" />
+    <update>
+      <Body>                
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;body&gt;
+    &lt;div class="ParaInfo"&gt;
+        ^TocInstruction^Seleccione un enlace de página en la tabla de contenido a continuación.^TocInstruction^
+    &lt;/div&gt;
+    &lt;div class="ParaHeader"&gt;
+        ^TocHeader^Mapa del Sitio^TocHeader^
+    &lt;/div&gt;
+    &lt;div data-role="placeholder" data-placeholder="site-map"&gt;&lt;/div&gt;
+
+    &lt;div id="app-sitemap" data-app-role="page" data-activator="Button|^TocHeader^Site Map^TocHeader^"&gt;
+        &lt;p&gt;
+            &lt;span&gt;^TocInstruction^Seleccione un enlace de página en la tabla de contenido a continuación.^TocInstruction^&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;div data-app-role="sitemap"&gt;&lt;/div&gt;
+        &lt;p&gt;
+            &lt;br /&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+              </Body>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T21:23:54">
+    <page name="ReportreportAmounts" />
+    <rename>Reporte General de Transacciones</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-03T21:24:03">
+    <page name="ReportreportAmounts" />
+    <update>
+      <Title>Reporte General de Transacciones</Title>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T21:24:32">
+    <page name="ReportreportAmounts" />
+    <update>
+      <Description>Visualizar Reporte General de Transacciones</Description>
+      <About>Esta pagina permitirá manejar todos los reportes general de transacciones.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:15:16">
+    <page name="TxnFc" />
+    <rename>Reporte FullCarga</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:15:28">
+    <page name="TxnFc" />
+    <update>
+      <Title>Reporte FullCarga</Title>
+      <Description>Visualizar Reporte FullCarga</Description>
+      <About>Esta pagina permitirá manejar el reporte fullcarga.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:17:06">
+    <page name="TxnTtpNotConcilied" />
+    <before>
+      <page name="TxnFcNotConcilied" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:17:12">
+    <page name="TxnFcNotConcilied" />
+    <before>
+      <page name="TxnTtpNotConcilied" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:17:16">
+    <page name="TransaccionesnoConciliadas" />
+    <move>
+      <page name="TxnTtpNotConcilied" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:17:45">
+    <pages />
+    <insert type="page">
+      <Name>Comercios</Name>
+      <Generate>Always</Generate>
+      <UseExtenders>false</UseExtenders>
+      <Path>Comercios</Path>
+      <Title>Comercios</Title>
+      <Roles>*</Roles>
+    </insert>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:17:54">
+    <page name="CompensacionMensual" />
+    <before>
+      <page name="Comercios" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:17:59">
+    <page name="Comercios" />
+    <move>
+      <page name="MerchantCredit" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:18:02">
+    <page name="Comercios" />
+    <move>
+      <page name="MerchantSummary" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:18:27">
+    <page name="Comercios" />
+    <update>
+      <About>Esta pagina permitirá manejar todos los reportes de comercios.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:18:48">
+    <page name="Comercios" />
+    <update>
+      <Description>Visualizar Reportes de Comercios</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-03T22:19:11">
+    <page name="CompensacionMensual" />
+    <update>
+      <Description>Visualizar Reportes de Compensación Mensual</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T00:35:27">
+    <userControl name="TableOfContents" />
+    <update>
+      <Body>                
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;body&gt;
+    &lt;div class="ParaInfo"&gt;
+        ^TocInstruction^Seleccione un enlace de página en la tabla de contenido a continuación.^TocInstruction^
+    &lt;/div&gt;
+    &lt;div class="ParaHeader"&gt;
+        ^TocHeader^Mapa del Sitio^TocHeader^
+    &lt;/div&gt;
+    &lt;div data-role="placeholder" data-placeholder="site-map"&gt;&lt;/div&gt;
+
+    &lt;div id="app-sitemap" data-app-role="page" data-activator="Button|^TocHeader^Mapa del Sitio^TocHeader^"&gt;
+        &lt;p&gt;
+            &lt;span&gt;^TocInstruction^Seleccione un enlace de página en la tabla de contenido a continuación.^TocInstruction^&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;div data-app-role="sitemap"&gt;&lt;/div&gt;
+        &lt;p&gt;
+            &lt;br /&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+              </Body>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:02:08">
+    <page name="ReportreportAmounts" />
+    <update>
+      <CustomStyle>material-icon-drag-indicator</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:03:00">
+    <page name="ReportreportAmounts" />
+    <rename>Reporte Resumen General de Transacciones</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:03:20">
+    <page name="ReportreportAmounts" />
+    <update>
+      <Title>Reporte Resumen General de Transacciones</Title>
+      <Description>Visualizar Reporte Resumen General de Transacciones</Description>
+      <About>Esta pagina permitirá manejar todos los reportes resumen general de transacciones.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:05:13">
+    <page name="TxnXzediNotConcilied" />
+    <update>
+      <CustomStyle>material-icon-horizontal-split</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:05:50">
+    <page name="TxnTtpNotConcilied" />
+    <update>
+      <CustomStyle>material-icon-input</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:09:38">
+    <page name="Comercios" />
+    <update>
+      <CustomStyle>material-icon-store</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:11:11">
+    <page name="MerchantCredit" />
+    <update>
+      <CustomStyle>material-icon-attach-money</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:11:51">
+    <page name="MerchantSummary" />
+    <update>
+      <CustomStyle>material-icon-bar-chart</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:13:29">
+    <page name="MerchantSummary" />
+    <update>
+      <CustomStyle>material-icon-multiline-chart</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:19:58">
+    <page name="ReportreportAmounts" />
+    <update>
+      <CustomStyle>material-icon-power-input</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:24:23">
+    <page name="TxnXzediNotConcilied" />
+    <update>
+      <CustomStyle>material-icon-gradient</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:25:33">
+    <page name="CompensacionMensual" />
+    <update>
+      <CustomStyle>material-icon-iso</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:26:10">
+    <page name="TxnPaidMonth" />
+    <update>
+      <CustomStyle>material-icon-tune</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:28:20">
+    <page name="SummaryMonthPayment" />
+    <update>
+      <CustomStyle>material-icon-money</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:28:55">
+    <page name="MerchantCreditMonth" />
+    <update>
+      <CustomStyle>material-icon-more-horiz</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T01:30:15">
+    <page name="SummaryMonthPayment" />
+    <update>
+      <CustomStyle>material-icon-apps</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-04T02:16:26">
+    <page name="TxnXzedi" />
+    <dataView id="view1" />
+    <update>
+      <ShowModalForms>false</ShowModalForms>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-07T11:05:24">
+    <page name="Comercios" />
+    <update>
+      <Roles />
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:47:20">
+    <page name="CompensacionDiaria" />
+    <update>
+      <Title />
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:47:28">
+    <page name="Comercios" />
+    <update>
+      <Title />
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:47:34">
+    <page name="CompensacionMensual" />
+    <update>
+      <Title />
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:47:43">
+    <page name="Gestion" />
+    <update>
+      <Title />
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:50:05">
+    <page name="TxnXzediNotConcilied" />
+    <rename>Reporte Transacciones no Conciliadas XZEDI</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:50:24">
+    <page name="TxnXzediNotConcilied" />
+    <update>
+      <Title>Reporte Transacciones no Conciliadas XZEDI</Title>
+      <Description>Visualizar Reporte Transacciones no Conciliadas XZEDI</Description>
+      <About>Esta pagina permitirá manejar todos los reportes transacciones no conciliadas Xzedi.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:52:25">
+    <page name="TxnFcNotConcilied" />
+    <update>
+      <Title>Reporte Transacciones no Conciliadas Full Carga</Title>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:52:34">
+    <page name="TxnFcNotConcilied" />
+    <update>
+      <Description>Visualizar Reporte Transacciones no Conciliadas Full Carga</Description>
+      <About>Esta pagina permitirá manejar todos los reportes transacciones no conciliadas full carga.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:52:46">
+    <page name="TxnFcNotConcilied" />
+    <rename>Reporte Transacciones no Conciliadas Full Carga</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:54:12">
+    <page name="TxnTtpNotConcilied" />
+    <update>
+      <Title>Reporte Transacciones no Conciliadas TPP</Title>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:54:22">
+    <page name="TxnTtpNotConcilied" />
+    <update>
+      <Description>Visualizar Reporte Transacciones no Conciliadas TPP</Description>
+      <About>Esta pagina permitirá manejar todos los reportes transacciones no conciliadas tpp.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-10T16:54:28">
+    <page name="TxnTtpNotConcilied" />
+    <rename>Reporte Transacciones no Conciliadas TPP</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-12T21:28:41">
+    <page name="MerchantCredit" />
+    <update>
+      <Title>Reporte Abono Comercios</Title>
+      <Description>Visualizar Reporte Abono Comercios</Description>
+      <About>Esta pagina permitirá manejar el reporte de abono comercios.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-12T21:28:48">
+    <page name="MerchantCredit" />
+    <rename>Reporte Abono Comercios</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-12T21:30:27">
+    <page name="MerchantSummary" />
+    <update>
+      <Title>Reporte Resumen Comercios</Title>
+      <Description>Visualizar Reporte Resumen Comercios</Description>
+      <About>Esta pagina permitirá manejar el reporte resumen comercios.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-12T21:30:39">
+    <page name="MerchantSummary" />
+    <rename>Reporte Resumen Comercios</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-12T21:35:25">
+    <userControl name="MembershipManager" />
+    <update>
+      <Body>                  
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;body&gt;
+    &lt;div data-activator="Tab|{Web.MembershipResources.Manager.UsersTab}"&gt;
+        &lt;div id="users" data-controller="aspnet_Membership" data-show-in-summary="false" data-show-view-selector="false" data-show-modal-forms="true" data-show-details-in-list-mode="false" data-show-quick-find="false"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div data-activator="Tab|{Web.MembershipResources.Manager.RolesTab}"&gt;
+        &lt;div id="roles" data-controller="aspnet_Roles" data-show-in-summary="true" data-show-view-selector="false" data-show-modal-forms="true" data-show-details-in-list-mode="false" data-show-quick-find="false"&gt;&lt;/div&gt;
+        &lt;div id="role-users" data-controller="aspnet_Membership" data-view="usersInRolesGrid" 
+			 data-show-in-summary="true" data-show-view-selector="false" data-show-modal-forms="true" data-show-details-in-list-mode="false" data-show-quick-find="false"
+             data-filter-source="roles" data-filter-fields="RoleId" data-page-size="5" 
+             data-auto-hide="self"
+             data-page-header="{Web.MembershipResources.Manager.UsersInRole}"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </Body>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-12T21:46:34">
+    <userControl name="MembershipManager" />
+    <update>
+      <Body>                  
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;body&gt;
+    &lt;div data-activator="Tab|{Web.MembershipResources.Manager.UsersTab}"&gt;
+        &lt;div id="users" data-controller="aspnet_Membership" data-show-view-selector="false" data-show-modal-forms="true" data-show-details-in-list-mode="false" data-show-quick-find="false"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div data-activator="Tab|{Web.MembershipResources.Manager.RolesTab}"&gt;
+        &lt;div id="roles" data-controller="aspnet_Roles" data-show-in-summary="true" data-show-view-selector="false" data-show-modal-forms="true" data-show-details-in-list-mode="false" data-show-quick-find="false"&gt;&lt;/div&gt;
+        &lt;div id="role-users" data-controller="aspnet_Membership" data-view="usersInRolesGrid" 
+			 data-show-in-summary="true" data-show-view-selector="false" data-show-modal-forms="true" data-show-details-in-list-mode="false" data-show-quick-find="false"
+             data-filter-source="roles" data-filter-fields="RoleId" data-page-size="5" 
+             data-auto-hide="self"
+             data-page-header="{Web.MembershipResources.Manager.UsersInRole}"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </Body>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-13T13:32:01">
+    <page name="TxnPaidMonth" />
+    <update>
+      <Title>Reporte Transacciones Pagadas por Mes</Title>
+      <Description>Visualizar Reporte Transacciones Pagadas por Mes</Description>
+      <About>Esta pagina permitirá manejar todos los reportes de transacciones pagadas por mes.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-13T13:32:05">
+    <page name="TxnPaidMonth" />
+    <rename>Reporte Transacciones Pagadas por Mes</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-13T13:33:37">
+    <page name="SummaryMonthPayment" />
+    <update>
+      <Title>Reporte Resumen Pago por Mes</Title>
+      <Description>Visualizar Reporte Resumen Pago por Mes</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-13T13:33:43">
+    <page name="SummaryMonthPayment" />
+    <rename>Reporte Resumen Pago por Mes</rename>
+  </c>
+  <c y="NodeSet" t="2019-05-13T13:37:43">
+    <page name="MerchantCreditMonth" />
+    <update>
+      <Title>Reporte Resumen Abonos a Comercios por Mes</Title>
+      <Description>Visualizar Reporte Resumen Abonos a Comercios por Mes</Description>
+      <About>Esta pagina permitirá manejar todos los reportes de resumen abonos a comercios por mes.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-05-13T13:38:02">
+    <page name="MerchantCreditMonth" />
+    <rename>Reporte Resumen Abonos a Comercios por Mes</rename>
+  </c>
+  <c y="NodeSet" t="2019-06-17T20:00:56">
+    <page name="Conciliacion" />
+    <move>
+      <page name="ReportConciliationTpp" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-06-17T20:02:23">
+    <page name="ReportConciliationTpp" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Title>Reporte Conciliación TPP</Title>
+      <Description>Visualizar Reporte Conciliación TPP</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T20:02:28">
+    <page name="ReportConciliationTpp" />
+    <rename>Reporte Conciliación TPP</rename>
+  </c>
+  <c y="NodeSet" t="2019-06-17T20:03:00">
+    <page name="ReportConciliationTpp" />
+    <update>
+      <About>Esta pagina permitirá manejar el reporte de conciliación tpp.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T20:05:06">
+    <page name="ReportConciliationTpp" />
+    <update>
+      <CustomStyle>material-icon-link</CustomStyle>
+      <Roles>tpp</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T20:12:42">
+    <page name="CompensacionDiaria" />
+    <update>
+      <Roles>Administrators,User</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T20:12:56">
+    <page name="Comercios" />
+    <update>
+      <Roles>Administrators,User</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T20:13:04">
+    <page name="CompensacionMensual" />
+    <update>
+      <Roles>Administrators,User</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T20:13:14">
+    <page name="Gestion" />
+    <update>
+      <Roles>Administrators,User</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:40:46">
+    <page name="TxnXzedi" />
+    <update>
+      <Roles>Administrators,User</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:40:53">
+    <page name="Proveedores" />
+    <update>
+      <Roles>Administrators,User</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:41:05">
+    <page name="Proveedores" />
+    <update>
+      <Roles>Administrators,User,TPP</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:41:15">
+    <page name="ReportAmounts" />
+    <update>
+      <Roles>Administrators,User</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:41:20">
+    <page name="TxnReconciled" />
+    <update>
+      <Roles>Administrators,User</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:41:24">
+    <page name="TransaccionesnoConciliadas" />
+    <update>
+      <Roles>Administrators,User</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:41:29">
+    <page name="EntityAssort" />
+    <update>
+      <Roles>Administrators,User</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:41:34">
+    <page name="SummaryDailySupplier" />
+    <update>
+      <Roles>Administrators,User</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:41:39">
+    <page name="TxnPaid" />
+    <update>
+      <Roles>Administrators,User</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:41:54">
+    <page name="CompensacionDiaria" />
+    <update>
+      <Roles>Administrators,User,Tpp</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:42:04">
+    <page name="Proveedores" />
+    <update>
+      <Roles>Administrators,User</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:42:14">
+    <page name="Conciliacion" />
+    <update>
+      <Roles>Administrators,User,Tpp</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-17T22:51:54">
+    <page name="ReportConciliationTpp" />
+    <dataView id="view1" />
+    <update>
+      <ShowViewSelector>false</ShowViewSelector>
+      <ShowQuickFind>false</ShowQuickFind>
+      <ShowDetailsInListMode>false</ShowDetailsInListMode>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-18T16:05:17">
+    <page name="Conciliacion" />
+    <move>
+      <page name="TppLiquidation" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-06-18T16:06:10">
+    <page name="TppLiquidation" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Title>Reporte Liquidación TPP</Title>
+      <Description>Visualizar Reporte Liquidación TPP</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-18T16:06:15">
+    <page name="TppLiquidation" />
+    <rename>Reporte Liquidación TPP</rename>
+  </c>
+  <c y="NodeSet" t="2019-06-18T16:06:26">
+    <page name="TppLiquidation" />
+    <update>
+      <Roles>Administrators,User</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-18T16:07:02">
+    <page name="TppLiquidation" />
+    <update>
+      <CustomStyle>material-icon-</CustomStyle>
+      <About>Esta pagina permitirá manejar el reporte de liquidación tpp.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-18T17:13:16">
+    <page name="TppLiquidation" />
+    <update>
+      <CustomStyle>material-icon-offline-pin</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-18T17:14:32">
+    <page name="TppLiquidation" />
+    <dataView id="view1" />
+    <update>
+      <ShowDescription>false</ShowDescription>
+      <ShowQuickFind>false</ShowQuickFind>
+      <ShowDetailsInListMode>false</ShowDetailsInListMode>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-18T17:18:50">
+    <page name="TppLiquidation" />
+    <dataView id="view1" />
+    <update>
+      <ShowDescription>true</ShowDescription>
+      <ShowViewSelector>false</ShowViewSelector>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-24T15:48:21">
+    <page name="CompensacionMensual" />
+    <move>
+      <page name="ReportMonthlyInvoice" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-06-24T15:48:24">
+    <page name="CompensacionMensual" />
+    <move>
+      <page name="ReportXlsInvoice" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2019-06-24T15:50:14">
+    <page name="ReportMonthlyInvoice" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Title>Reporte Facturación a Comercios</Title>
+      <Description>Visualizar Reporte Facturación a Comercios</Description>
+      <About>Facturación a Comercios</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-24T15:50:45">
+    <page name="ReportMonthlyInvoice" />
+    <update>
+      <About>Esta pagina permitirá manejar todos los reportes de facturación a comercios.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-24T15:50:50">
+    <page name="ReportMonthlyInvoice" />
+    <rename>Reporte Facturación a Comercios</rename>
+  </c>
+  <c y="NodeSet" t="2019-06-24T15:51:35">
+    <page name="ReportMonthlyInvoice" />
+    <dataView id="view1" />
+    <update>
+      <ShowViewSelector>false</ShowViewSelector>
+      <ShowQuickFind>false</ShowQuickFind>
+      <ShowDetailsInListMode>false</ShowDetailsInListMode>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-24T15:54:09">
+    <page name="ReportXlsInvoice" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Title>Reporte Formato Emisión TeFacturo</Title>
+      <Description>Visualizar Reporte Formato Emisión TeFacturo</Description>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-24T15:54:31">
+    <page name="ReportXlsInvoice" />
+    <rename>Reporte Formato Emisión TeFacturo</rename>
+  </c>
+  <c y="NodeSet" t="2019-06-25T19:55:45">
+    <page name="ReportXlsInvoice" />
+    <dataView id="view1" />
+    <update>
+      <ShowViewSelector>false</ShowViewSelector>
+      <ShowQuickFind>false</ShowQuickFind>
+      <ShowDetailsInListMode>false</ShowDetailsInListMode>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-25T19:58:19">
+    <page name="ReportXlsInvoice" />
+    <update>
+      <About>Esta pagina permitirá manejar todos los reportes de formato emisión tefacturo.</About>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-25T20:42:28">
+    <page name="ReportMonthlyInvoice" />
+    <update>
+      <CustomStyle>material-icon-view-module</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-25T20:43:12">
+    <page name="ReportXlsInvoice" />
+    <update>
+      <CustomStyle>material-icon-playlist-add-check</CustomStyle>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-25T21:04:05">
+    <page name="ReportMonthlyInvoice" />
+    <update>
+      <Roles>)</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-25T21:04:14">
+    <page name="ReportXlsInvoice" />
+    <update>
+      <Roles>)</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-28T15:46:52">
+    <page name="ReportXlsInvoice" />
+    <update>
+      <Roles />
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-28T15:46:59">
+    <page name="ReportMonthlyInvoice" />
+    <update>
+      <Roles />
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-06-28T22:24:35">
+    <page name="ReportConciliationTpp" />
+    <update>
+      <Roles>Tpp</Roles>
+    </update>
+  </c>
+  <c y="NodeSet" t="2019-07-02T15:48:50">
+    <page name="ReportXlsInvoice" />
+    <update>
+      <Roles>)</Roles>
+    </update>
+  </c>
+</log>

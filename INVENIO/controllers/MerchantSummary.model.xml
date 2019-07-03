@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="REPORT" baseTable="MERCHANT_SUMMARY" alias="MERCHANT_SUMMARY" created="2019-05-03T11:48:00" modified="2019-05-03T11:48:26" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys />
+  <columns>
+    <column name="Código_de_Comercio" fieldName="CódigoDeComercio" label="Código de Comercio" />
+    <column name="Nombre_de_Comercio" fieldName="NombreDeComercio" label="Nombre de Comercio" />
+    <column name="Fecha_Afiliación" fieldName="FechaAfiliación" label="Fecha Afiliación" />
+    <column name="Saldo_Actual" fieldName="SaldoActual" label="Saldo Actual" format="N2" />
+    <column name="Total_Abonos" fieldName="TotalAbonos" label="Total Abonos" format="N2" />
+    <column name="Total_Consumos" fieldName="TotalConsumos" label="Total Consumos" format="N2" />
+    <column name="Total_Comisiones" fieldName="TotalComisiones" label="Total Comisiones" format="N2" />
+    <column name="Código_de_recaudo" fieldName="CódigoDeRecaudo" label="Código de recaudo" />
+  </columns>
+</dataModel>

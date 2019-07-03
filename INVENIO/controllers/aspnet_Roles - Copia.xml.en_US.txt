@@ -1,0 +1,28 @@
+*******************************************************************************
+Your application uses this file to locate resource strings defined
+in aspnet_Roles - Copia.xml project item. 
+
+Replace the text between localization brackets as needed.
+*******************************************************************************
+
+^ActionBarNewActionDescription^Crear un nuevo registro de rol de miembro.^ActionBarNewActionDescription^
+
+^ActionBarNewActionHeaderText^Nuevo Rol^ActionBarNewActionHeaderText^
+
+^ActionBarNewGroupHeaderText^Nuevo^ActionBarNewGroupHeaderText^
+
+^CreateFormCategory^Complete el formulario. Asegúrese de ingresar todos los campos requeridos.^CreateFormCategory^
+
+^CreateFormHeaderText^
+        Complete este formulario y haga clic en el botón Aceptar para crear un nuevo registro de roles de membresía. Haga clic en Cancelar para volver a la pantalla anterior.^CreateFormHeaderText^
+
+^DescriptionLabel^Descripción^DescriptionLabel^
+
+^EditViewCategory^Estos son los campos del registro de roles de membresía que se pueden editar.^EditViewCategory^
+
+^EditViewHeaderText^Revise la información de los roles a continuación. Haga clic en Editar para cambiar este registro, haga clic en Eliminar para eliminar el registro o haga clic en Cancelar / Cerrar para volver.^EditViewHeaderText^
+
+^GridViewHeaderText^Esta es una lista de roles de la plataforma.^GridViewHeaderText^
+
+^RoleNameLabel^Nombre Rol^RoleNameLabel^
+
